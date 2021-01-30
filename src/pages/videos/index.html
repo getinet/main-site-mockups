@@ -1,0 +1,188 @@
+---
+title: videos
+posterClass: none
+quoteDisplay: hide
+body-class: video-page
+show-photo-by: hide
+---
+
+<style media="screen">
+  .intrestest-wrapper-bar {
+    display: none;
+  }
+  .related-wrapper #related-events,
+  .related-wrapper #related-videos {
+    display: none;
+  }
+
+  .row.related-wrapper {
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .arrow {
+    top: 200px;
+    position: relative;
+  }
+
+  .arrow.next {
+    float: right;
+    right: -20px;
+  }
+
+  .arrow.previous {
+    float: left;
+    opacity: .25;
+    pointer-events: none;
+    left: -20px;
+  }
+
+  .orbit-next:hover {
+    background-color: transparent;
+  }
+
+  .orbit-next:hover svg * {
+    fill: #8BB018;
+    stroke: none;
+  }
+
+</style>
+
+{{> header-hero}}
+
+<div class="row videos hide">
+  <div class="small-12 large-10 columns small-centered">
+    <div class="row">
+      <div class="small-12 columns">
+        <!-- <h4>Featured Video</h4> -->
+        <div class="responsive-embed widescreen">
+          <iframe width="1024" height="768" src="https://www.youtube.com/embed/AwHpDKz_Re0?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+
+          <div class="hide">
+            <div class="video-poster" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+               <!-- <img src="{{root}}/assets/img/video-poster-1.png" style="cursor:pointer" /> -->
+               <!-- <i class="fa fa-youtube-play fa-6" aria-hidden="true"></i> -->
+            </div>
+            <div style="display:none">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/AwHpDKz_Re0?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p class="title"><b>Reduce Reuse Recycle: Minimizing Code Duplication through Modular FileMaker Design</b></p>
+        <p>We have better tools than ever in FileMaker to create reusable modules. Here we explore why the combination of card windows and JSON reigns supreme for modular architecture, and look in depth at how modules open, close, and communicate. Demos include the LOgiCATOR search-interface module, the CalPick date-selector module, and a module that facilitates sync between a local FileMaker file and a hosted (FileMaker Server) file. The latter demo also introduces the “Leave No Trace” technique that uses a self-destructing module to solve the problem of graceful disconnect from a hosted file once the connection is no longer needed.</p>
+        <p>This presentation was recorded at the “Database Interest Group for FileMaker” (DIGFM) meeting held at FileMaker, Inc. on March 8, 2018. Special thanks to FileMaker for hosting the meeting and providing the recording. <a href="https://community.filemaker.com/group">DigFM</a> is a monthly meeting open to the public, featuring a wide array of speakers and topics of interest to the FileMaker developer community. All are welcome.</p>
+        <hr>
+      </div>
+
+      {{#each global.videos}}
+      <div class="{{columns}} small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="responsive-embed widescreen">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{id}}?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p class="title"><b>{{title}}</b></p>
+          <p>{{description}}</p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="row videos">
+  <div class="small-12 columns small-centered">
+    <div class="row">
+      <div class="small-12 medium-10 small-centered columns">
+        <!-- <h2>Featured Video</h2> -->
+        <div class="responsive-embed widescreen">
+          <iframe  src="https://www.youtube.com/embed/yino6Ak2HxA?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+
+          <div class="hide">
+            <div class="video-poster" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+               <!-- <img src="{{root}}/assets/img/video-poster-1.png" style="cursor:pointer" /> -->
+               <!-- <i class="fa fa-youtube-play fa-6" aria-hidden="true"></i> -->
+            </div>
+            <div style="display:none">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/AwHpDKz_Re0?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-12 medium-10 columns small-centered">
+        <p class="title"><b>Reduce Reuse Recycle: Minimizing Code Duplication through Modular FileMaker Design</b></p>
+        <p>We have better tools than ever in FileMaker to create reusable modules. Here we explore why the combination of card windows and JSON reigns supreme for modular architecture, and look in depth at how modules open, close, and communicate. Demos include the LOgiCATOR search-interface module, the CalPick date-selector module, and a module that facilitates sync between a local FileMaker file and a hosted (FileMaker Server) file. The latter demo also introduces the “Leave No Trace” technique that uses a self-destructing module to solve the problem of graceful disconnect from a hosted file once the connection is no longer needed.</p>
+        <p>This presentation was recorded at the “Database Interest Group for FileMaker” (DIGFM) meeting held at FileMaker, Inc. on March 8, 2018. Special thanks to FileMaker for hosting the meeting and providing the recording. <a href="https://community.filemaker.com/group">DigFM</a> is a monthly meeting open to the public, featuring a wide array of speakers and topics of interest to the FileMaker developer community. All are welcome.</p>
+      </div>
+
+      <div class="small-12 medium-10 columns small-centered">
+        {{>related-one-of-each}}
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row expanded videos last-section" style="background-color: #ffd939; padding: 20px 20px 100px;margin-bottom: -80px;color: rgba(0,0,0,0.7) !important;">
+  <div class="arrow previous">
+    <button class="orbit-previous" tabindex="0">
+      <svg width="21px" height="35px" viewBox="0 0 21 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Services-Accordion-Copy" transform="translate(-237.000000, -1014.000000)" fill-rule="nonzero" fill="#9B9B9B">
+                  <g id="Quote-Group" transform="translate(210.000000, 954.000000)">
+                      <polygon id="Shape-Copy" points="45.3513514 95 27 77.5 45.3513514 60 48 62.5257732 32.2972973 77.5 48 92.4742268"></polygon>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      <span class="show-for-sr"><object type="image/svg+xml" data="assets/img/ui/chevron-left.svg" width="21" height="35"></object></span>
+      <!-- &#9664;&#xFE0E; -->
+    </button>
+  </div>
+
+  <div class="arrow next">
+    <button class="orbit-next" tabindex="0">
+      <!--?xml version="1.0" encoding="UTF-8"?-->
+      <svg width="21px" height="35px" viewBox="0 0 21 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Services-Accordion-Copy" transform="translate(-1188.000000, -1014.000000)" fill-rule="nonzero" fill="#9B9B9B">
+                <g id="Quote-Group" transform="translate(210.000000, 954.000000)">
+                    <polygon id="Shape" transform="translate(988.500000, 77.500000) scale(-1, 1) translate(-988.500000, -77.500000) " points="996.351351 95 978 77.5 996.351351 60 999 62.5257732 983.297297 77.5 999 92.4742268"></polygon>
+                </g>
+            </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div class="small-12 columns">
+    <h4>Video Library</h4>
+  </div>
+
+  <div class="row expanded">
+    <div class="small-12 columns">
+      {{#each global.videos}}
+
+
+      <div class="medium-4 large-3 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="responsive-embed widescreen">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{id}}?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p class="title"><b>{{title}}</b></p>
+          <p>{{description}}</p>
+          <p>
+            <small><b>SERVICES&nbsp;</b> FileMaker Development
+            <br><b>FUNCTIONAL AREAS&nbsp;</b> Document Management | Document Generation | Marketing | Localization
+            <br><b>TECH&nbsp;</b> FileMaker
+            </small>
+          </p>
+        </div>
+      </div>
+
+      {{/each}}
+    </div>
+  </div>
+
+
+</div>

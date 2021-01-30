@@ -1,0 +1,275 @@
+---
+title: List of Mocked Pages
+posterClass: none
+quoteDisplay: hide
+guest-profile: active
+guest-profile-page: true
+body-class: hex
+show-photo-by: hide
+---
+
+
+<style media="screen">
+  .intrestest-wrapper-bar, th {
+    display: none;
+  }
+</style>
+
+{{> header-hero}}
+
+<div class="row expanded">
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Credentials</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+          {{#ifequal category 'credentials'}}
+          <tr>
+            <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+            <td>{{date}}</td>
+          </tr>
+          {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Email</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+          {{#ifequal category 'email'}}
+          <tr>
+            <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+            <td>{{date}}</td>
+          </tr>
+          {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Guest Profiles</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+          {{#ifequal category 'guest-profile'}}
+          <tr>
+            <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+            <td>{{date}}</td>
+          </tr>
+          {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Career</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'career'}}
+
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+
+          <td>{{date}}</td>
+        </tr>
+
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Video</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'video'}}
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+          <td>{{date}}</td>
+        </tr>
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Blog</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'blog'}}
+
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+          <td>{{date}}</td>
+        </tr>
+
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Contact</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'contact'}}
+
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+          <td>{{date}}</td>
+        </tr>
+
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Case Studies</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'casestudy'}}
+
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+          <td>{{date}}</td>
+        </tr>
+
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Misc</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+        {{#ifequal category 'misc'}}
+
+        <tr>
+          <td><a href="../{{root}}{{link}}" target="_blank">{{title}}</a></td>
+          <td>{{date}}</td>
+        </tr>
+
+        {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns">
+    <h4>Inventory of Services</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+          {{#ifequal category 'ios'}}
+          <tr>
+            <td><a href="{{link}}" target="_blank">{{title}}</a><br>
+            <small>{{note}}</small></td>
+            <td>{{date}}</td>
+          </tr>
+          {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="small-12 medium-6 large-4 columns end">
+    <h4>SidePanel</h4>
+    <table class="unstriped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th width="75">updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pages.pages}}
+          {{#ifequal category 'sidepanel'}}
+          <tr>
+            <td><a href="{{link}}" target="_blank">{{title}}</a><br>
+            <small>{{note}}</small></td>
+            <td>{{date}}</td>
+          </tr>
+          {{/ifequal}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

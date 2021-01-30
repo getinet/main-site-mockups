@@ -1,0 +1,116 @@
+<div class="row mockup-versions-wrapper expanded">
+  <div class="small-12 columns">
+    <h4>Mockup Options</h4>
+  </div>
+  <div class="small-12 columns">
+    <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+    $('.homepage-poster, .header-poster').toggleClass('filtered')">Image Filter</a>
+    <a data-open="welcome-modal-1" class="button green tiny expanded ">Welcome Modal</a>
+    <a data-open="gallery-modal-1" class="button green tiny expanded ">Gallery</a>
+    <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+    $('.service-wrapper').toggleClass('breath')">More Breathing room</a>
+    <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+    $('.show-intrest-2').toggleClass('flash')">Pulsing Hearts</a>
+    <a href="javascript:void(0)" class="tiny button github expanded" onclick="
+      $('body').toggleClass('video-page')">Dark mode</a>
+    <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+    $('.cookie-notifications ').toggleClass('hide')">Cookie Notification Banner</a>
+  </div>
+
+  <div class="small-12 end columns">
+    <p><h5>Intrest and Recommendations</strong></h5>
+    <a href="javascript:void(0)" class="button green tiny" onclick="
+    $('.intrestest-wrapper-bar').addClass('hide');
+    $('.intrestest-wrapper-bar.version-1').removeClass('hide')">Version I</a>
+    <a href="javascript:void(0)" class="button green tiny" onclick="
+    $('.intrestest-wrapper-bar').addClass('hide');
+    $('.intrestest-wrapper-bar.version-2').removeClass('hide')">Version II</a>
+    <a href="javascript:void(0)" class="button green tiny active" onclick="
+    $('.intrestest-wrapper-bar').addClass('hide');
+    $('.intrestest-wrapper-bar.version-3').removeClass('hide')">Version III</a>
+  </div>
+
+  {{#if user-profile}}
+    <div class="small-12 end columns">
+        <h4>User Profile</h4>
+        <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-2, .version-3, .functional, .tech, .db, .event').fadeOut();$('.version-1').fadeIn()">Phase 1</a>
+
+        <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-1, .version-3').fadeOut();$('.version-2, .functional, .tech, .db, .event').fadeIn()">Phase II</a>
+
+        <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-1, .version-3, .version-2, .functional, .tech, .db, .event').fadeIn()">Phase III</a>
+
+        <a href="javascript:void(0)" class="button blue tiny" onclick="$('.not-empty').fadeToggle();$('.empty-state').fadeToggle();">EMPTY STATE</a>
+    </div>
+    {{/if}}
+
+
+
+  <!-- <div class="small-12 end columns">
+    <label>Intro Nodes
+      <select id="intro-nodes">
+        <option value="version-1">V1-Mixed Articles</option>
+        <option value="version-2">V2-Blogs and Case Studies at Bottom</option>
+        <option value="version-3">V3-Postcards</option>
+        <option value="version-4" selected>V4-Postcards &amp; Cards Mixed</option>
+      </select>
+  </div> -->
+  <div class="small-12 end columns promo-options">
+    <label>Promotions</label>
+      <!-- <a href="javascript:void(0)" class="button tiny one-promo">One Promo</a>
+      <a href="javascript:void(0)" class="button tiny two-promos">Two Promos</a> -->
+
+      <a href="javascript:void(0)" class="button green tiny" onclick="
+      $('.promo-wrapper').addClass('hide');
+      $('.promo-wrapper.single').removeClass('hide');window.dispatchEvent(new Event('resize'));">One Promo</a>
+      <a href="javascript:void(0)" class="button green tiny" onclick="
+      $('.promo-wrapper').addClass('hide');
+      $('.promo-wrapper.tiny').removeClass('hide');window.dispatchEvent(new Event('resize'));">One Tiny Promo</a>
+      <a href="javascript:void(0)" class="button green tiny" onclick="
+      $('.promo-wrapper').addClass('hide');
+      $('.promo-wrapper.dual').removeClass('hide')">Two Promos</a>
+      <a href="javascript:void(0)" class="button green tiny" onclick="
+      $('.promo-wrapper').addClass('hide')">No Promos</a>
+  </div>
+
+
+  {{#ifpage 'oldcastle-case-study'}}
+  <div class="small-12 end columns">
+      <label>OldCastle Header posters</label>
+      <a href="javascript:void(0)" class="button tiny oc-header-1">Header 1</a>
+      <a href="javascript:void(0)" class="button tiny oc-header-2">Header 2</a>
+      <a href="javascript:void(0)" class="button tiny oc-header-3">Header 3</a>
+      <a href="javascript:void(0)" class="button tiny oc-header">animated</a>
+  </div>
+
+  <div class="small-12 end columns">
+      <label>Joy Of Coding</label>
+      <a href="javascript:void(0)" class="button tiny" onclick="$('.icon').removeClass('inverted')">Normal Icons</a>
+      <a href="javascript:void(0)" class="button tiny"onclick="$('.icon').addClass('inverted')">Inverted Icons</a>
+  </div>
+  {{/ifpage}}
+
+
+
+
+    {{#if subscription-management}}
+      <div class="small-12 end columns">
+        <h4>Subscription Managment</h4>
+        <a href="javascript:void(0)" class="button green tiny" onclick="
+        $('.subscription-management-options').addClass('hide');
+        $('.subscription-management-options.option-1').removeClass('hide')">Version I</a>
+        <a href="javascript:void(0)" class="button green tiny" onclick="
+        $('.subscription-management-options').addClass('hide');
+        $('.subscription-management-options.option-2').removeClass('hide')">Version II</a>
+      </div>
+    {{/if}}
+
+    {{#if products}}
+    <div class="small-12 end columns">
+      <label>Products</label>
+      <a href="javascript:void(0)" class="button green tiny" onclick="
+      $('.custom').toggleClass('hide');">Show Custom Card</a>
+    </div>
+    {{/if}}
+
+
+  </div>

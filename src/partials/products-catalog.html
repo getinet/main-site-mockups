@@ -1,0 +1,19 @@
+<div class="row prodcuts-list-wrapper"  data-equalizer data-equalize-on="medium" id="products-eq">
+  {{#each global.prodcuts}}
+  <div class="small-12 medium-{{medium}} columns {{end}} {{class}}">
+    <div class="card-wrapper products" data-equalizer-watch onclick="location.href = '{{cta-link}}'">
+      <div class="image-wrapper"  style="background-image: url('{{card-image}}')"> </div>
+      <div class="ribbon {{ribbon}}"><span>Free</span></div>
+      <h4>{{name}}</h4>
+      {{>interested-btn}} {{>share-btn}}
+      <p class="product-tag-line">{{tag-line}}</p>
+      <p>{{summary}}</p>
+      <div class="button-group tiny {{solo}}">
+        <a class="secondary button {{moreinfolink-visiablity}}" href="{{root}}{{moreinfolink}}">More Info</a>
+        <a class="secondary button {{2nd-btn-visiablity}}">{{2nd-btn-label}}</a>
+        <a class="{{cta-btn-color}} button {{cta-btn-visiablity}}" onclick="location.href = '{{cta-link}}'">{{cta-btn-label}}</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

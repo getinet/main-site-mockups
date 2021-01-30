@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>round-email-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M19.0000168,10.4835176 C18.7656414,10.7367266 18.5000161,10.9592438 18.2187659,11.1510686 C16.9140765,12.0181175 15.6015751,12.8928398 14.3281361,13.7982535 C13.6718851,14.2739796 12.8593844,14.8571277 12.0078209,14.8571277 L12.0000084,14.8571277 L11.9921959,14.8571277 C11.1406324,14.8571277 10.3281312,14.2739796 9.67188073,13.7982535 C8.39844167,12.8851664 7.0859398,12.0181175 5.78906333,11.1510686 C5.50000067,10.9592438 5.2343754,10.7367266 5,10.4835176 L5,16.5758795 C5,17.2511035 5.56250087,17.8035597 6.25000167,17.8035597 L17.7500151,17.8035597 C18.4375159,17.8035597 19.0000168,17.2511035 19.0000168,16.5758795 L19.0000168,10.4835176 Z M19.0000168,8.22765546 C19.0000168,7.55243146 18.4297035,6.99997525 17.7500151,6.99997525 L6.25000167,6.99997525 C5.41406307,6.99997525 5,7.64450742 5,8.39646146 C5,9.09470433 5.78906333,9.96175367 6.34375173,10.3300575 C7.5546906,11.1587416 8.7812544,11.9874257 9.99219327,12.8237827 C10.5000064,13.1690677 11.3593824,13.8749835 11.9921959,13.8749835 L12.0000084,13.8749835 L12.0078209,13.8749835 C12.6406339,13.8749835 13.5000099,13.1690677 14.0078231,12.8237827 C15.2187624,11.9874257 16.4453262,11.1587416 17.6640775,10.3300575 C18.3515783,9.86200429 19.0000168,9.08703138 19.0000168,8.22765546 Z" id="path-1"></path>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.125" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="round-email-green">
+            <g id="Combined-Shape">
+                <use fill="#8BB018" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,208 @@
+<div class="row related-wrapper">
+  <div class="small-12 columns {{related-casestudies}}" id="related-casestudies">
+    <h4>related case studies</h4>
+    <div class="row">
+      {{#each global.case-study}}
+      <div class="{{span}} small-12 columns" >
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('{{img}}')"> </div>
+          <a href="#"><p class="title">{{title}}</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                {{summary}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <!-- <div class="row">
+      <div class="large-8 medium-8 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/400/200/nature/1')"> </div>
+          <a href="#"><p class="title">1 Simple Ways To Save A Bunch Of Money</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-4 medium-4 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/400/200/nature/2')"> </div>
+          <a href="#"><p class="title">1 Simple Ways To Save A Bunch Of Money</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-6 medium-4 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/400/200/nature/3')"> </div>
+          <a href="#"><p class="title">1 Simple Ways To Save A Bunch Of Money</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-3 medium-4 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/400/200/nature/4')"> </div>
+          <a href="#"><p class="title">1 Simple Ways To Save A Bunch Of Money</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-3 medium-4 small-12 columns">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/400/200/nature/5')"> </div>
+          <a href="#"><p class="title">1 Simple Ways To Save A Bunch Of Money</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="small-12 columns {{related-photos}}" id="related-blogs">
+    <h4>photos by</h4>
+    <div class="row">
+      {{#each global.photos-by}}
+      {{#if related}}
+      <div class="large-3 medium-6 small-12 columns" >
+        <a data-open="beez-gallery">
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('{{img-url}}')"> </div>
+          <!-- <a href="#"><p class="title">{{title}}</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                {{summary}}
+              </p>
+            </div>
+          </div> -->
+        </div><a/>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="small-12 columns {{related-blogs}}" id="related-blogs">
+    <h4>related blog posts</h4>
+    <div class="row">
+      {{#each global.blogs}}
+      <div class="large-3 medium-6 small-12 columns" >
+        <div class="card-wrapper card-1">
+          <div class="image-wrapper"  style="background-image: url('{{img}}')"> </div>
+          <a href="#"><p class="title">{{title}}</p></a>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <p>
+                {{summary}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="small-12 columns  {{related-events}}" id="related-events">
+    <h4>related events</h4>
+    <div class="row">
+      <div class="large-4 medium-4 small-12 columns">
+        <div class="card-wrapper layered">
+          <div class="image-wrapper" style="background-image: url('{{root}}assets/img/DevCon2017-Poster-P.jpg');"> </div>
+          <div class="description-wrapper">
+            <div class="description-text">
+              <div class="span"><p>Join Us @ DEFCON 2017 </p>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#"><p>1 Simple Ways To Save A Bunch Of Money</p></a> -->
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-12 columns">
+        <div class="card-wrapper layered two">
+          <div class="image-wrapper" style="background-image: url('{{root}}assets/img/railsconf2017.jpg');"></div>
+          <div class="description-wrapper animated fadeIn">
+            <div class="description-text">
+              <div class="span"><p>Join Us @ RailsConf 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-12 columns">
+        <div class="card-wrapper layered three">
+          <div class="image-wrapper" style="background-image: url('{{root}}assets/img/railsconf2017.jpg');"></div>
+          <div class="description-wrapper animated">
+            <div class="description-text">
+              <div class="span"><p>Join Us @ RailsConf 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="small-12 columns {{related-products}}" id="related-products">
+    <h4>related products</h4>
+    <div class="row">
+      <div class="small-12 medium-4  columns">
+        <div class="card-wrapper products-related">
+          <div class="image-wrapper" style="background-image: url({{root}}assets/img/headers/inspector_pro-card-preview.jpg)">
+          </div>
+          <a href="#"><h4>InspectorPro 6.5</h4></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="small-12 columns  {{related-videos}}" id="related-videos">
+    <h4>related videos</h4>
+    <div class="row">
+      {{#each global.videos}}
+      {{#if related}}
+      <div class="small-12 medium-4 columns">
+        <div class="card-wrapper card-1">
+          <div class="responsive-embed widescreen">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{id}}?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd1080?" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p class="title">{{title}}</p>
+          <!-- <p>{{description}}</p> -->
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</div>

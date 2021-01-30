@@ -1,0 +1,31 @@
+<form class="log-in-form" data-abide novalidate>
+
+
+  <div class="step-1 animated fadeIn  ">
+    <!-- <div data-abide-error class="alert callout" style="display: none;">
+      <p><i class="fi-alert"></i> Come on dude. You know I need all the 411!</p>
+    </div> -->
+    <h4 class="text-center">Log in</h4>
+    <label>
+      <input type="email" placeholder="Email" required>
+      <span class="form-error" id="example1Error1">
+        This field requires a valid email address.
+      </span>
+    </label>
+    <label>
+      <input type="password" placeholder="Password" required>
+      <span class="form-error">
+        This field is required.
+      </span>
+    </label>
+    <hr>
+    <button class="button expanded green" type="submit" value="Submit" onclick="$('.step-1').addClass('hide');
+    $('.step-2').removeClass('hide')">Login</button>
+    <p class="notes">disable button untill all required fields are filled.</p>
+    <p class="text-center"><small><a href="#">Forgot your password?</a></small></p>
+  </div>
+
+  <div class="step-2 animated fadeIn hide">
+    <p class="text-center">Your account is currently being updated. <br>  We will email you when your account is ready.</p>
+  </div>
+</form>

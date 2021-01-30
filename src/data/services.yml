@@ -1,0 +1,182 @@
+-
+  title: Innovation with JavaScript
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+  alt: FileMaker Dev
+  description: Beezwax blazes new trails with integrating JavaScript with FileMaker, with layout components and widgets using the Web Viewer, data visualization, AJAX methods, and solutions for RESTful integration.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  card-class: migrate
+
+-
+  title: Performance Improvement
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-82AE0129-4435-4E15-9A11-CC7CC849E78C/performance.svg
+  alt: FileMaker Dev
+  description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+  intro: yes
+-
+  title: Cloud Storage
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+  alt: FileMaker Dev
+  description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+  card-class: cloud-storage
+  intro: yes
+
+-
+  title: Migrating FileMaker solutions to Web Technologies
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+  alt: Migrating FileMaker solutions to Web Technologies
+  description: If you need to reach more concurrent users, we can migrate the established structure and functionality of your FileMaker system into a Web Application.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+  card-class: web
+  intro: yes
+-
+  title: System Redesign
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90C1862F-6DE9-4BD2-BE20-302F67DD067C/systemredesign.svg
+  alt:
+  description: Software ages quickly. Rethinking your system may be daunting, but procrastinating can be just as costly. Leverage your existing solution with innovations, including a new definition of how you work today. Mapped out over months and years in phases, priorities can line up with budget. We approach redesigns incrementally, improvement with integrity, and future flexibility, comes step-by-step.
+  show-label: show-label
+  header-class:
+  class:
+  filemaker:
+  card-class: sys-redesign
+  intro: yes
+
+-
+  title: data visualization
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-321C864E-BD09-440E-A914-A2212042EEC3/DataVis.svg
+  alt:
+  description: We can translate your data into dynamic visual reports or interactive web graphics to help users more quickly and fully understand information.
+  show-label:
+  header-class:
+  class:
+  filemaker:
+  card-class: data-viz
+  intro: yes
+-
+  title: performance improvement
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+  alt:
+  description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+  show-label:
+  header-class:
+  class:
+  filemaker:
+  card-class: performance
+  intro: yes
+-
+  title: Web and FileMaker Integration
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+  alt: Web and FileMaker Integration
+  description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+  filemaker: true
+  intro: yes
+-
+  title: FileMaker License Fullfillment
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-FD96E59B-AE8C-4D00-90A3-5FBA4F36E1EF/FMLicenseFulfillment.svg
+  alt: FileMaker Dev
+  description: Making the most of our strong twenty-year working relationship with FilleMaker Inc., we can process orders of FileMaker products for you.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+-
+  title: Dashboards
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-BF8DC1B9-28C2-4D6B-BE4B-A416B7A88F70/dashboard_1.svg
+  alt: Dashboards
+  description: A dashboard provides at-a-glance views of KPIs (key performance indicators) relevant to particular objectives and/or models. This can be for anything from sales to HR, or from marketing to production.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+-
+  title: User Interface Design
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-0871A798-1F3B-4CB7-8967-CE6B8C1BF188/UI.svg
+  alt: User Interface Design
+  description: Thoughtful software is the cornerstone of computing the beginning, not the end. Great software demands approachable, rewarding interfaces. Without them, people resist using computers This is a design failure, not a human one. Beezwax prizes visual clarity, but interface design isn’t purely aesthetic. It’s about grasping the interplay between people and the information they generate and consume. It’s about intuiting and promoting real users’ needs. Ultimately, it’s about improving the relationship between people and work.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  intro: yes
+-
+  title: System Redesign
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90C1862F-6DE9-4BD2-BE20-302F67DD067C/systemredesign.svg
+  alt: System Redesign
+  description: Software ages quickly. Rethinking your system may be daunting, but procrastinating can be just as costly. Leverage your existing solution with innovations, including a new definition of how you work today. Mapped out over months (or years) in phases, priorities can line up with budget. We approach redesigns incrementally improvement with integrity, and future flexibility, comes step-by-step.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+-
+  title: Migrating To Latest FileMaker Version
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-02378B41-1E76-4DA8-9045-24B1CA4A6152/migratetolatestFM.svg
+  alt: Migrating To Latest FileMaker Version
+  description: You know it's time to move forward to the current version of FileMaker, but aren't sure of all the steps to do this safely and efficiently. We'll look for the gotchas, using our team's knowledge across FileMaker versions, as well as tools like InspectorPro to identify compatibility issues. Meanwhile, many new features are only potential  until you implement them. And, of course, we can help with that, too.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+-
+  title: Web Services / REST APIs
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-0FFF5EA7-ECD4-4A55-ACB8-F73AC67E2BFD/RESTapis.svg
+  alt: Migrating To Latest FileMaker Version
+  description: Machine-to-machine communication for transferring file formats such as XML and JSON. In practice, the web service typically provides an object-oriented web based interface to a database server ( utilized by another web server, or by a mobile application ). Another common application may be a mashup, where a web server consumes several web services at different machines, and compiles the content into one user interface.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+-
+  title: FileMaker WebDirect Development
+  img: https://beezwax.net/assets/default-images/default-service-icon.svg
+  description: With FileMaker WebDirect, we can tailor a FileMaker custom app to manage and share business information directly through a secure web browser. WebDirect is your FileMaker database delivered directly to a web browser.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+  intro: yes
+-
+  title: Convert from Excel
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3569F341-3AF0-480A-A244-B1883595C113/ExportExcel.svg
+  description: Many systems we've built started as Excel files, Numbers documents or Google sheets. Smart individuals can quickly organize their own data in spreadsheets, but are challenged to securely share their work with team members, across an organization.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+-
+  title: Data Analysis
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-73F79F8A-E3F3-4122-B59D-AEC5B6E84E6B/dataanalysis.svg
+  description: Useful information can be derived and decisions made by manipulating, transforming and cleaning data sets.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+-
+  title: Reports
+  img: https://beezwax.net/assets/default-images/default-service-icon.svg
+  description: Data displayed, nicely.
+  show-label: show-label
+  header-class: filemaker
+  class: odd
+-
+  title: FileMaker Support
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-E888CC6E-75BB-4474-9EA5-12C89C821EC4/FMsupport.svg
+  description: We often provide a few hours of support in how to use your FileMaker system more effectively, before you decide how many more hours to spend in building something new. This support work can include helping our clients make fuller use of the built-in FileMaker tools, or even making minor adjustments to the structure, interface, and scripting.
+  show-label: show-label
+  header-class: filemaker
+  class: even
+  filemaker: true
+-
+  title: Going Beyond Excel
+  img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-54800AC3-17E9-425D-89B9-122C24FE333E/GoingBeyondExcel.svg
+  description: Excel is a powerful tool in an individual's hands. But FileMaker is a powerful tool for teams. As you grow into a collaborative team, you'll want your data management to mature into systems that handle robust business logic, data workflow, integration, document management, remote access and security... not to mention a modern user experience that supports mobility, notifications, reporting and data visualization via custom business apps built on the FileMaker platform.
+  show-label: show-label
+  header-class: filemaker
+  class: odd

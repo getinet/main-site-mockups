@@ -1,0 +1,59 @@
+<div class="row techs-wrapper expanded" style="padding-bottom: 0;">
+  <div class="small-12 small-centered columns">
+    <h4 class="text-center show-for-medium">technologies we use</h4>
+    <h4 class="text-center show-for-small-only">some technologies we use</h4>
+  </div>
+  <div class="row small-up-4 medium-up-6 large-up-8">
+    {{#each global.tech-nodes}}
+    <div class="column">
+      <div class="card has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2" title="{{description}}">
+        <img src="../assets/img/icons/{{img}}">
+        <div class="card-section">
+          <p class="text-center">{{name}}</p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="row small-12 medium-11 large-10 colums show-for-medium more-tech-wrapper in-depth hide">
+    <p class="text-center or"> <span>additional technologies</span> </p>
+    <ul>
+        {{#each global.tech-additional-nodes}}
+        <li class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2" title="{{description}}">{{name}}</li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <div class="row small-10 colums show-for-small-only small-centered">
+    <p class="button green expanded small show-more" onclick="$('.more-tech-wrapper').toggleClass('show');"> More </p>
+  </div>
+
+</div>
+
+
+
+<div class="row techs-wrapper expanded in-depth hide">
+  <div class="small-12 small-centered columns">
+    <h4 class="text-center show-for-medium">Functional Areas</h4>
+    <h4 class="text-center show-for-small-only">Some Functional Areas</h4>
+  </div>
+  <div class="row small-12 medium-11 large-10 colums show-for-medium more-functional-wrapper">
+    <ul>
+        {{#each global.functional-areas}}
+        <li class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2" title="{{description}}">{{name}}</li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <div class="row small-12 medium-11 large-10 colums show-for-small-only">
+    <ul style="max-height: 350px;overflow:hidden;">
+        {{#each global.functional-areas}}
+        <li class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="true" tabindex="2" title="{{description}}">{{name}}</li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <div class="row small-10 colums show-for-small-only small-centered">
+    <p class="button green expanded small show-more" onclick="$('.more-functional-wrapper').toggleClass('show');"> More </p>
+  </div>
+</div>

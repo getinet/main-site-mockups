@@ -1,0 +1,359 @@
+<ul class="accordion jobs-wrapper" data-accordion data-deep-link="true" data-allow-all-closed="true">
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title even">
+      <h4>Personal Info</h4>
+      <i class="fa fa-check-circle status passed hide" aria-hidden="true"></i>
+    </a>
+    <!-- <i class="fa fa-check-circle status passed" aria-hidden="true"></i> -->
+
+    <div class="accordion-content" data-tab-content data-tab-content id="personal-info">
+      <div class="row">
+        <form data-abide novalidate>
+        <div class="medium-6 columns">
+          <label>First Name *
+            <input type="text" placeholder="Required" required>
+          </label>
+        </div>
+
+        <div class="medium-6 columns">
+          <label>Last Name *
+            <input type="text" placeholder="Required" required>
+          </label>
+        </div>
+
+        <div class="medium-6 columns">
+          <label>Email *
+            <input type="text" placeholder="Required" required>
+          </label>
+        </div>
+
+        <div class="medium-6 columns">
+          <label>Phone
+            <input type="text">
+          </label>
+        </div>
+
+        <div class="medium-6 columns">
+          <label>GitHub Profile
+            <input type="text">
+          </label>
+        </div>
+
+        <div class="medium-6 columns">
+          <label>LinkedIn Profile
+            <input type="text">
+          </label>
+        </div>
+
+        <div class="small-12 columns">
+          <div class="row">
+            <div class="medium-8 columns">
+              <label>Resume Link
+                <input type="text" class="float-left">
+              </label>
+            </div>
+            <div class="medium-4 columns">
+              <label>&nbsp;</label>
+              <label for="exampleFileUpload" class="button small green expanded"><i class="fa fa-upload" aria-hidden="true"></i> &nbsp;Upload File</label>
+              <input type="file" id="exampleFileUpload" class="show-for-sr">
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="small-12 columns">
+          <div class="input-group">
+              <input class="input-group-field" type="url">
+              <div class="input-group-button">
+                <input type="submit" class="button" value="Upload File">
+              </div>
+            </div>
+        </div> -->
+        <div class="small-12 columns text-center">
+          <a href="#experience" class="button small green" onclick="$(".status.passed").removeClass("hide");">Next</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title even">
+      <!-- <div class="svg-wrapper float-left">
+
+      </div> -->
+      <h4>Referral</h4>
+      <i class="fa fa-check-circle status passed hide" aria-hidden="true"></i>
+    </a>
+    <div class="accordion-content" data-tab-content data-tab-content id="Referral">
+      <div class="row">
+        <div class="small-12 columns">
+          <label>How did you hear about Beezwax? * <br>
+            <select class="select-2-default " >
+              <option value="" disabled selected hidden>Required - Select…</option>
+              <option value="Referral">Referral</option>
+              <option value="Craigslist">Craigslist</option>
+              <option value="HackerX">HackerX</option>
+              <option value="Indeed Prime">Indeed Prime</option>
+              <option value="Indeed.com">Indeed.com</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Stack Overflow">Stack Overflow</option>
+              <option value="TechLadies">TechLadies</option>
+              <option value="Other">Other</option></select>
+          </label>
+
+
+        </div>
+      </div>
+
+  </div>
+
+  </li>
+
+  <li class="accordion-item" data-accordion-item id="experience">
+    <a href="#" class="accordion-title odd">
+      <!-- <div class="svg-wrapper float-left">
+
+      </div> -->
+      <h4>Skillz &amp; Experience</h4><i class="fa fa-circle-thin status" aria-hidden="true"></i></a>
+    <!-- <i class="fa fa-circle-thin status" aria-hidden="true"></i> -->
+    <div class="accordion-content" data-tab-content data-tab-content >
+      <div class="row">
+        <div class="small-12 columns">
+          <label>Please link to a snippet of code – a class, a function, etc. – in a project on GitHub written entirely by you.<br>
+          Please link to the sample in the context of the project it belongs to. In other words, don’t pull it out into a separate repository.*
+
+            <input type="url" placeholder="Required"  required>
+            Explain in detail what it does. What choices were you making when you wrote it? How does it illustrate your personal style and/or best practices? <br>
+            <textarea placeholder="Explanation…" cols="30" rows="5" required></textarea>
+          </label>
+
+          <hr class="grey dash">
+
+        </div>
+
+        <div class="skill level hide">
+          <div class="small-12 columns">
+            <h4 style="padding-left:0;">Experience Level</h4>
+          </div>
+
+          <div class="small-12 columns">
+              <p style="padding-left:0;"><b>Proficiency</b> is 1-10, using your best judgment. 1 is that you understand the context of this term, - you know how this term fits into the tech stack -- you could open the thing up and start to get going with it in some way, but that's it. 10 means you are as good as it gets.</p>
+              <p style="padding-left:0;"><b>Learn</b> Willing to signup to take your time and expand your knowledge by a fellow Bee and mindshare.</p>
+              <p style="padding-left:0;"><b>Mentor</b> Willing to signup to offer your time and knowledge to a fellow Bee and mindshare.</p>
+
+            <hr class="grey dash">
+
+          </div>
+
+          <div class="small-12 columns">
+            {{#each global.skills}}
+            <div class="row skills">
+              <div class="small-12 columns">
+                <div class="svg-wrapper">
+                  <img src="/assets/img/icons/{{icon}}" alt="{{alt}}" title="{{title}}">
+                </div>
+                <h5>{{name}}</h5>
+              </div>
+              <div class="small-12 medium-6 columns">
+                <label>Proficiency<br>
+                  <select class="proficiency_options" name="proficiency" >
+                    <option value="" disabled selected hidden>Select…</option>
+                    <option value="0">0</option>
+                    <option value="1">1 - Used in hobby project</option>
+                    <option value="2">2 - Have a public GitHub project</option>
+                    <option value="3">3 - Deployed professional production code</option>
+                    <option value="4">4 - Deployed professional production code (&lt; 1000 hours)</option>
+                    <option value="5">5 - Led small projects (&lt; 1000 hours)</option>
+                    <option value="6">6</option>
+                    <option value="7">7 - Led large projects (&gt;1000 hours)</option>
+                    <option value="8">8 - Led huge projects (&gt;1000 hours)</option>
+                    <option value="9">9 - Wrote book on it</option>
+                    <option value="10">10 - Guru</option></select>
+                </label>
+                <div class="row" style="margin-top:10px;">
+                  <div class="small-6 columns">
+                    <label>Learn</label>
+                    <div class="switch small">
+                      <!-- <span class="pre">Intro</span> -->
+                      <input class="switch-input" id="{{learn-toggle-id}}" type="checkbox" name="togleSwitch">
+                      <label class="switch-paddle" for="{{learn-toggle-id}}">
+                        <span class="show-for-sr">How deeap do you want to get</span>
+                        <span class="switch-inactive" aria-hidden="true"></span>
+                        <span class="switch-active" aria-hidden="true"></span>
+                      </label>
+                      <!-- <span class="post">In-Depth</span> -->
+                    </div>
+                    <!-- <i class="fa fa-toggle-off  has-tip top toggle-switch" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="You are willing to learn more about your craft."></i> -->
+
+                  </div>
+                  <div class="small-6 columns">
+                    <label>Mentor</label>
+                    <div class="switch small">
+                      <!-- <span class="pre">Intro</span> -->
+                      <input class="switch-input" id="{{mentor-toggle-id}}" type="checkbox" name="togleSwitch">
+                      <label class="switch-paddle" for="{{mentor-toggle-id}}">
+                        <span class="show-for-sr">How deeap do you want to get</span>
+                        <span class="switch-inactive" aria-hidden="true"></span>
+                        <span class="switch-active" aria-hidden="true"></span>
+                      </label>
+                      <!-- <span class="post">In-Depth</span> -->
+                  </div>
+                </div>
+
+
+                </div>
+
+
+              </div>
+              <div class="small-6 medium-1 columns hide">
+                <label>Learn</label>
+                <div class="switch small">
+                  <!-- <span class="pre">Intro</span> -->
+                  <input class="switch-input" id="{{learn-toggle-id}}" type="checkbox" name="togleSwitch">
+                  <label class="switch-paddle" for="{{learn-toggle-id}}">
+                    <span class="show-for-sr">How deeap do you want to get</span>
+                    <span class="switch-inactive" aria-hidden="true"></span>
+                    <span class="switch-active" aria-hidden="true"></span>
+                  </label>
+                  <!-- <span class="post">In-Depth</span> -->
+                </div>
+                <!-- <i class="fa fa-toggle-off  has-tip top toggle-switch" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="You are willing to learn more about your craft."></i> -->
+                <label>Mentor</label>
+                <div class="switch small">
+                  <!-- <span class="pre">Intro</span> -->
+                  <input class="switch-input" id="{{mentor-toggle-id}}" type="checkbox" name="togleSwitch">
+                  <label class="switch-paddle" for="{{mentor-toggle-id}}">
+                    <span class="show-for-sr">How deeap do you want to get</span>
+                    <span class="switch-inactive" aria-hidden="true"></span>
+                    <span class="switch-active" aria-hidden="true"></span>
+                  </label>
+                  <!-- <span class="post">In-Depth</span> -->
+                </div>
+              </div>
+              <div class="small-6 medium-1 columns hide">
+                <label>Mentor</label>
+                <div class="switch small">
+                  <!-- <span class="pre">Intro</span> -->
+                  <input class="switch-input" id="{{mentor-toggle-id}}" type="checkbox" name="togleSwitch">
+                  <label class="switch-paddle" for="{{mentor-toggle-id}}">
+                    <span class="show-for-sr">How deeap do you want to get</span>
+                    <span class="switch-inactive" aria-hidden="true"></span>
+                    <span class="switch-active" aria-hidden="true"></span>
+                  </label>
+                  <!-- <span class="post">In-Depth</span> -->
+                </div>
+                <!-- <i class="fa fa-toggle-off  has-tip top toggle-switch" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="You are willing to share your knowledge of your craft with others."></i> -->
+              </div>
+              <div class="small-12 medium-6 columns">
+                <label>Note
+                  <textarea placeholder="…" cols="30" rows="4"></textarea>
+                </label>
+              </div>
+            </div>
+            <hr class="grey dash">
+            {{/each}}
+          </div>
+        </div>
+
+
+
+        <div class="small-12 columns">
+          <label>Other relevant skills *
+            <textarea placeholder="Remember, be nice!" cols="30" rows="5"></textarea>
+          </label>
+        </div>
+        <div class="small-12 columns text-center">
+          <a href="#exercise" class="button small green">Next</a>
+        </div>
+
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title even">
+      <h4>This is is NOT FizBuzz… but…</h4>
+    </a>
+    <div class="accordion-content" data-tab-content data-tab-content id="exercise">
+      <div class="row">
+        <div class="medium-12 columns">
+          <label>What does your function return for the following string? *<br>
+            <code>h$|j..g|qr@p$ $r.|@$.jhpqg| .rpq@.$hg||j$ r.$g||pq$j@.h jh|.pq.|@gr$$ j|g$h@.p.r|q$ pgq|h$j.$|r.@ qgp@h$r$.j||. h@|$pr.j|qg.$ h|@qj.p$g$|.r @$r|hq.j|g.p$ |$.gj.rhq@p|$ .p.|@q|j$g$rh |.|$hgr@pj.q$ $grj.h@$q|p.| jhr$|$p@|..qg q|.j$g@.p$h|r $q.$@rpgj||.h .jrhg@.|$q|$p p.@r|gj$$h.q| rq$|.@|pjh.$g $.hqj@p$||g.r @$.gj|q$|h.rp @$.$h|q.g|pjr g.rq.h|@$$pj| $j@.hgq$|p|.r qhp||$j..g@r$ .qrp$gh$|@j.| h|g.$q.r$jp@| $@jq.r|gh|.p$</code>
+            <textarea placeholder="Required" cols="30" rows="5"></textarea>
+          </label>
+        </div>
+        <div class="small-12 columns text-center">
+          <a href="#notes-info" class="button small green">Next</a>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="accordion-item even" data-accordion-item>
+    <a href="#" class="accordion-title odd">
+      <!-- <div class="svg-wrapper float-left">
+
+      </div> -->
+      <h4>Notes for Us</h4><i class="fa fa-circle-thin status" aria-hidden="true"></i></a>
+    <!-- <i class="fa fa-circle-thin status" aria-hidden="true"></i> -->
+    <div class="accordion-content" data-tab-content id="notes-info">
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Optional notes</label>
+          <textarea placeholder="Optional notes to us at Beezwax"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </li>
+  <hr>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title even">
+      <h4>Example of when a required section is Complete</h4>
+      <i class="fa fa-check-circle status passed" aria-hidden="true"></i>
+    </a>
+    <div class="accordion-content" data-tab-content data-tab-content id="exercise">
+      <div class="row">
+        <div class="medium-12 columns">
+          <p>The mark appears when all required fields are completed.</p>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title even">
+      <h4>Example of when a required section is not complete</h4>
+      <i class="fa fa-exclamation-circle status error" aria-hidden="true"></i></a>
+    <div class="accordion-content" data-tab-content data-tab-content id="exercise">
+      <div class="row">
+        <div class="medium-12 columns">
+          <p>The mark appears when all required fields are not completed and the user moves to another section.</p>
+        </div>
+
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div class="small-12 columns">
+  <div class="text-center" style="margin: 25px 0;">
+    <small>Prove your humanity *</small><br>
+    <img src="{{root}}assets/img/recaptcha.gif" alt="" style="width:300px;">
+  </div>
+  <p class="text-center">
+    <button class="button small secondary" type="reset" value="Reset">Reset</button>
+    <button class="button small green" type="submit" value="Submit" data-open="application-confirm">Submit</button>
+  </p>
+  </form>
+</div>
+
+
+<div class="reveal text-center jobs-wrapper animated fadeInUp" id="application-confirm" data-reveal>
+  <h4 class="">Thank You <span>Mary</span>!</h4>
+     <p>We will be in touch shortly.</p>
+     <p>If you would like to share with us details about your level of experience with each of the specific skills required for this position, please fill in this additional optional form.</p>
+    <div class="text-center"> <a class="button green hollow small" href="{{root}}careers/skills.html">Skills and Experience</a></div>
+    <hr class="grey">
+
+  <div class="text-center"> <a class="button green small" href="{{root}}index.html">Done</a></div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

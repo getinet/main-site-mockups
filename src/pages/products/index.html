@@ -1,0 +1,276 @@
+---
+title: Products
+posterClass: products
+quote: Just a note to pass along our rave reviews to you for the system you guys made for us. The transition was a dream come true, as if a weight were lifted off of our shoulders! I'll sing the praises of Beezwax to anyone who will listen.
+quoteBy: Gregg McVicar
+quoteRole: Producer
+quoteCompany: Radiocamp
+photographer: Mike Smith
+products: active
+---
+
+{{> header-hero}}
+
+<div class="row">
+  <div class="small-12 small-centered columns">
+    {{>share-btn}}<h2>products, tools, and plug-ins</h2>
+    <p class="lead"> Through years of custom development work, Beezwax has built a range of widely-used products, tools and plug-ins. InspectorPro is available for purchase, along with a fully-functional demo. Other tools listed here are available via a free download. More projects, libraries and code can also be found on our <a href="https://github.com/beezwax">GitHub page</a>.
+    </p>
+    <p>
+    If you so choose, Beezwax can configure and integrate many of these into
+    your existing solution.
+    </p>
+  </div>
+</div>
+
+{{> products-catalog}}
+
+<div class="reveal small" id="exampleModal1" data-reveal>
+  <h4>Download {Product Name Here}</h4>
+  <p>First, please let us know a little bit about you.</p>
+
+  <form data-abide novalidate>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <label>First Name
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="text">
+          <!-- <span class="form-error">
+            Yo, you had better fill this out, it's required.
+          </span> -->
+        </label>
+        <!-- <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p> -->
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Last Name
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="text">
+          <!-- <span class="form-error">
+            Yo, you had better fill this out, it's required.
+          </span> -->
+        </label>
+        <!-- <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p> -->
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Company
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpTex" data-abide-ignore>
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Company URL
+          <input type="text" placeholder="http://domain.com" pattern="url">
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Email
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="email">
+          <span class="form-error">
+            Not a valid email address!
+          </span>
+        </label>
+        <!-- <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p> -->
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Phone
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpTex" data-abide-ignore pattern="number">
+        </label>
+      </div>
+
+      <div class="small-12 columns">
+        <label>Platform
+          <select id="select" required>
+            <!-- <option value=""></option> -->
+            <option value="mac">macOS</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+          </select>
+        </label>
+      </div>
+
+      <fieldset class="small-12 columns">
+        <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
+        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
+        <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+      </fieldset>
+      <fieldset class="small-12 columns">
+        <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
+        <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
+        <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
+        <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
+      </fieldset>
+      <fieldset class="small-12 columns">
+        <legend>Checkboxes</legend>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+        <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+        <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+      </fieldset>
+
+    </div>
+
+    <div class="row">
+      <fieldset class="small-12 columns">
+        <p style="text-align:center;"><img src="assets/img/newCaptchaAnchor.gif" alt="reCaptcha" style="width: 210px;margin: 50px 0;">
+        <button class="button green expanded" type="submit" value="Submit">Download</button>
+      </fieldset>
+      <!-- <fieldset class="small-12 columns">
+        <button class="button" type="reset" value="Reset">Reset</button>
+      </fieldset> -->
+    </div>
+  </form>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal tiny" id="bBoxDownload" data-reveal>
+  <h4>download</h4>
+  <h2>APP Name Here</h2>
+  <p>First, please let us know a little bit about you.</p>
+
+  <form data-abide novalidate>
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <label>First Name
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="text">
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Last Name
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="text">
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Company
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpTex" data-abide-ignore>
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Company URL
+          <input type="text" placeholder="- -" pattern="url">
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Email
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpText" required pattern="email">
+          <span class="form-error">
+            Not a valid email address!
+          </span>
+        </label>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <label>Phone
+          <input type="text" placeholder="- -" aria-describedby="exampleHelpTex" data-abide-ignore pattern="number">
+        </label>
+      </div>
+
+      <div class="small-12 columns">
+        <label>Platform
+          <select id="select" required >
+            <option value=""></option>
+            <option value="mac" selected>macOS</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+            <option value="ios">iOS</option>
+            <option value="android">Android</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="small-12 columns">
+        <label>How did you hear about {app name}?<br>
+          <textarea placeholder="- -"></textarea>
+        </label>
+      </div>
+
+      <div class="small-12 columns">
+        <label>Any questions or feedback? Let us know how we can help<br>
+          <textarea placeholder="- -"></textarea>
+        </label>
+      </div>
+
+      <div class="small-12 columns">
+        <p style="text-align:center;"><img src="assets/img/newCaptchaAnchor.gif" alt="reCaptcha" style="width:304px;"></p>
+      </div>
+
+
+
+      <fieldset class="small-12 columns">
+        <button class="button green expanded" type="submit" value="Submit">Download</button>
+      </fieldset>
+
+      <fieldset class="medium-2 small-centered columns">
+        <button class="button tiny secondary expanded" type="reset" value="Reset">Reset</button>
+      </fieldset>
+
+    </div>
+
+    <!-- <div class="row">
+
+      <fieldset class="small-12 medium-9 columns">
+        <p style="text-align:center;"><img src="assets/img/newCaptchaAnchor.gif" alt="reCaptcha" style="width: 210px;margin: 50px 0;">
+        <button class="button green expanded" type="submit" value="Submit">Download</button>
+      </fieldset>
+
+    </div> -->
+  </form>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal tiny" id="accounts-info" data-reveal>
+      <div class="image-wrapper"style="background-image: url('assets/img/products/bAccounts.png')"> </div>
+      <h4>Accounts</h4>
+      <p>A modular user account manager for FileMaker with the following functions and features:</p>
+
+      <ul class="bulleted">
+          <li>Create</li>
+          <li>Delete</li>
+          <li>enable/disable</li>
+          <li>reset password</li>
+          <li>change privilege set</li>
+          <li>configurable settings</li>
+          <li>email user a “welcome” email</li>
+          <li>basic UI for account management</li>
+        </ul>
+      <p>
+        The module is designed to work with single and multi-file solutions where the accounts and privilege sets are the same in every file.
+      </p>
+      <img class="accounts-modular-screenshot" src="https://www.beezwax.net/system/attachments/259/original/accounts-modular-screenshot.jpg" alt="Accounts Modular screenshot">
+      <br>
+      <h4>Changelog</h4>
+      <ul class="bulleted">
+        <li>
+          v2.04, v2.03, v2.02 and v2.01 added new functionality, documentation improvements and
+          integration simplification.
+        </li>
+        <li>
+    	  v2.0 included a major overhaul to simplify integration and massively improve documentation.
+        </li>
+      </ul>
+
+      <h4>License</h4>
+      <p>Copyright (c) 2016, Darren Burgess</p>
+
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+      <p><small>
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</small>
+      </p>
+
+      <br>
+
+      <a class="button green" data-open="exampleModal1">Download</a>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>

@@ -1,0 +1,48 @@
+---
+title: Photos By...
+posterClass: photos-by
+quoteDisplay: show
+quote: When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.
+quoteBy: Ansel Adams
+quoteRole:
+quoteCompany:
+photographer: Lon Cook
+---
+
+{{> header-hero}}
+
+<style media="screen">
+  .intrestest-wrapper-bar {
+    display: none;
+  }
+</style>
+
+<div class="row">
+  <div class="small-12 medium-8 small-centered columns">
+    <h2>Photos by Beez…</h2>
+    <p class="lead">The original photography and artwork on our website has been created by Beez. This is a glimpse of who we are, and what we see. It's a small reflection of multiple talents on the teams of people who make up Beezwax. We’re proud of our Beez and how great they are to work with, and we look forward to working with you, too.</p>
+  </div>
+</div>
+
+<div class="row expanded photos-by-wrapper">
+  {{#each global.photos-by}}
+  <div class="small-12 {{width}} columns">
+    <div class="card-wrapper card-1 beePhotos animated fadeIn">
+      {{#if video}}
+        <!-- <video autoplay loop>
+          <source src="{{video-asset}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+      {{else}}
+      <div class="image-wrapper" style="background-image:url('{{img-url}}');height: {{height}}vh"> </div>
+      {{/if}}
+      <div class="photo-by-on">
+        <!-- <span>Photo By:</span> <br> -->
+          <img src="{{photographer-avatar}}" alt="{{photographer}}">
+          <a href="../{{root}}who/bee.html">{{photographer}}</a>
+      </div>
+      <!-- >photo-by-v2 -->
+    </div>
+  </div>
+  {{/each}}
+</div>

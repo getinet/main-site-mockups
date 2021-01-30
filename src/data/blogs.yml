@@ -1,0 +1,27 @@
+blogs:
+  -
+    img: /2017/10/IMG_9387.jpg
+    link: https://blog.beezwax.net/2017/10/12/logicator-part-3-ready-set-integrate-into-your-filemaker-apps
+    authur: Mark Scott
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16
+  -
+    img: FilemakerDev.svg
+    authur: Mark Scott
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16
+  -
+    img: FilemakerDev.svg
+    authur: Mark Scott
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16
+  -
+    img: FilemakerDev.svg
+    authur: Mark Scott
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16
+  -
+    img: FilemakerDev.svg
+    authur: Mark Scott
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16

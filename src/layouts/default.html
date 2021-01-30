@@ -1,0 +1,3093 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beezwax • {{ title }}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{root}}assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="{{root}}assets/img/fav/site.webmanifest">
+    <link rel="mask-icon" href="{{root}}assets/img/fav/safari-pinned-tab.svg" color="#ffd939">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="{{body-class}}">
+    {{> notifications}}
+    <div class="the-gut" data-sticky-container>
+      <!-- off-canvas Left-->
+      <div class="off-canvas position-left design-options" id="offCanvas" data-off-canvas style="z-index:6;">
+
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="row expanded">
+          <div class="small-12 columns">
+            <h4>Mockup Options</h4>
+          </div>
+          <div class="small-12 columns">
+            <a href="{{root}}design-pages" target="_blank" class="button green tiny expanded ">Designed Pages Index</a>
+            <a href="{{root}}styleguide" target="_blank" class="button green tiny expanded ">Style Guide</a>
+            <a data-open="welcome-modal-1" class="button green tiny expanded ">Welcome Modal</a>
+            <a data-open="invision" class="button green tiny expanded ">InVision</a>
+            <a class="button green tiny expanded" onclick="
+            $('.notifications-wrapper').toggleClass('hide')">Notifications</a>
+
+            <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.homepage-poster, .header-poster').toggleClass('filtered')">Image Filter</a>
+            <a href="javascript:void(0)" class="button green tiny expanded loading-toggle">Loading Screen Animation</a>
+            <!-- <a href="javascript:void(0)" class="button green alert tiny expanded" onclick="
+            $('.video-background').toggleClass('hide')">Home Page Video Background</a> -->
+
+            <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.new-whys-testimonials').toggleClass('hide')">Whys & Testimonials 2.0</a>
+
+            <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.breadcrumb-wrapper').toggleClass('hide')">Breadbreadcrumbs</a>
+
+            <hr class=gray>
+
+            <a data-open="intake" class="button green tiny expanded ">In-Take Form</a>
+
+            <!-- <a href="{{root}}clients/akamai" class="button red small expanded">Profile: Akami</a>
+            <a href="{{root}}events.html" class="button red small expanded">Events Page</a> -->
+
+            <!-- <a data-open="gallery-modal-1" class="button green tiny expanded ">Portfolio Gallery</a> -->
+            <!-- <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.service-wrapper').toggleClass('breath')">More Breathing room</a> -->
+            <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.show-intrest-2').toggleClass('flash')">Pulsing Hearts</a>
+            <a href="javascript:void(0)" class="tiny button github expanded" onclick="
+              $('body').toggleClass('video-page')">Dark mode</a>
+            <a href="javascript:void(0)" class="button green tiny expanded" onclick="
+            $('.cookie-notifications ').toggleClass('hide')">Cookie Notification Banner</a>
+          </div>
+
+          <div class="small-12 end columns">
+            <p><h5>Intrest and Recommendations</strong></h5>
+            <a href="javascript:void(0)" class="button green tiny" onclick="
+            $('.intrestest-wrapper-bar').addClass('hide');
+            $('.intrestest-wrapper-bar.version-1').removeClass('hide')">Version I</a>
+            <a href="javascript:void(0)" class="button green tiny" onclick="
+            $('.intrestest-wrapper-bar').addClass('hide');
+            $('.intrestest-wrapper-bar.version-2').removeClass('hide')">Version II</a>
+            <a href="javascript:void(0)" class="button green tiny active" onclick="
+            $('.intrestest-wrapper-bar').addClass('hide');
+            $('.intrestest-wrapper-bar.version-3').removeClass('hide')">Version III</a>
+          </div>
+
+          {{#if user-profile}}
+            <div class="small-12 end columns">
+                <h4>User Profile</h4>
+                <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-2, .version-3, .functional, .tech, .db, .event').fadeOut();$('.version-1').fadeIn()">Phase 1</a>
+
+                <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-1, .version-3').fadeOut();$('.version-2, .functional, .tech, .db, .event').fadeIn()">Phase II</a>
+
+                <a href="javascript:void(0)" class="button green tiny" onclick="$('.version-1, .version-3, .version-2, .functional, .tech, .db, .event').fadeIn()">Phase III</a>
+
+                <a href="javascript:void(0)" class="button blue tiny" onclick="$('.not-empty').fadeToggle();$('.empty-state').fadeToggle();">EMPTY STATE</a>
+            </div>
+          {{/if}}
+
+
+
+
+
+          <!-- <div class="small-12 end columns">
+            <label>Intro Nodes
+              <select id="intro-nodes">
+                <option value="version-1">V1-Mixed Articles</option>
+                <option value="version-2">V2-Blogs and Case Studies at Bottom</option>
+                <option value="version-3">V3-Postcards</option>
+                <option value="version-4" selected>V4-Postcards &amp; Cards Mixed</option>
+              </select>
+          </div> -->
+          <div class="small-12 end columns promo-options">
+            <label>Promotions</label>
+              <!-- <a href="javascript:void(0)" class="button tiny one-promo">One Promo</a>
+              <a href="javascript:void(0)" class="button tiny two-promos">Two Promos</a> -->
+
+              <a href="javascript:void(0)" class="button green tiny" onclick="
+              $('.promo-wrapper').addClass('hide');
+              $('.promo-wrapper.single').removeClass('hide');window.dispatchEvent(new Event('resize'));">One Promo</a>
+              <a href="javascript:void(0)" class="button green tiny" onclick="
+              $('.promo-wrapper').addClass('hide');
+              $('.promo-wrapper.tiny').removeClass('hide');window.dispatchEvent(new Event('resize'));">One Tiny Promo</a>
+              <a href="javascript:void(0)" class="button green tiny" onclick="
+              $('.promo-wrapper').addClass('hide');
+              $('.promo-wrapper.dual').removeClass('hide')">Two Promos</a>
+              <a href="javascript:void(0)" class="button green tiny" onclick="
+              $('.promo-wrapper').addClass('hide')">No Promos</a>
+          </div>
+
+
+          {{#ifpage 'oldcastle-case-study'}}
+          <div class="small-12 end columns">
+              <label>OldCastle Header posters</label>
+              <a href="javascript:void(0)" class="button tiny oc-header-1">Header 1</a>
+              <a href="javascript:void(0)" class="button tiny oc-header-2">Header 2</a>
+              <a href="javascript:void(0)" class="button tiny oc-header-3">Header 3</a>
+              <a href="javascript:void(0)" class="button tiny oc-header">animated</a>
+          </div>
+
+          <div class="small-12 end columns">
+              <label>Joy Of Coding</label>
+              <a href="javascript:void(0)" class="button tiny" onclick="$('.icon').removeClass('inverted')">Normal Icons</a>
+              <a href="javascript:void(0)" class="button tiny"onclick="$('.icon').addClass('inverted')">Inverted Icons</a>
+          </div>
+          {{/ifpage}}
+
+
+
+
+            {{#if subscription-management}}
+              <div class="small-12 end columns">
+                <h4>Subscription Managment</h4>
+                <a href="javascript:void(0)" class="button green tiny" onclick="
+                $('.subscription-management-options').addClass('hide');
+                $('.subscription-management-options.option-1').removeClass('hide')">Version I</a>
+                <a href="javascript:void(0)" class="button green tiny" onclick="
+                $('.subscription-management-options').addClass('hide');
+                $('.subscription-management-options.option-2').removeClass('hide')">Version II</a>
+              </div>
+            {{/if}}
+
+            {{#if products}}
+              <div class="small-12 end columns">
+                <label>Products</label>
+                <a href="javascript:void(0)" class="button green tiny" onclick="
+                $('.custom').toggleClass('hide');">Show Custom Card</a>
+              </div>
+            {{/if}}
+
+
+          </div>
+      </div>
+
+      <div class="off-canvas-content show-for-medium" data-off-canvas-content>
+        <button type="button" class="button design-options" data-toggle="offCanvas" style="position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;"><i class="fa fa-sliders" aria-hidden="true"></i></button>
+      </div>
+
+      <!-- off-canvas -->
+
+      <!-- off-canvas Right-->
+      <div class="off-canvas position-right profile-panel" id="Profile_Panel" data-off-canvas>
+
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="row expanded">
+          <!-- <div class="small-12 columns">
+            <h4>Profile</h4>
+          </div> -->
+
+
+          <div class="small-12 columns">
+            <form class="log-in-form">
+            <h4>Log in</h4>
+            <label>
+              Email
+              <input type="email" placeholder="somebody@example.com">
+            </label>
+            <br>
+            <label>Password
+              <input type="password" placeholder="Password">
+            </label>
+            <!-- <input id="show-password" type="checkbox"><label for="show-password">Show password</label> -->
+            <!-- <br> -->
+            <br>
+            <p><a href="{{root}}users/jane-smith" class="button expanded green" >Login</a> </p>
+            <a class="button expanded" data-open="SignUpModal">Sign Up</a>
+            <p class="text-center"><a href="javascript:void(0)"><small>Forgot your password?</small></a></p>
+          </form>
+          <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-12 columns hide">
+            <h4>Your intrests</h4>
+          </div>
+          <div class="small-12 columns hide">
+            {{#each global.guest-intrestes}}
+            <a class="button  secondary tiny intrest-item {{node-type-class}}" >
+              <i class="fa fa-toggle-off child-filter has-tip top" data-tooltip aria-haspopup="true"
+              data-disable-hover="false"
+              data-click-open="false"
+              tabindex="2" title="By turning on this Filter, the page will only display content based on this and other filters applied within your intrests."></i> {{title}} <i class="fa fa-times has-tip top" aria-hidden="true" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove Service"></i>
+            </a>
+            {{/each}}
+          </div>
+          <div class="small-12 columns hide">
+            <a href="{{root}}contact" class="button green small has-tip top show-for-large expanded" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Proceed to Contact Us"><strong>Contact Us <i class="fa fa-chevron-right" aria-hidden="true"></i></strong>
+            </a>
+            <hr>
+          </div>
+
+          <div class="small-12 columns">
+            <h4>Filters
+              <!-- <br><small>Only active on services and products pages? </small> -->
+            </h4>
+          </div>
+          <div class="small-12 columns" style="background: #4d5158;">
+            <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu data-multi-open="false">
+              <li class="industry">
+                <a href="#">Industry</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><select id="user-intrests-industry" multiple="multiple" style="width:100%;">
+                    <option>Publishing</option>
+                    <option>Arts & Entertainment</option>
+                    <option>Consulting</option>
+                    <option>Creative & Media</option>
+                    <option>Education</option>
+                    <option>Engineering</option>
+                    <option>Environmental</option>
+                    <option>Finance & Legal</option>
+                    <option>Food</option>
+                    <option>Government</option>
+                    <option>Health</option>
+                    <option>Hospitality & Transportation</option>
+                    <option>Human Resources</option>
+                    <option>Marketing & Communications</option>
+                    <option>Non-Profit</option>
+                    <option>Organization Development</option>
+                    <option>Real Estate</option>
+                    <option>Science & Research</option>
+                    <option>Spirituality</option>
+                    <option>Technology</option>
+                    <option>Wholesale & Retail</option>
+                    <option>*Your Industry</option>
+                    <option>(Construction)</option>
+                    <option>(Insurance)</option>
+                    <option>(Sports)</option>
+                    <option>(Manufacturing)</option>
+                  </select></li>
+                </ul>
+              </li>
+              <li class="functional_areas" >
+                <a href="#">Functional Areas (2)</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><select id="user-functional-areas" multiple="multiple" style="width:100%;">
+                    <option >	*Our Functional Areas	</option>
+                    <option>	Email marketing	</option>
+                    <option selected>	Customer Relationship Management	</option>
+                    <option>	Project Management	</option>
+                    <option>	Time Tracking	</option>
+                    <option selected>	Asset Management	</option>
+                    <option>	Accounting	</option>
+                    <option>	Scheduling	</option>
+                    <option>	Event Management	</option>
+                    <option>	Inventory Management	</option>
+                    <option>	Calendaring	</option>
+                    <option>	Fundraising	</option>
+                    <option>	Surveys	</option>
+                    <option>	Curriculum	</option>
+                    <option>	Human Resources	</option>
+                    <option>	Registration	</option>
+                    <option>	Studio Management	</option>
+                    <option>	Contract Management	</option>
+                    <option>	Royalties Management	</option>
+                    <option>	Print Production	</option>
+                    <option>	Credit Card Processing	</option>
+                    <option>	POS	</option>
+                    <option>	Video and Audio Engineering	</option>
+                    <option>	HIPAA Compliance	</option>
+                    <option>	Content Management	</option>
+                    <option>	Issue Tracking	</option>
+                    <option>	Communications	</option>
+                    <option>	Compliance	</option>
+                    <option>	eCommerce	</option>
+                    <option>	Contact Management	</option>
+                    <option>	Incident Tracking	</option>
+                    <option>	Legal Notices	</option>
+                    <option>	Marketing	</option>
+                    <option>	Facilities Management	</option>
+                    <option>	Space Planning	</option>
+                    <option>	Telecommunications	</option>
+                    <option>	Supply Management	</option>
+                    <option>	Ordering Systems	</option>
+                    <option>	Globalization	</option>
+                    <option>	Internationalization	</option>
+                    <option>	Localization	</option>
+                    <option>	Vendor Management	</option>
+                    <option>	Finance	</option>
+                    <option>	Headcount	</option>
+                    <option>	Forecasting	</option>
+                    <option>	User Support	</option>
+                    <option>	Support Quality Management	</option>
+                    <option>	Construction	</option>
+                    <option>	Transportation	</option>
+                    <option>	Manufacturing	</option>
+                    <option>	Hardware Engineering	</option>
+                    <option>	Security	</option>
+                    <option>	Information Security	</option>
+                    <option>	Advertising	</option>
+                    <option>	Legal	</option>
+                    <option>	Intellectual Property	</option>
+                    <option>	Document Management	</option>
+                    <option>	Software Engineering	</option>
+                    <option>	Billing/Invoicing	</option>
+                    <option>	Account Management	</option>
+                    <option>	Video and Audio production	</option>
+                    <option>	Recruitment	</option>
+                    <option>	Training	</option>
+                    <option>	Office Management	</option>
+                    <option>	Sales	</option>
+                    <option>	Document Generation	</option>
+                    <option>	Process Design	</option>
+                    <option>	IT Services	</option>
+                    <option>	Operations	</option>
+                    <option>	Big Data	</option>
+                    <option>	Research and Development	</option>
+                    <option>	Testing	</option>
+                    <option>	Administration	</option>
+                    <option>	Business Continuity	</option>
+                    <option>	Program Management	</option>
+                    <option>	Strategic Planning	</option>
+                    <option>	Market Research	</option>
+                    <option>	Process Management	</option>
+                    <option>	Procurement Management	</option>
+                    <option>	Laboratory Management	</option>
+                    <option>	Budgeting	</option>
+                    <option>	Partnership Management	</option>
+                    <option>	Payroll	</option>
+                    <option>	Product Development	</option>
+                    <option>	Quality Assurance	</option>
+                    <option>	Retail	</option>
+                  </select></li>
+                </ul>
+              </li>
+              <li class="goals">
+                <a href="#">Goals</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><select id="user-goals" multiple="multiple" style="width:100%;">
+                    <option>	Reporting	</option>
+                    <optgroup label="Swedish Cars">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                    </optgroup>
+                    <option>	Security enhancement	</option>
+                    <option>	Increase efficiency	</option>
+                    <option>	Offer a new service	</option>
+                    <option>	Strengthen partnerships	</option>
+                    <option>	Use Web more effectively	</option>
+                    <option>	Know what's happening in your business	</option>
+                    <option>	Start a new business	</option>
+                    <option>	Goof off	</option>
+                    <option>	Productivity	</option>
+                    <option>	Teamwork	</option>
+                    <option>	Brainstorm	</option>
+                    <option>	Return On Investment	</option>
+                    <option>	Building Trust	</option>
+                    <option>	Transparency	</option>
+                    <option>	Collaboration ;)	</option>
+                    <option>	Innovation	</option>
+                    <option>	Sustainability / the Triple Bottom Line	</option>
+                    <option>	Recession Preparedness	</option>
+                    <option>	Mindfulness	</option>
+                    <option>	Relaxation	</option>
+                    <option>	Competitive Advantage	</option>
+                    <option>	Love your job	</option>
+                    <option>	Creativity	</option>
+                    <option>	Exactly So	</option>
+                    <option>	Work Flexibility	</option>
+                    <option>	Work-life Balance	</option>
+                    <option>	Accountability	</option>
+                    <option>	Distributed Workforce	</option>
+                    <option>	Scaling Your Business	</option>
+                    <option>	*Your Goals	</option>
+                    <option>	Hiring	</option>
+                    <option>	Train Staff	</option>
+                    <option>	Market your offerings	</option>
+                    <option>	Better understand your business	</option>
+                    <option>	Figure it out as we go	</option>
+                    <option>	Resource conservation	</option>
+                    <option>	Paperless Office	</option>
+                    <option>	Diversity and Inclusion	</option>
+                    <option>	Remote User Performance	</option>
+                    <option>	Mergers & Acquisitions	</option>
+                    <option>	Reduce your costs	</option>
+                    <option>	Confidence in Technology Partner	</option>
+                    <option>	No commitment required; On-call support	</option>
+                    <option>	Mobile Workforce	</option>
+                    <option>	Not having to think about our info systems	</option>
+                    <option>	Better Managerial Oversight	</option>
+                  </select></li>
+                </ul>
+              </li>
+              <li class="services">
+                <a href="#">Services</a>
+                <ul class="menu vertical sublevel-1">
+                  <li>
+                    <select id="user-services" multiple="multiple" style="width:100%;">
+                      <!-- <option value="new">Add Intrestes</option> -->
+                      <option value="FileMaker Development" selected>FileMaker Development</option>
+                      <option value="User Interface Design (UI)" selected>User Interface Design (UI)</option>
+                      <option value="Charting" selected>Charting</option>
+                      <option value="Mobile Development" selected>Mobile Development</option>
+                      <option value="Training & Workshops" selected>Training & Workshops</option>
+                      <option value="Integration" selected>Integration</option>
+                      <option value="FileMaker Support">FileMaker Support</option>
+                      <option value="Networking">Networking</option>
+                      <option value="IT">IT</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Data Cleanup">Data Cleanup</option>
+                      <option value="Migrating To Latest FileMaker Version">Migrating To Latest FileMaker Version</option>
+                      <option value="FileMaker System Redesign">FileMaker System Redesign</option>
+                      <option value="FileMaker and Web Integration">FileMaker and Web Integration</option>
+                      <option value="Plug-in Integration">Plug-in Integration</option>
+                      <option value="FileMaker Server Administration">FileMaker Server Administration</option>
+                      <option value="Network Topology Design">Network Topology Design</option>
+                      <option value="Network Wiring and Implementation">Network Wiring and Implementation</option>
+                      <option value="Router Configuration">Router Configuration</option>
+                      <option value="Map IT Infrastructure">Map IT Infrastructure</option>
+                      <option value="Hosting Services">Hosting Services</option>
+                      <option value="Server Configuration">Server Configuration</option>
+                      <option value="Server Co-Location">Server Co-Location</option>
+                      <option value="IT Consulting">IT Consulting</option>
+                      <option value="IT Training">IT Training</option>
+                      <option value="Web Store Integration">Web Store Integration</option>
+                      <option value="Consulting">Consulting</option>
+                      <option value="Requirements Gathering">Requirements Gathering</option>
+                      <option value="Opinion">Opinion</option>
+                      <option value="Needs Assessment">Needs Assessment</option>
+                      <option value="Business Analysis">Business Analysis</option>
+                      <option value="Technical Documentation">Technical Documentation</option>
+                      <option value="Troubleshooting">Troubleshooting</option>
+                      <option value="Upgrading from previous versions">Upgrading from previous versions</option>
+                      <option value="Database normalization">Database normalization</option>
+                      <option value="Data Visualization">Data Visualization</option>
+                      <option value="WordPress Development">WordPress Development</option>
+                      <option value="Solution-Specific Training">Solution-Specific Training</option>
+                      <option value="Configuration">Configuration</option>
+                      <option value="Data Migration">Data Migration</option>
+                      <option value="Export to Excel">Export to Excel</option>
+                      <option value="Going Beyond Excel">Going Beyond Excel</option>
+                      <option value="Design">Design</option>
+                      <option value="Dashboards">Dashboards</option>
+                      <option value="Inspector Consult">Inspector Consult</option>
+                      <option value="System Audit">System Audit</option>
+                      <option value="Database Repair">Database Repair</option>
+                      <option value="IT support">IT support</option>
+                      <option value="Code Readability">Code Readability</option>
+                      <option value="Code Maintainability">Code Maintainability</option>
+                      <option value="Code Quality">Code Quality</option>
+                      <option value="Agile Development">Agile Development</option>
+                      <option value="Database Administration">Database Administration</option>
+                      <option value="Web Services / REST APIs">Web Services / REST APIs</option>
+                      <option value="Graphic Design">Graphic Design</option>
+                      <option value="Data Syncing">Data Syncing</option>
+                      <option value="Data Modeling">Data Modeling</option>
+                      <option value="Data Analysis">Data Analysis</option>
+                      <option value="SEO">SEO</option>
+                      <option value="FileMaker PHP">FileMaker PHP</option>
+                      <option value="Prototyping">Prototyping</option>
+                      <option value="Directory and Authentication">Directory and Authentication</option>
+                      <option value="Technical Support">Technical Support</option>
+                      <option value="Product Management">Product Management</option>
+                      <option value="Quality Assurance">Quality Assurance</option>
+                      <option value="Email Integration">Email Integration</option>
+                      <option value="Network Engineering">Network Engineering</option>
+                      <option value="Security">Security</option>
+                      <option value="Deployment">Deployment</option>
+                      <option value="Data Management">Data Management</option>
+                      <option value="Data Mining">Data Mining</option>
+                      <option value="Your wishlist come true">Your wishlist come true</option>
+                      <option value="Optimization">Optimization</option>
+                      <option value="FileMaker Power User Training">FileMaker Power User Training</option>
+                      <option value="Basic FileMaker Development Training">Basic FileMaker Development Training</option>
+                      <option value="Advanced FileMaker Development Training">Advanced FileMaker Development Training</option>
+                      <option value="Network Security">Network Security</option>
+                      <option value="Testing">Testing</option>
+                      <option value="Setup">Setup</option>
+                      <option value="FileMaker Training">FileMaker Training</option>
+                      <option value="Automating Tasks">Automating Tasks</option>
+                      <option value="Licensing Fullfillment">Licensing Fullfillment</option>
+                      <option value="Writing User Stories">Writing User Stories</option>
+                      <option value="App Development">App Development</option>
+                      <option value="Organization Development Consulting">Organization Development Consulting</option>
+                      <option value="Business Workflow Applications">Business Workflow Applications</option>
+                      <option value="Form Submission and Processing">Form Submission and Processing</option>
+                      <option value="Legacy System Improvements">Legacy System Improvements</option>
+                      <option value="Reports">Reports</option>
+                      <option value="Export to PDF">Export to PDF</option>
+                      <option value="Email Import and Processing">Email Import and Processing</option>
+                      <option value="Data Search">Data Search</option>
+                      <option value="Software as a Service (SaaS)">Software as a Service (SaaS)</option>
+                      <option value="Junk Mail filtering">Junk Mail filtering</option>
+                      <option value="Server Backup Procedure">Server Backup Procedure</option>
+                      <option value="Account Management">Account Management</option>
+                      <option value="Project Management">Project Management</option>
+                      <option value="FileMaker Scripting">FileMaker Scripting</option>
+                      <option value="FileMaker Calculations">FileMaker Calculations</option>
+                      <option value="FileMaker Custom Functions">FileMaker Custom Functions</option>
+                      <option value="Cross-browser deployment">Cross-browser deployment</option>
+                      <option value="FileMaker Accounts & Privileges">FileMaker Accounts & Privileges</option>
+                      <option value="Schema Naming Conventions Standardization">Schema Naming Conventions Standardization</option>
+                      <option value="Single-Page Application">Single-Page Application</option>
+                      <option value="web framework (CakePHP, Zend, …)">web framework (CakePHP, Zend, …)</option>
+                      <option value="FileMaker SQL">FileMaker SQL</option>
+                      <option value="Interaction Design (IxD)">Interaction Design (IxD)</option>
+                      <option value="Database Development">Database Development</option>
+                      <option value="System Redesign">System Redesign</option>
+                      <option value="System Administration">System Administration</option>
+                      <option value="Linux System Administration">Linux System Administration</option>
+                      <option value="Open Source publishing">Open Source publishing</option>
+                      <option value="Product Design">Product Design</option>
+                      <option value="Custom Software Development">Custom Software Development</option>
+                      <option value="Software Architecture">Software Architecture</option>
+                      <option value="Systems Architecture">Systems Architecture</option>
+                      <option value="Vendor Portal Development">Vendor Portal Development</option>
+                      <option value="Single Sign-On (SSO)">Single Sign-On (SSO)</option>
+                    </select>
+                  </li>
+                  <!-- <li>
+                    <a href="#">Sub-item 2</a>
+                    <ul class="menu vertical sublevel-2">
+                      <li>
+                        <a href="#">Super-sub-item 1</a>
+                        <ul class="menu vertical sublevel-3">
+                          <li><a class="subitem" href="#">Thing 1</a></li>
+                          <li><a class="subitem" href="#">Thing 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="subitem" href="#">Thing 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="subitem" href="#">Thing 1</a></li>
+                  <li><a class="subitem" href="#">Thing 2</a></li> -->
+                </ul>
+              </li>
+
+              <li class="products">
+                <a href="#">Products</a>
+                <ul class="menu vertical sublevel-1">
+                  <li><select id="user-intrest-products" multiple="multiple" style="width:100%;">
+                    <option selected title="Built from the ground up using the FileMaker Platform, InspectorPro offers advanced diagnostics, in-depth analysis, and data visualization to improve collaboration, performance and insight for FileMaker teams. InspectorPro has long been recognized as the leading FileMaker diagnostic tool.">InspectorPro</option>
+                    <option>XML Generator</option>
+                    <option  selected>@ SQL Sugar for FileMaker</option>
+                    <option selected>bBox</option>
+                    <option selected>PiVOT</option>
+                    <option>Web Services Plug-in</option>
+                    <option>360Works SuperContainer</option>
+                    <option>Troi File</option>
+                    <option>360Works ScriptMaster</option>
+                    <option>SeedCode GoZync</option>
+                    <option>TextMate Bundle for FileMaker</option>
+                    <option>Our Products</option>
+                    <option>The Hive Organizer</option>
+                    <option>Hive Contacts</option>
+                    <option>"Clients Matter" Accounting Solution</option>
+                    <option>Bento</option>
+                    <option>Propolis</option>
+                    <option>Dragon Web Surveys</option>
+                    <option>Divvy-up</option>
+                    <option>FMCakeMix</option>
+                    <option>SyncDek</option>
+                    <option>HiveHelp</option>
+                    <option>myFMbutler DoSQL</option>
+                    <option>FMBooksConnector (QB to FM)</option>
+                    <option>JobPro Central</option>
+                    <option>MirrorSync</option>
+                    <option>FMAR Plugin</option>
+                    <option>AidellsSausageApp</option>
+                    <option>Gore Management App</option>
+                    <option>OfficeHub App</option>
+                    <option>HiveMine</option>
+                    <option>Systems the Trojan Horse</option>
+                    <option>Wedding DB</option>
+                    <option>WebDev Challenge App</option>
+                    <option>Job Skills Training System</option>
+                    <option>A Ruby Gem or several</option>
+                    <option>JavaScript Widgets</option>
+                    <option>Publish To Apple News</option>
+                    <option>Accounts</option>
+                    <option>Errbit</option>
+                    <option>LOgiCATOR</option>
+                    <option>EmailPro</option>
+                    <option>Server-Side Swift FileMaker Extensions</option>
+                    <option>Harvest Replacement (Redmine Replacement.. WebTool)...</option>
+                    <option>Barcode Creator</option>
+                    <option>Zulu</option>
+                    <option>Stripe</option>
+                    <option>Blockchain</option>
+                  </select></li>
+                </ul>
+              </li>
+
+              </ul>
+              <hr>
+          </div>
+
+          <div class="small-12 columns">
+            <h4>Your Recommendations</h4>
+          </div>
+          <div class="small-12 columns" style="background: #4d5158;">
+            <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
+              <li>
+                <!-- <a href="#">Recommendations</a> -->
+                <ul class="menu vertical sublevel-1 is-active">
+                  <li>
+                    <div class="intrests-wrapper">
+                      <div class="row hide"> /* sort and filter */
+                        <div class="small-12 medium-6 columns">
+                          <div class="filter-list">
+                            <label>Sort by Date
+                              <select>
+                                <option value=""  disabled>Sort by Date</option>
+                                <option value="all">All</option>
+                                <option value="products">Recent</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                          <div class="filter-list">
+                            <label>Filter by Type
+                              <select>
+                                <option value=""  disabled>Filter by Type</option>
+                                <option value="all" selected>All Types</option>
+                                <option value="products">Products</option>
+                                <option value="services">Services</option>
+                                <option value="fuctional">Fuctional Areas</option>
+                                <option value="technology">Technology</option>
+                                <option value="database">Database</option>
+                                <option value="events">Events</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="recommendations-wrapper">
+                        <div class="empty-state callout hide">
+                          <h4>This can only work if you {{>interested-btn}} intrests.</h4>
+                        </div>
+                        {{#each global.guest-recomendations}}
+                        <div class="callout small {{node-type}}">
+                          <div class="section-header">
+                            <h4>{{title}}</h4>
+                            <!-- {{>interested-btn}} -->
+                            <button class="green tiny button" href="javascript:void(0)" data-open="model-services">More Info</button>
+                          </div>
+
+                          <p>{{description}}</p>
+                        </div>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="small-12 columns small-centered columns text-center toggle-wrapper">
+            <!-- <i class="fa fa-angle-up toggle animated fadeIn" aria-hidden="true"></i> -->
+            <div class="toggle-wrapper" style="margin-bottom:0;">
+              <!-- <p>Flip the switch to see the truth depth of our capabilities.</p> -->
+              <div class="switch small" style="margin-left: 0;">
+                <span class="pre">Intro</span>
+                <input class="switch-input intro-advanced-toggle" id="site-intro-advanced-2" type="checkbox" name="exampleSwitch">
+                <label class="switch-paddle" for="site-intro-advanced-2">
+                  <span class="show-for-sr">How deeap do you want to get</span>
+                  <span class="switch-inactive" aria-hidden="true"></span>
+                  <span class="switch-active" aria-hidden="true"></span>
+                </label>
+                <span class="post">In-Depth</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="reveal small" id="model-services-old" data-reveal>
+        <img src="https://beezwax.net/assets/pages/products/inspectorpro/velocimeter.png" alt="" style="width: 48px;float: left;margin-right: 10px;"><h2>InspectorPro 6.5 {{>interested-btn}}</h2>
+
+        <p class="lead">Better collaboration, performance and insight for your FileMaker teams. Available now for FileMaker Pro Advanced (v12-16) on macOS and Windows.</p>
+        <p class="text-center">
+          <div class="button-group joined show-for-medium">
+            <a class="secondary button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download Free Trial</a>
+            <a class="secondary button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Buy Now</a>
+            <a class="green button"><i class="fa fa-life-ring" aria-hidden="true"></i> Contact Support</a>
+          </div>
+
+          <div class="button-group small expanded joined show-for-small-only">
+            <a class="secondary button">Download</a>
+            <a class="secondary button">Buy</a>
+            <a class="green button">Support</a>
+          </div>
+        </p>
+        <p>
+          We have focused on the most important points that matter to you as a Developer. We are also the first to tackle PDoS ( Process DDR on Server ). When you host InspectorPro, a whole new world of collaboration presents itself. Once you have uploaded your DDR files to the server using InspectorPro, it takes over from
+          there and control is returned back to you so you can continue developing while InspectorPro is busy processing.
+          You’ll love it.
+        </p>
+        <p class="text-center" style="margin-bottom:0">
+        <a class="button green" href="{{root}}/products/inspectorpro.html">Visit Product Page</a>
+        </p>
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        {{>related-all-items}}
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- <div class="off-canvas-content" data-off-canvas-content>
+        <button type="button" class="button design-options" data-toggle="Profile_Panel" style="position: fixed;
+        top: 50px;
+        right: 0;
+        z-index: 5;"><i class="fa fa-sliders" aria-hidden="true"></i></button>
+      </div> -->
+
+      <!-- off-canvas -->
+
+      {{>loading-scrn}}
+
+      {{>global-nav-2}}
+
+      {{>intrestest-wrapper-bar}}
+
+      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+      {{> body}}
+
+      {{>welcome}}
+      {{>gallery-1}}
+      {{>beez-gallery}}
+
+      {{>in-take-modal}}
+      {{>cookies}}
+      {{>invision}}
+
+    </div>
+    {{> global-footer}}
+
+
+
+    <script src="https://use.fontawesome.com/81a851b476.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+
+
+    <!-- <script src="{{root}}assets/js/typed.js"></script> -->
+    <!-- <script src="{{root}}assets/js/jquery.fittext.js"></script> -->
+
+    <!-- BEFORE & AFTER -->
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script> -->
+    <!-- <script src="{{root}}assets/js/jquery.event.move.js"></script> -->
+    <!-- <script src="{{root}}assets/js/jquery.twentytwenty.js"></script> -->
+
+    <!-- <script src="js/vendor/jquery.js"></script> -->
+    <!-- <script src="{{root}}assets/js/hopscotch.js"></script>
+    <script src="{{root}}assets/js/tour.js"></script> -->
+    <script src="{{root}}assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+
+    <script type="text/javascript">
+      $('.notifications-wrapper').delay(6000).queue(function(){
+        $(this).addClass("slideOutUp");
+      });
+    </script>
+
+
+
+    {{#if usasa-casestudy}}
+      <script>
+        $(window).load(function ()
+        {
+            setTimeout(function ()
+            {
+                var $contents = $('#usasa-site').contents();
+                $contents.scrollTop($contents.height());
+            }, 3000); // ms = 3 sec
+        });
+
+      </script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#CA, #OR, #WA, #AK, #ID, #MT, .western-washington-series, .mt-hood-series, .id-mtn, .central-oregon-series, .inland-nw, .big-alaska, .north-tahoe, .south-tahoe, .unbound, .so-cal').hover(function(){
+          $('#CA, #OR, #WA, #AK, #ID, #MT').toggleClass('highlight');
+          });
+
+          $('#UT, #NM, #AZ, #CO, .gc, .bmw, .sw-co, .aspen-sm, .rocky-mt, .sw-fr').hover(function(){
+          $('#UT, #NM, #AZ, #CO').toggleClass('highlight rockies');
+          });
+
+          $('#MN, #WI, #IL, #MI, #OH, .up-mid-snow, .mid-west-best, .great-lakes, .raging-buffalo, .sos').hover(function(){
+          $('#MN, #WI, #IL, #MI, #OH').toggleClass('highlight central');
+          });
+
+          $('#ME, #MA, #VT, #NH, .mass, .new-ham, .south-vt, .north-vt, .mm').hover(function(){
+          $('#ME, #MA, #VT, #NH').toggleClass('highlight newengland');
+          });
+
+          $('#NY, #PA, #VA, #NC, .app, .se, .mas, .wnns, .ads, .cms').hover(function(){
+          $('#NY, #PA, #VA, #NC').toggleClass('highlight eastern');
+          });
+
+          $('.markers .fa, .regions-lists-wrapper li').click(function(){
+            window.location = 'region.html';
+          });
+
+        });
+      </script>
+
+      <script>
+        jQuery.fn.random = function() {
+            var randomIndex = Math.floor(Math.random() * 32);
+            return jQuery(this[randomIndex]);
+        };
+        var prev;
+        var timer = window.setInterval(function () {
+            if(prev){
+                prev.mouseleave();
+            }
+            prev = $('.animated .markers .fa').random().mouseenter();
+            console.log(prev)
+        }, 2000);
+      </script>
+    {{/if}}
+
+    <!-- VIS Normal -->
+    <script type="text/javascript">
+        // create an array with nodes
+        var nodes = new vis.DataSet([
+            {id: 1,
+              // label: 'Beezwax',
+              image: '{{root}}//assets/img/icons/logo-viz.svg',
+              shape: 'image',
+              // size: 100,
+              widthConstraint: { minimum: 160 },
+              heightConstraint: { minimum: 160 },
+              color: { background:'red', border:'#ffd939'}
+            },
+            {	id:	2	, label: 'User Experience Design', image: '{{root}}/assets/img/icons/vis-placeholder.svg', shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 3	, label: 'FileMaker Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                       font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                       color: { background:'grey', border:'grey'}
+                     },
+            {	id:	4	, label: 'User Interface Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	5	, label: 'Charting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	6	, label: 'Mobile Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                      font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                      color: { background:'red', border:'red'}
+                    },
+            {	id:	7	, label: 'Training & Workshops', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                      font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                      color: { background:'red', border:'red'}
+                    },
+            {	id:	8	, label: 'Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                      font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                      color: { background:'red', border:'red'}
+                    },
+            {	id:	9	, label: 'FileMaker Support', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	10	, label: 'Networking', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	11	, label: 'IT Services', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	12	, label: 'Web Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                      font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                      color: { background:'tan', border:'tan'}
+                    },
+            {	id:	13	, label: 'Data Cleanup', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	14	, label: 'Upgrading To Latest Version of FileMaker', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	15	, label: 'System Redesign', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	16	, label: 'Web and FileMaker Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	17	, label: 'Plug-in Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	18	, label: 'FileMaker Server Administration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	19	, label: 'Network Topology Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	20	, label: 'Network Wiring and Implementation', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	21	, label: 'Router Configuration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	22	, label: 'Map IT Infrastructure', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	23	, label: 'Hosting Services', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	24	, label: 'Server Configuration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	25	, label: 'Server Co-Location', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	26	, label: 'IT Consulting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	27	, label: 'IT Training', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	28	, label: 'Web Store Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	29	, label: 'Consulting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html' ,
+                        font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                        color: { background:'red', border:'red'}
+                      },
+            {	id: 30	, label: 'Requirements Gathering', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 31	, label: 'Opinion', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 32	, label: 'Needs Assessment', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 33	, label: 'Business Analysis', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 34	, label: 'Technical Documentation', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 35	, label: 'Troubleshooting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 36	, label: 'Database Normalization', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 37	, label: 'Data Visualization', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html' ,
+                        font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                        color: { background:'red', border:'red'}
+                      },
+            {	id: 38	, label: 'Lets talk about tech', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id: 39	, label: 'Get to know Beezwax', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	40	, label: 'WordPress Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	41	, label: 'Solution-Specific Training', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	42	, label: 'Configuration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	43	, label: 'Data Migration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	44	, label: 'Migrate from Excel', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	45	, label: 'Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html',
+                        font: {size:12, color:'black',  strokeWidth:1, strokeColor:'#ffffff'},
+                        color: { background:'red', border:'red'}
+                      },
+            {	id:	46	, label: 'Dashboards', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	47	, label: 'InspectorPro Consult', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	48	, label: 'System Audit', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	49	, label: 'Database Repair', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	50	, label: 'IT Support', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	51	, label: 'Object-Oriented Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	52	, label: 'Code Readability', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	53	, label: 'Code Maintenance', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	54	, label: 'Code Quality', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	55	, label: 'Accessibility Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	56	, label: 'Agile Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	57	, label: 'Database Administration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	58	, label: 'Test-Driven Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	59	, label: 'Web Services ', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	60	, label: 'Graphic Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	61	, label: 'Data Syncing', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	62	, label: 'Data Modeling', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	63	, label: 'Data Analysis', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	64	, label: 'SEO', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	65	, label: 'FileMaker PHP', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	66	, label: 'Prototyping', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	67	, label: 'Directory and Authentication', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	68	, label: 'Technical Support', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	69	, label: 'Product Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	70	, label: 'Quality Assurance', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	71	, label: 'Email Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	72	, label: 'Network Engineering', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	73	, label: 'Information Security', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	74	, label: 'Deployment', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	75	, label: 'Data Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	76	, label: 'Data Mining', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	77	, label: 'Your wishlist come true', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	78	, label: 'Optimization', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	79	, label: 'FileMaker Developer Workshop', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	80	, label: 'Basic Training for FileMaker Users', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	81	, label: 'Pro-to-Pro Training', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	82	, label: 'Network Security', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	83	, label: 'Testing', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	84	, label: 'FileMaker Training', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	85	, label: 'Automating Tasks', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	86	, label: 'Licensing Fullfillment', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	87	, label: 'Writing User Stories', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	88	, label: 'App Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	89	, label: 'Organization Development Consulting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	90	, label: 'Custom Business Workflow Solutions', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	91	, label: 'Form Submission and Processing', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	92	, label: 'Legacy System Improvements', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	93	, label: 'Reports', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	94	, label: 'PDF Reporting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	95	, label: 'Email Import and Processing', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	96	, label: 'Search Tools', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	97	, label: 'Software as a Service (SaaS)', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	98	, label: 'Junk Mail filtering', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	99	, label: 'Server Backup Procedure', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	100	, label: 'Account Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	101	, label: 'Project Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	102	, label: 'FileMaker Scripting', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	103	, label: 'FileMaker Calculations', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	104	, label: 'FileMaker Custom Functions', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	105	, label: 'Cross-browser deployment', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	106	, label: 'FileMaker Accounts & Privileges', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	107	, label: 'Schema Naming Conventions Standardization', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	108	, label: 'Single-Page Application', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	109	, label: 'Implementing web frameworks', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	110	, label: 'FileMaker SQL', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	111	, label: 'Interaction Design (IxD)', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	112	, label: 'Database Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	113	, label: 'System Administration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	114	, label: 'Linux System Administration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	115	, label: 'Open Source publishing', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	116	, label: 'Product Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	117	, label: 'Responsive Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	118	, label: 'Custom Solutions', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	119	, label: 'Software Architecture', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	120	, label: 'Systems Architecture', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	121	, label: 'Vendor Portal Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	122	, label: 'Single Sign-On (SSO)', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	123	, label: 'Join our client list?...', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	124	, label: 'Estimating Time', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	125	, label: 'Performance', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	126	, label: 'Data extraction', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	127	, label: 'Data Services', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	128	, label: 'FileMaker to Calendar integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	129	, label: 'Innovation with JavaScript and FileMaker', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	130	, label: 'Open Source Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	131	, label: 'FileMaker Cloud Administration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	132	, label: 'Cloud Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	133	, label: 'UX Design Research', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	134	, label: 'Geographic Tools', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	135	, label: 'FileMaker License Fullfillment', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	136	, label: 'We do events, yo.', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	137	, label: 'Migrating FileMaker solutions to Web Technologies', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	138	, label: 'Contributing to our communities', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	139	, label: 'Contributing to our Developer Communities', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	140	, label: 'Mobile First', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	141	, label: 'Tableau Implementation', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	142	, label: 'Ruby on Rails Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	143	, label: 'DevOps', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	144	, label: 'Native Mobile Apps with FileMaker', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	145	, label: 'JavaScript Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	146	, label: 'Notifications', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	147	, label: 'Swift Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	148	, label: 'FileMaker Go', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	149	, label: 'FileMaker SQL integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	150	, label: 'FileMaker to Swift Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	151	, label: 'Configuration Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	152	, label: 'Ticket Tracking Systems', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	153	, label: 'Adaptive Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	154	, label: 'FileMaker QuickBooks Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	155	, label: 'FileMaker WebDirect Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	156	, label: 'Machine Learning Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	157	, label: 'eCommerce Design', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	158	, label: 'User Documentation', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	159	, label: 'Program Management', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	160	, label: 'REST APIs', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	161	, label: 'Gem Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	162	, label: 'Iron Horse', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	163	, label: 'Grid: Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	164	, label: 'Data Integrity', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	165	, label: 'AppleTV App Development', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	166	, label: 'FileMaker to Box integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	167	, label: 'FileMaker to API integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	168	, label: 'Slack Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'},
+            {	id:	169	, label: 'Alexa Integration', image:  '{{root}}/assets/img/icons/vis-placeholder.svg'	, shape: 'image', url: '{{root}}services/single.html'}
+        ]);
+
+        // create an array with edges
+        var edges = new vis.DataSet([
+            {from: 1, to: 3},
+            {from: 1, to: 12},
+            {from: 1, to: 29},
+            {from: 1, to: 37},
+            {from: 1, to: 8},
+            {from: 1, to: 6},
+            {from: 1, to: 45},
+            {from: 1, to: 7},
+            // FM Dev
+            {from: 3, to: 102},
+            {from: 3, to: 103},
+            {from: 3, to: 104},
+            {from: 3, to: 106},
+            // {from: 3, to: 110},
+            {from: 3, to: 125},
+            {from: 3, to: 128},
+            {from: 3, to: 129},
+            {from: 3, to: 131},
+            {from: 3, to: 135},
+            {from: 3, to: 137},
+            {from: 3, to: 14},
+            {from: 3, to: 148},
+            {from: 3, to: 149},
+            {from: 3, to: 15},
+            {from: 3, to: 150},
+            {from: 3, to: 154},
+            {from: 3, to: 155},
+            {from: 3, to: 16},
+            {from: 3, to: 166},
+            {from: 3, to: 167},
+            {from: 3, to: 18},
+            {from: 3, to: 2},
+            {from: 3, to: 28},
+            {from: 3, to: 4},
+            {from: 3, to: 65},
+            {from: 3, to: 79},
+            {from: 3, to: 84},
+            {from: 3, to: 9},
+            // WEB DEV
+            {from: 12, to: 16},
+            {from: 12, to: 16},
+            {from: 12, to: 132},
+            {from: 12, to: 142},
+            {from: 12, to: 4},
+            {from: 12, to: 16},
+            {from: 12, to: 153},
+            {from: 12, to: 145},
+            {from: 12, to: 46},
+            {from: 12, to: 2},
+            {from: 12, to: 15},
+            {from: 12, to: 28},
+            // Mobile DEV
+            {from: 6, to: 2},
+            {from: 6, to: 147},
+            {from: 6, to: 56},
+            {from: 6, to: 153},
+            {from: 6, to: 66},
+            {from: 6, to: 4},
+            {from: 6, to: 125},
+            {from: 6, to: 61},
+            {from: 6, to: 37},
+            {from: 6, to: 148},
+            // Intergration
+            {from: 8, to: 16},
+            {from: 8, to: 129},
+            {from: 8, to: 141},
+            {from: 8, to: 165},
+            {from: 8, to: 43},
+            {from: 8, to: 71},
+            {from: 8, to: 61},
+            {from: 8, to: 28},
+            {from: 8, to: 59},
+            {from: 8, to: 94},
+            // CONSULTING
+            {from: 29, to: 8},
+            {from: 29, to: 118},
+            {from: 29, to: 26},
+            {from: 29, to: 87},
+            {from: 29, to: 30},
+            {from: 29, to: 48},
+            {from: 29, to: 78},
+            {from: 29, to: 33},
+            {from: 29, to: 69},
+            {from: 29, to: 89},
+            {from: 29, to: 31},
+            {from: 29, to: 133},
+            {from: 29, to: 16},
+            {from: 29, to: 71},
+            {from: 29, to: 32},
+            {from: 29, to: 159},
+            {from: 29, to: 61},
+            {from: 29, to: 129},
+            // DESIGN
+            {from: 45, to: 4},
+            {from: 45, to: 133},
+            {from: 45, to: 5},
+            {from: 45, to: 117},
+            {from: 45, to: 158},
+            {from: 45, to: 66},
+            {from: 45, to: 60},
+            {from: 45, to: 55},
+            {from: 45, to: 87},
+            // DATAVIZ
+            {from: 37, to: 46},
+            {from: 37, to: 134},
+            {from: 37, to: 5},
+            {from: 37, to: 59},
+            {from: 37, to: 63},
+            {from: 37, to: 94},
+            {from: 37, to: 4},
+            // TRAINING
+            {from: 7, to: 41},
+            {from: 7, to: 84},
+            {from: 7, to: 81},
+            {from: 7, to: 139},
+            {from: 7, to: 27},
+            {from: 7, to: 34},
+            {from: 7, to: 47},
+            {from: 7, to: 79},
+        ]);
+
+
+
+        // create a network
+        var container = document.getElementById('mynetwork');
+
+        // provide the data in the vis format
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        var options = {
+          // stabilize: true   // stabilize positions before displaying
+          interaction:{
+              dragNodes:true,
+              dragView: true,
+              hideEdgesOnDrag: false,
+              hideNodesOnDrag: false,
+              hover: false,
+              hoverConnectedEdges: true,
+              keyboard: {
+                enabled: false,
+                speed: {x: 10, y: 10, zoom: 0.02},
+                bindToWindow: true
+              },
+              multiselect: false,
+              navigationButtons: false,
+              selectable: true,
+              selectConnectedEdges: true,
+              tooltipDelay: 300,
+              zoomView: true
+            },
+
+
+          layout: {
+              randomSeed: undefined,
+              improvedLayout:true,
+              enableEditMode:true,
+              hierarchical: {
+                enabled:false,
+                levelSeparation: 150,
+                nodeSpacing: 100,
+                treeSpacing: 200,
+                blockShifting: true,
+                edgeMinimization: true,
+                parentCentralization: true,
+                direction: 'UD',        // UD, DU, LR, RL
+                sortMethod: 'hubsize'   // hubsize, directed
+              }
+            },
+          configure: 'nodes,edges',
+          "nodes": {
+             "font": {
+               "size": 7
+             }
+           }
+        };
+
+
+        // initialize your network!
+        var network = new vis.Network(container, data, options);
+
+        network.on("doubleClick", function (params) {
+          if (params.nodes.length === 1) {
+              var node = nodes.get(params.nodes[0]);
+              window.open(node.url, '_blank');
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      function get_random_color() {
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.round(Math.random() * 15)];
+        }
+        return color;
+      }
+
+      $(function() {
+        $(".hex.pusher .hexLink").each(function() {
+          $(this).css("background-color", get_random_color());
+        });
+      });
+
+      $(function() {
+        $(".service-cards-v2").each(function() {
+          $(this).css("background-color", get_random_color());
+        });
+      });
+    </script>
+
+    <script>
+      $( ".v2-toggle" ).click(function() {
+        $('.intro-v2, .in-depth-v2').toggleClass( "hide" );
+        $("html, body").animate({ scrollTop: $('#nav-viewer').offset().top }, 10);
+      });
+
+      $( ".v2-toggle" ).click(function() {
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      $( ".instructions" ).hover(function() {
+        $(this).addClass( "animated fadeOut" );
+      });
+
+
+
+
+    </script>
+
+    <script type="text/javascript">
+      // Get URL
+      var url = window.location.href;
+      // Get DIV
+      var msg = document.getElementById('cookie-ui');
+      // Check if URL contains the keyword
+      if( url.search( 'cookie' ) > 0 ) {
+          // Display the message
+          msg.style.display = "block";
+          $('#cookie-ui').removeClass('hide');
+      }
+    </script>
+
+    <script type="text/javascript">
+      var url = window.location.href;
+      var msg = document.getElementsByClassName('video-background-2');
+      if( url.search( 'video' ) > 0 ) {
+        $('.video-background-2').removeClass('hide');
+      }
+    </script>
+
+    <script> //YouTube on homepage
+      var tag = document.createElement('script');
+      		tag.src = 'https://www.youtube.com/player_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var tv,
+      		playerDefaults = {autoplay: 0, autohide: 1, loop: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
+      var vid = [
+        {'videoId': 'qe29vtPASrE', 'startSeconds': 0,  'suggestedQuality': 'hd1080', 'playlist': 'qe29vtPASrE'}
+      ],
+    		randomVid = Math.floor(Math.random() * vid.length),
+        currVid = randomVid;
+      $('.hi em:last-of-type').html(vid.length);
+
+      function onYouTubePlayerAPIReady(){
+        tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
+      }
+
+      function onPlayerReady(){
+        tv.loadVideoById(vid[currVid]);
+        tv.mute();
+      }
+
+      function onPlayerStateChange(e) {
+        if (e.data === 1){
+          $('#tv').addClass('active');
+          $('.hi em:nth-of-type(2)').html(currVid + 1);
+        } else if (e.data === 2){
+          $('#tv').removeClass('active');
+          if(currVid === vid.length - 1){
+            currVid = 0;
+          } else {
+            currVid++;
+          }
+          tv.loadVideoById(vid[currVid]);
+          tv.seekTo(vid[currVid].startSeconds);
+        }
+      }
+
+      function vidRescale(){
+
+        var w = $(window).width()+200,
+          h = $(window).height()+200;
+
+        if (w/h > 16/9){
+          tv.setSize(w, w/16*9);
+          $('.tv .screen').css({'left': '0px'});
+        } else {
+          tv.setSize(h/9*16, h);
+          $('.tv .screen').css({'left': -($('.tv .screen').outerWidth()-w)/2});
+        }
+      }
+
+      $(window).on('load resize', function(){
+        vidRescale();
+      });
+
+      $('.hi span:first-of-type, .play-vid').on('click', function(){
+        $('#tv').toggleClass('mute');
+        $('.hi em:first-of-type').toggleClass('hidden');
+        $(this).text(function(i, text){
+          return text === "Play Muted" ? "Play with Sound" : "Play Muted";
+          $('.fa').toggleClass('fa-volume-up');
+        })
+        if($('#tv').hasClass('mute')){
+          tv.mute();
+        } else {
+          tv.unMute();
+        }
+      });
+
+      $('.hi span:last-of-type').on('click', function(){
+        $('.hi em:nth-of-type(2)').html('~');
+        tv.pauseVideo();
+      });
+
+    </script>
+
+    <script> //Before & After TOGGLE
+
+      $(function(){
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
+      });
+
+      // SITE INTRO & IN-DEPTH TOGGLE
+      $( "#site-intro-advanced" ).click(function() {
+        // $('.in-depth').toggleClass( "hide" );
+        // $('.intro-only').toggleClass( "hide" );
+
+
+        $('.intro-v2, .in-depth-v2').toggleClass( "hide" );
+
+        $("html, body").animate({ scrollTop: $('#nav-viewer').offset().top }, 10);
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      $( ".wide-node, .service-cards-v2" ).click(function() {
+        $('.header-poster').toggleClass( "services single-service" );
+        $('.single-service-wrapper').removeClass( 'hide' );
+        $('.promo-wrapper, .sticky-container, .node-details, .testimonial').addClass( "hide" );
+        $("html, body").animate({ scrollTop: $('body').offset().top }, 1);
+      });
+
+      $( ".close-single" ).click(function() {
+        $('.header-poster').toggleClass( "services single-service" );
+        $('.single-service-wrapper').addClass( 'hide' );
+        $('.sticky-container, .node-details, .testimonial').removeClass( "hide" );
+        $("html, body").animate({ scrollTop: $('body').offset().top }, 10);
+      });
+
+
+
+
+    </script>
+
+    <script>
+      $( ".show-intrest-2" ).click(function() {
+        event.stopPropagation();
+        $(this).toggleClass( "selected flash " );
+        // $(this).find(".fa").toggleClass( "fa-star-o fa-star" );
+        $(this).find(".fa").toggleClass( "fa-heart-o fa-heart" );
+
+        // $(".intrestest-wrapper-bar.version-3").show();
+        $(".intrestest-wrapper-bar.version-3").removeClass('hide fadeOutDown');
+        $(".intrestest-wrapper-bar.version-3").addClass('fadeInUp');
+      });
+
+      $( ".show-intrest-2" ).hover(function(){
+          $(this).find(".fa").toggleClass( "fa-heart-o fa-heart" );
+          $(this).toggleClass( "flash" );
+      });
+
+      $( '.play-vid ').click(function(){
+          $('.message-wrapper').toggleClass('hide');
+      });
+    </script>
+
+    <script type="text/javascript">
+
+      $(".proficiency_options, .select-2-default, #footer-user-intrests").select2();
+
+      $("#user-services, #user-services-card").select2({
+          placeholder: "Select services…",
+          // allowClear: true
+      });
+      $("#user-goals, #user-goals-card, #intake-goals").select2({
+          placeholder: "Select Goals…",
+          // allowClear: true
+      });
+      $("#user-functional-areas, #user-functional-areas-card").select2({
+          placeholder: "Select Functional Areas…",
+          // allowClear: true
+      });
+      $("#user-intrests-industry, #user-intrests-industry-card").select2({
+          placeholder: "Select Industries…",
+          // allowClear: true
+      });
+      $("#user-intrest-products, #user-intrest-products-card").select2({
+          placeholder: "Select Products…",
+          // allowClear: true
+      });
+
+      $("#user-services, #user-intrest-products, #user-intrests-industry, #user-intrests").on("select2:open", function() {
+          $(".select2-search__field").attr("placeholder", "Search...");
+      });
+      $("#user-services, #user-intrest-products, #user-intrests-industry, #user-intrests").on("select2:close", function() {
+          $(".select2-search__field").attr("placeholder", "Search...");
+      });
+
+      $("#breadcrumb-options").select2({
+          placeholder: "Select Functional Areas…",
+          minimumResultsForSearch: Infinity
+      });
+
+      $("#user-intrests, #intake-goals").select2({
+          placeholder: "Select services that intrest you…",
+          minimumResultsForSearch: Infinity
+      });
+
+
+
+      // $('#user-services').attr('placeholder', 'New Placeholder Text').select2();
+
+    </script>
+
+    <script type="text/javascript">
+      $("#field").keyup(function(){
+        el = $(this);
+        if(el.val().length >= 500){
+            el.val( el.val().substr(0, 500) );
+        } else {
+            $("#charNum").text(500-el.val().length);
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+      $('.rings').each(function(){
+          $(this).css({'top' : getRandomInt(25,45) + '%', 'left' : getRandomInt(15,80) + '%', 'animation-duration' : getRandomInt(2,6) + 's'});
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(function(){
+        $(".masonry-css-item p").each(function () {
+          var numChars = $(this).text().length;
+          if ((numChars >= 1) && (numChars < 20)) {
+              $(this).css("font-size", "1.5em");
+          }
+          else if ((numChars >= 20) && (numChars < 60)) {
+              $(this).css("font-size", "1.25em");
+          }
+          else if ((numChars >= 60) && (numChars < 100)) {
+              $(this).css("font-size", "1.15rem");
+          }
+          else if ((numChars >= 100) && (numChars < 140)) {
+              $(this).css("font-size", "1.25rem");
+          }
+          else if ((numChars < 240)) {
+              $(this).css("font-size", "1rem");
+          }
+          else {
+              $(this).css("font-size", "1rem");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(function() {
+          $('#resizeable').textfill({
+              success: function() {
+      		    console.log("yay!")
+      		},
+      		fail: function() {
+      		    alert("boo hoo!")
+      		}
+          });
+      });
+    </script>
+
+    <!-- NEWSLETTER SUBSCRIPTION -->
+    <script type="text/javascript">
+      $("#checkAll").change(function () {
+          $("input:checkbox").prop('checked', $(this).prop("checked"));
+      });
+
+      $(".unselect-all").change(function () {
+        $('.checkbox').removeClass('fa-square-o').addlClass('fa-check-square');
+      });
+
+      $(".select-all").change(function () {
+        $('.checkbox').removeClass('fa-check-square').addlClass('fa-square-o');
+      });
+
+      $( "#unsubscribe-mode" ).click(function( event ) {
+        event.stopPropagation();
+        $( ".logged-in-view, .logged-out-view" ).toggleClass('hide');
+        // $("html, body").animate({ scrollTop: $('#nav-viewer').offset().top }, 400);
+      });
+    </script>
+
+    <!-- TOP MENU -->
+    <script type="text/javascript">
+      $(".service-backdrop").hide();
+
+      $("#search-desktop").click(function() {
+        $(".search-bar-wrapper").removeClass('hide').delay(1000).removeClass('fadeOutUp');
+        $(".site-search-field").focus();
+        $('.logo').addClass('search-on');
+      });
+
+      $(".fi-x").click(function() {
+        $(".search-bar-wrapper").removeClass('fadeInDown').delay(1000).addClass('fadeOutUp');
+        $('.logo').removeClass('search-on');
+        $(".site-search-results-container").addClass('hide');
+      });
+
+      // $('.site-search-field').bind('keypress', function(e) {
+      //   var code = e.keyCode || e.which;
+      //   if(code == 13) { //Enter keycode
+      //    window.location = "search-results.html?this_could_be_a_saved_query";
+      //   }
+      // });
+
+      $('.site-search-field').bind('keypress', function(e) {
+        var code = e.keyCode || e.which;
+        if(code == 13) { //Enter keycode
+         $(".site-search-results-container").removeClass('hide').addClass('animated fadeInDown');
+         $(".top-bar").toggle();
+        }
+
+      });
+
+      $("#search-mobile").click(function() {
+        $(".mobile-search-wrapper").fadeIn(400);
+        $(".site-search-field").focus();
+        $(this).hide();
+      });
+
+      $(".mobile-search-wrapper .fi-x").click(function() {
+        $(".mobile-search-wrapper").hide();
+        $("#search-mobile").show();
+      });
+
+      $('.site-search-results-container').on( 'mousewheel DOMMouseScroll', function (e) {
+
+        var e0 = e.originalEvent;
+        var delta = e0.wheelDelta || -e0.detail;
+
+        this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+        e.preventDefault();
+      });
+    </script>
+
+    <!-- TOP MENU END -->
+
+    <!-- LOGO ANIMATION START -->
+    <script>
+      // function easeOutBounce (x) {
+      //   var base = -Math.cos(x * (0.5 * Math.PI)) + 1;
+      //   var rate = Math.pow(base,1.5);
+      //   var rateR = Math.pow(1 - x, 2);
+      //   var progress = -Math.abs(Math.cos(rate * (2.5 * Math.PI) )) + 1;
+      //   return (1- rateR) + (progress * rateR);
+      // }
+      //
+      // var timing,
+      //   timingProps = {
+      //     type: 'delayed',
+      //     duration: 150,
+      //     start: 'autostart',
+      //     pathTimingFunction: Vivus.LINEAR,
+      //     animTimingFunction: Vivus.LINEAR
+      //   };
+      //
+      // function timingTest (buttonEl, property, type) {
+      //   var activeSibling = buttonEl.parentNode.querySelector('button.active');
+      //   activeSibling.classList.remove('active');
+      //   buttonEl.classList.add('active');
+      //
+      //   timingProps.type = (property === 'type') ? type : timingProps.type;
+      //   timingProps.pathTimingFunction = (property === 'path') ? Vivus[type] : timingProps.pathTimingFunction;
+      //   timingProps.animTimingFunction = (property === 'anim') ? Vivus[type] : timingProps.animTimingFunction;
+      //
+      //   timing && timing.stop().destroy();
+      //   timing = new Vivus('timing-example', timingProps);
+      // }
+      //
+      // var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', dashGap: 20, forceRender: false},
+      //   function () {
+      //     if (window.console) {
+      //       console.log('Animation finished. [log triggered from callback]');
+      //     }
+      //   }),
+      //   obt3 = new Vivus('bee-animagted-logo', {type: 'oneByOne', dashGap: 20, forceRender: false, duration: 350}),
+    </script>
+
+    <!-- <script type="text/javascript">
+      new Vivus('bee-animagted-logo', {}, function (obj) {
+        obj.el.classList.add('finished');
+      });
+    </script> -->
+    <!-- LOGO ANIMATION END -->
+
+    <!-- <script>
+      $('.photo-by').click(function(i) {
+        // $(this).toggleClass( 'active' );
+        // window.location = 'photos-by.html';
+      });
+
+      // $('.photo-by').on('blur', function(){
+      //   $(this).removeClass( 'active' );
+      // });
+    </script> -->
+
+    <script type="text/javascript"> //USER SIGNUP
+      $('.user-i-agree').click(function(i) {
+        $(this).toggleClass('hollow');
+        $(".sign-up-btn").toggleClass( 'disabled' );
+      });
+
+      $('.cookie-cta').click(function(i) {
+        $('.cookie-notifications').toggleClass('fadeInUp fadeOutDown');
+        $('.footer').toggleClass( 'tall' );
+      });
+    </script>
+
+
+    <script>
+      $( '.child-filter' ).click(function( event ) {
+        event.stopPropagation();
+        $(this).toggleClass( 'fa-toggle-off fa-toggle-on' );
+        $('.main-filter').removeClass( 'fa-toggle-off ' ).addClass('fa-toggle-on');
+      });
+
+      $( '.main-filter.fa-toggle-on' ).click(function( event ) {
+        event.stopPropagation();
+        $('.child-filter').removeClass( 'fa-toggle-on' ).addClass( 'fa-toggle-off' );
+        $(this).removeClass( 'fa-toggle-on' ).addClass( 'fa-toggle-off' );
+      });
+
+      $( '.main-filter.fa-toggle-off' ).click(function( event ) {
+        event.stopPropagation();
+        $('.child-filter').addClass( 'fa-toggle-on' ).removeClass('fa-toggle-off');
+        $(this).removeClass( 'fa-toggle-off' ).addClass( 'fa-toggle-on' );
+      });
+    </script>
+
+    <!-- HOME SCRIPTS -->
+    <!-- RANDOM POSTER -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var images=['{{root}}assets/img/homeposters/getinet-20121230-185534.jpg',
+                    '{{root}}assets/img/homeposters/cake-lon.jpg',
+                    '{{root}}assets/img/homeposters/dog-lon.jpg',
+                    '{{root}}assets/img/homeposters/rotunda_tonya.jpg',
+                    '{{root}}assets/img/homeposters/JulesBowie-3-IMG_0861.jpg',
+                    '{{root}}assets/img/homeposters/JulesBowie-4-IMG_0615.jpg',
+                    '{{root}}assets/img/homeposters/JulesBowie-21-IMG_7740.jpg',
+                    // 'assets/img/homeposters/JulesBowie-26-IMG_5133.jpg',
+                    '{{root}}assets/img/homeposters/JulesBowie-28-IMG_0620.jpg',
+                    '{{root}}assets/img/homeposters/underwaterdubrovnikcroatia-who.jpg'];
+                    var i = 0;
+
+        var randomNumber = Math.floor(Math.random() * images.length);
+        var bgImg = 'url(' + images[randomNumber] + ')';
+
+        // $('.homepage-poster').css({'background-image':bgImg, 'background-size':'inherit', });
+        $('.homepage-poster, .login-page-wrapper').css({'background-image':bgImg,});
+        $('.version-1 .poster-1 .background').css({'background-image':bgImg,});
+
+
+        $('input').focus(function(){
+          placeholder = $(this).attr('placeholder');
+          if(placeholder != undefined){
+            $(this).parent().prepend('<span class="input-placeholder animated fadeInUp">'+placeholder+'</span>');
+          }
+        });
+        $('input').blur(function(){
+          $(this).parent().find('.input-placeholder').addClass('fadeOutDown');
+        });
+
+
+
+
+
+        function setCookie() {
+            $.cookie('test_status', '1', { path: '/', expires: 60 });
+            return false;
+        }
+
+        // $('.top-bar-left.error li, .error #bee-not-animated-logo').addClass('animated hinge infinite');
+
+        $('.top-bar-left.error .logo').addClass('animated hinge infinite');
+
+        $("#nav-viewer, .navigation-wrapper").hide(); //INTRO SUMMARY
+
+        // $(".loading-scrn").delay( '1000' ).fadeOut( '500' );
+
+        // $('#nav-viewer').delay('2000').addClass('animated fadeInUp');
+
+        $('.intrestest-wrapper-bar.version-3').removeClass('hide').addClass('slideInUp');
+
+        $('.beez-gallery').slick({
+          slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            dots: true,
+            // centerMode: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 6,
+          // slidesToScroll: 1,
+          asNavFor: '.beez-gallery',
+          arrows: true,
+          dots: false,
+          // centerMode: true,
+          focusOnSelect: true
+        });
+
+        var moving__background = $(".header-poster");
+        $(window).scroll(function() {
+            moving__background.css('margin-top', ($(window).scrollTop())/400); // Parallax scrolling
+            moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
+        });
+
+
+        // var colors = ["#CCCCCC","#333333","#990099"];
+        //   var rand = Math.floor(Math.random()*colors.length);
+        //   $('.hex.pusher .hexLink').css("background-color", colors[rand]);
+
+
+
+
+
+
+
+
+
+        {{#if index}}
+
+          // var CookieGet = $.cookie('welcome-to-beezwax');
+          //      if (CookieGet != null) {
+          //           // Hide the element here.
+          //           $('#welcome-modal-1').show();
+          //      }
+
+          // AUTO WELCOME MESSAGE
+          // if (document.cookie.indexOf("visited=") >= 0) {
+          //   // They've been here before.
+          //   // alert("hello again");
+          // }
+          // else {
+          //   // set a new cookie
+          //   expiry = new Date();
+          //   expiry.setTime(expiry.getTime()+(10*60*1000)); // Ten minutes
+          //
+          //   // Date()'s toGMTSting() method will format the date correctly for a cookie
+          //   document.cookie = "visited=yes; expires=" + expiry.toGMTString();
+          //   // alert("this is your first time");
+          //   $('.intrestest-wrapper-bar.version-3').addClass('hide');
+          //     setTimeout(function(){
+          //       $("#welcome-modal-1").foundation('open');
+          //     }, 1000);
+          // }
+          // $(".card-1").addClass("hide");
+          //
+          // $(window).on('scroll', function() {
+          //   $(".card-1").each(function() {
+          //     if (isScrolledIntoView($(this))) {
+          //       $(this).removeClass("hide").addClass("animated fadeInUp");
+          //     } else {
+          //       // $(this).addClass("hide");
+          //     }
+          //   });
+          // });
+
+
+          // $('.intrestest-wrapper-bar.version-3').addClass('hide');
+          //   setTimeout(function(){
+          //     $("#welcome-modal-1").foundation('open');
+          //   }, 1000);
+        {{/if}}
+
+        {{#if services}}
+          $( ".fa-toggle-off, .fa-toggle-on" ).click(function() {
+            var cards = $(".nodes-summary-wrapper .columns");
+            for(var i = 0; i < cards.length; i++){
+                var target = Math.floor(Math.random() * cards.length -1) + 1;
+                var target2 = Math.floor(Math.random() * cards.length -1) +1;
+                cards.eq(target).before(cards.eq(target2));
+
+            }
+          });
+
+
+          // $(".node-summary.v7").addClass('hide').delay(1500).queue(function(next) {
+          //   $(this).removeClass('hide').addClass( 'fadeIn' );
+          //   next();
+          // });
+
+          // if (document.cookie.indexOf("visited=") >= 0) {
+          //   // They've been here before.
+          //   // alert("hello again");
+          // }
+          // else {
+          //   // set a new cookie
+          //   expiry = new Date();
+          //   expiry.setTime(expiry.getTime()+(10*60*1000)); // Ten minutes
+          //
+          //   // Date()'s toGMTSting() method will format the date correctly for a cookie
+          //   document.cookie = "visited=yes; expires=" + expiry.toGMTString();
+          //   // alert("this is your first time");
+          //   $('.intrestest-wrapper-bar.version-3').addClass('hide');
+          //     setTimeout(function(){
+          //       $("#welcome-modal-1").delay(2500).foundation('open');
+          //     }, 1000);
+          // }
+
+        {{/if}}
+
+
+
+        {{#if guest-profile-page}}
+
+          $( '#q6' ).click(function() {
+            $( '.question-6-wrapper' ).toggleClass( "hide" );
+          });
+
+          $( '.show-project-detail' ).click(function() {
+            $(this).parents('.project-wrapper').find('.project-details').toggleClass( "collapsed" );
+            if ($(this).text() == "show details") {
+              $(this).text("hide details");
+            } else {
+              $(this).text("show details");
+            };
+          });
+
+          var url = window.location.href;
+          if( url.search( 'temp-pass' ) > 0 ) {
+            $("#TempPassLogInModal").foundation("open");
+          } else if ( url.search( 'signup' ) > 0 ){
+            $("#SignUpModal").foundation("open");
+          } else {
+            $("#FeedbackLogInModal").foundation("open");
+          };
+
+        {{/if}}
+
+
+        {{#if login-page}}
+          var url = window.location.href;
+          if( url.search( 'temp-pass' ) > 0 ) {
+            $(".form-wrapper").addClass("hide");
+            $("#temp-pass").removeClass("hide");
+          } else if ( url.search( 'sign-up' ) > 0 ){
+            $(".form-wrapper").addClass("hide");
+            $("#sign-up").removeClass("hide");
+          } else if ( url.search( 'updating' ) > 0 ){
+            $(".form-wrapper").addClass("hide");
+            $("#login-updating-account").removeClass("hide");
+          } else if ( url.search( 'forgot-pass' ) > 0 ){
+            $(".form-wrapper").addClass("hide");
+            $("#forgot-pass").removeClass("hide");
+            $( ".button" ).click(function() {
+              $( this ).toggleClass( "disabled" );
+              $( '.feedback-message').toggleClass( "hide" );
+              $('input[type="text"]').prop("disabled", true);
+            });
+          } else {
+            $(".form-wrapper").addClass("hide");
+            $("#login").removeClass("hide");
+          };
+        {{/if}}
+
+
+
+        {{#if user-profile}}
+          $('.version-2, .version-3, .functional, .tech, .db, .event, .empty-state').hide();$('.version-1').fadeIn();
+          $('.intrestest-wrapper-bar.version-3').addClass('hide');
+
+          var moving__background = $(".header-poster");
+          $(window).scroll(function() {
+              moving__background.css('margin-top', ($(window).scrollTop())/400); // Parallax scrolling
+              moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
+          });
+
+          $( '.toggle-btn' ).click(function() {
+            $( this ).toggleClass( "secondary green" );
+            $( this ).children( '.toggle-switch' ).toggleClass( 'fa-toggle-on fa-toggle-off' );
+
+            $( '.chosen-nodes .toggle-switch, .proposed-nodes' ).toggleClass( 'fa-toggle-on fa-toggle-off' );
+          });
+
+          $( ".toggle-swtich" ).click(function() {
+            $( this ).toggleClass( "fa-toggle-on fa-toggle-off" );
+          });
+
+            $("#invision").foundation('open');
+        {{/if}}
+
+        // INVISION SETTINGS
+
+        {{#if invision-moved}}
+            $("#invision").foundation('open');
+        {{/if}}
+
+        $( '.toggle-switch' ).click(function() {
+          $( this ).toggleClass( "fa-toggle-on fa-toggle-off" );
+        });
+
+        // In-Take
+        $('.in-take-last-card').bind('inview', function (event, visible) {
+          if (visible == true) {
+            // element is now visible in the viewport
+            $('.intake-submit-btn').removeClass('disabled');
+          } else {
+            // element has gone out of viewport
+             $('.intake-submit-btn').addClass('disabled');
+          }
+        });
+        // In-Take End
+
+
+        // CLIENT LIST
+        var cards = $(".client-logos-wrapper.v2.intro-only .column");
+        for(var i = 0; i < cards.length; i++){
+            var target = Math.floor(Math.random() * cards.length -1) + 1;
+            var target2 = Math.floor(Math.random() * cards.length -1) +1;
+            cards.eq(target).before(cards.eq(target2));
+
+        }
+        $(".client-logos-wrapper.v2 .column").removeClass( "hide" );
+
+        $( ".client-logos-wrapper.v2 img" ).hover(function() {
+          $('.client-logos-wrapper.v2 img' ).toggleClass( "blur" );
+          $(this ).toggleClass( "focus" );
+        });
+
+
+        // $("#holder>div:nth-child(5)").after("<div>inserted div</div>");
+
+      });
+
+      $(document).ready(function() {
+        var frameRate = 30;
+        var dt = 1.0 / frameRate;
+        var DEG_TO_RAD = Math.PI / 180;
+        var RAD_TO_DEG = 180 / Math.PI;
+        var colors = [
+            ["#ffd939", "#ffd939"],
+            ["#ffd939", "#ffd939"],
+            ["#ffd939", "#ffd939"],
+            ["#ffd939", "#ffd939"]
+        ];
+
+        function Vector2(_x, _y) {
+            this.x = _x, this.y = _y;
+            this.Length = function() {
+                return Math.sqrt(this.SqrLength());
+            }
+            this.SqrLength = function() {
+                return this.x * this.x + this.y * this.y;
+            }
+            this.Equals = function(_vec0, _vec1) {
+                return _vec0.x == _vec1.x && _vec0.y == _vec1.y;
+            }
+            this.Add = function(_vec) {
+                this.x += _vec.x;
+                this.y += _vec.y;
+            }
+            this.Sub = function(_vec) {
+                this.x -= _vec.x;
+                this.y -= _vec.y;
+            }
+            this.Div = function(_f) {
+                this.x /= _f;
+                this.y /= _f;
+            }
+            this.Mul = function(_f) {
+                this.x *= _f;
+                this.y *= _f;
+            }
+            this.Normalize = function() {
+                var sqrLen = this.SqrLength();
+                if (sqrLen != 0) {
+                    var factor = 1.0 / Math.sqrt(sqrLen);
+                    this.x *= factor;
+                    this.y *= factor;
+                }
+            }
+            this.Normalized = function() {
+                var sqrLen = this.SqrLength();
+                if (sqrLen != 0) {
+                    var factor = 1.0 / Math.sqrt(sqrLen);
+                    return new Vector2(this.x * factor, this.y * factor);
+                }
+                return new Vector2(0, 0);
+            }
+        }
+        Vector2.Lerp = function(_vec0, _vec1, _t) {
+            return new Vector2((_vec1.x - _vec0.x) * _t + _vec0.x, (_vec1.y - _vec0.y) * _t + _vec0.y);
+        }
+        Vector2.Distance = function(_vec0, _vec1) {
+            return Math.sqrt(Vector2.SqrDistance(_vec0, _vec1));
+        }
+        Vector2.SqrDistance = function(_vec0, _vec1) {
+            var x = _vec0.x - _vec1.x;
+            var y = _vec0.y - _vec1.y;
+            return (x * x + y * y + z * z);
+        }
+        Vector2.Scale = function(_vec0, _vec1) {
+            return new Vector2(_vec0.x * _vec1.x, _vec0.y * _vec1.y);
+        }
+        Vector2.Min = function(_vec0, _vec1) {
+            return new Vector2(Math.min(_vec0.x, _vec1.x), Math.min(_vec0.y, _vec1.y));
+        }
+        Vector2.Max = function(_vec0, _vec1) {
+            return new Vector2(Math.max(_vec0.x, _vec1.x), Math.max(_vec0.y, _vec1.y));
+        }
+        Vector2.ClampMagnitude = function(_vec0, _len) {
+            var vecNorm = _vec0.Normalized;
+            return new Vector2(vecNorm.x * _len, vecNorm.y * _len);
+        }
+        Vector2.Sub = function(_vec0, _vec1) {
+            return new Vector2(_vec0.x - _vec1.x, _vec0.y - _vec1.y, _vec0.z - _vec1.z);
+        }
+
+        function EulerMass(_x, _y, _mass, _drag) {
+            this.position = new Vector2(_x, _y);
+            this.mass = _mass;
+            this.drag = _drag;
+            this.force = new Vector2(0, 0);
+            this.velocity = new Vector2(0, 0);
+            this.AddForce = function(_f) {
+                this.force.Add(_f);
+            }
+            this.Integrate = function(_dt) {
+                var acc = this.CurrentForce(this.position);
+                acc.Div(this.mass);
+                var posDelta = new Vector2(this.velocity.x, this.velocity.y);
+                posDelta.Mul(_dt);
+                this.position.Add(posDelta);
+                acc.Mul(_dt);
+                this.velocity.Add(acc);
+                this.force = new Vector2(0, 0);
+            }
+            this.CurrentForce = function(_pos, _vel) {
+                var totalForce = new Vector2(this.force.x, this.force.y);
+                var speed = this.velocity.Length();
+                var dragVel = new Vector2(this.velocity.x, this.velocity.y);
+                dragVel.Mul(this.drag * this.mass * speed);
+                totalForce.Sub(dragVel);
+                return totalForce;
+            }
+        }
+
+        function ConfettiPaper(_x, _y) {
+            this.pos = new Vector2(_x, _y);
+            this.rotationSpeed = Math.random() * 600 + 800;
+            this.angle = DEG_TO_RAD * Math.random() * 360;
+            this.rotation = DEG_TO_RAD * Math.random() * 360;
+            this.cosA = 1.0;
+            this.size = 5.0;
+            this.oscillationSpeed = Math.random() * 1.5 + 0.5;
+            this.xSpeed = 40.0;
+            this.ySpeed = Math.random() * 60 + 50.0;
+            this.corners = new Array();
+            this.time = Math.random();
+            var ci = Math.round(Math.random() * (colors.length - 1));
+            this.frontColor = colors[ci][0];
+            this.backColor = colors[ci][1];
+            for (var i = 0; i < 4; i++) {
+                var dx = Math.cos(this.angle + DEG_TO_RAD * (i * 90 + 45));
+                var dy = Math.sin(this.angle + DEG_TO_RAD * (i * 90 + 45));
+                this.corners[i] = new Vector2(dx, dy);
+            }
+            this.Update = function(_dt) {
+                this.time += _dt;
+                this.rotation += this.rotationSpeed * _dt;
+                this.cosA = Math.cos(DEG_TO_RAD * this.rotation);
+                this.pos.x += Math.cos(this.time * this.oscillationSpeed) * this.xSpeed * _dt
+                this.pos.y += this.ySpeed * _dt;
+                if (this.pos.y > ConfettiPaper.bounds.y) {
+                    this.pos.x = Math.random() * ConfettiPaper.bounds.x;
+                    this.pos.y = 0;
+                }
+            }
+            this.Draw = function(_g) {
+                if (this.cosA > 0) {
+                    _g.fillStyle = this.frontColor;
+                } else {
+                    _g.fillStyle = this.backColor;
+                }
+                _g.beginPath();
+                _g.moveTo(this.pos.x + this.corners[0].x * this.size, this.pos.y + this.corners[0].y * this.size * this.cosA);
+                for (var i = 1; i < 4; i++) {
+                    _g.lineTo(this.pos.x + this.corners[i].x * this.size, this.pos.y + this.corners[i].y * this.size * this.cosA);
+                }
+                _g.closePath();
+                _g.fill();
+            }
+        }
+        ConfettiPaper.bounds = new Vector2(0, 0);
+
+        function ConfettiRibbon(_x, _y, _count, _dist, _thickness, _angle, _mass, _drag) {
+            this.particleDist = _dist;
+            this.particleCount = _count;
+            this.particleMass = _mass;
+            this.particleDrag = _drag;
+            this.particles = new Array();
+            var ci = Math.round(Math.random() * (colors.length - 1));
+            this.frontColor = colors[ci][0];
+            this.backColor = colors[ci][1];
+            this.xOff = Math.cos(DEG_TO_RAD * _angle) * _thickness;
+            this.yOff = Math.sin(DEG_TO_RAD * _angle) * _thickness;
+            this.position = new Vector2(_x, _y);
+            this.prevPosition = new Vector2(_x, _y);
+            this.velocityInherit = Math.random() * 2 + 4;
+            this.time = Math.random() * 100;
+            this.oscillationSpeed = Math.random() * 2 + 2;
+            this.oscillationDistance = Math.random() * 40 + 40;
+            this.ySpeed = Math.random() * 40 + 80;
+            for (var i = 0; i < this.particleCount; i++) {
+                this.particles[i] = new EulerMass(_x, _y - i * this.particleDist, this.particleMass, this.particleDrag);
+            }
+            this.Update = function(_dt) {
+                var i = 0;
+                this.time += _dt * this.oscillationSpeed;
+                this.position.y += this.ySpeed * _dt;
+                this.position.x += Math.cos(this.time) * this.oscillationDistance * _dt;
+                this.particles[0].position = this.position;
+                var dX = this.prevPosition.x - this.position.x;
+                var dY = this.prevPosition.y - this.position.y;
+                var delta = Math.sqrt(dX * dX + dY * dY);
+                this.prevPosition = new Vector2(this.position.x, this.position.y);
+                for (i = 1; i < this.particleCount; i++) {
+                    var dirP = Vector2.Sub(this.particles[i - 1].position, this.particles[i].position);
+                    dirP.Normalize();
+                    dirP.Mul((delta / _dt) * this.velocityInherit);
+                    this.particles[i].AddForce(dirP);
+                }
+                for (i = 1; i < this.particleCount; i++) {
+                    this.particles[i].Integrate(_dt);
+                }
+                for (i = 1; i < this.particleCount; i++) {
+                    var rp2 = new Vector2(this.particles[i].position.x, this.particles[i].position.y);
+                    rp2.Sub(this.particles[i - 1].position);
+                    rp2.Normalize();
+                    rp2.Mul(this.particleDist);
+                    rp2.Add(this.particles[i - 1].position);
+                    this.particles[i].position = rp2;
+                }
+                if (this.position.y > ConfettiRibbon.bounds.y + this.particleDist * this.particleCount) {
+                    this.Reset();
+                }
+            }
+            this.Reset = function() {
+                this.position.y = -Math.random() * ConfettiRibbon.bounds.y;
+                this.position.x = Math.random() * ConfettiRibbon.bounds.x;
+                this.prevPosition = new Vector2(this.position.x, this.position.y);
+                this.velocityInherit = Math.random() * 2 + 4;
+                this.time = Math.random() * 100;
+                this.oscillationSpeed = Math.random() * 2.0 + 1.5;
+                this.oscillationDistance = Math.random() * 40 + 40;
+                this.ySpeed = Math.random() * 40 + 80;
+                var ci = Math.round(Math.random() * (colors.length - 1));
+                this.frontColor = colors[ci][0];
+                this.backColor = colors[ci][1];
+                this.particles = new Array();
+                for (var i = 0; i < this.particleCount; i++) {
+                    this.particles[i] = new EulerMass(this.position.x, this.position.y - i * this.particleDist, this.particleMass, this.particleDrag);
+                }
+            }
+            this.Draw = function(_g) {
+                for (var i = 0; i < this.particleCount - 1; i++) {
+                    var p0 = new Vector2(this.particles[i].position.x + this.xOff, this.particles[i].position.y + this.yOff);
+                    var p1 = new Vector2(this.particles[i + 1].position.x + this.xOff, this.particles[i + 1].position.y + this.yOff);
+                    if (this.Side(this.particles[i].position.x, this.particles[i].position.y, this.particles[i + 1].position.x, this.particles[i + 1].position.y, p1.x, p1.y) < 0) {
+                        _g.fillStyle = this.frontColor;
+                        _g.strokeStyle = this.frontColor;
+                    } else {
+                        _g.fillStyle = this.backColor;
+                        _g.strokeStyle = this.backColor;
+                    }
+                    if (i == 0) {
+                        _g.beginPath();
+                        _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                        _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                        _g.lineTo((this.particles[i + 1].position.x + p1.x) * 0.5, (this.particles[i + 1].position.y + p1.y) * 0.5);
+                        _g.closePath();
+                        _g.stroke();
+                        _g.fill();
+                        _g.beginPath();
+                        _g.moveTo(p1.x, p1.y);
+                        _g.lineTo(p0.x, p0.y);
+                        _g.lineTo((this.particles[i + 1].position.x + p1.x) * 0.5, (this.particles[i + 1].position.y + p1.y) * 0.5);
+                        _g.closePath();
+                        _g.stroke();
+                        _g.fill();
+                    } else if (i == this.particleCount - 2) {
+                        _g.beginPath();
+                        _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                        _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                        _g.lineTo((this.particles[i].position.x + p0.x) * 0.5, (this.particles[i].position.y + p0.y) * 0.5);
+                        _g.closePath();
+                        _g.stroke();
+                        _g.fill();
+                        _g.beginPath();
+                        _g.moveTo(p1.x, p1.y);
+                        _g.lineTo(p0.x, p0.y);
+                        _g.lineTo((this.particles[i].position.x + p0.x) * 0.5, (this.particles[i].position.y + p0.y) * 0.5);
+                        _g.closePath();
+                        _g.stroke();
+                        _g.fill();
+                    } else {
+                        _g.beginPath();
+                        _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                        _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                        _g.lineTo(p1.x, p1.y);
+                        _g.lineTo(p0.x, p0.y);
+                        _g.closePath();
+                        _g.stroke();
+                        _g.fill();
+                    }
+                }
+            }
+            this.Side = function(x1, y1, x2, y2, x3, y3) {
+                return ((x1 - x2) * (y3 - y2) - (y1 - y2) * (x3 - x2));
+            }
+        }
+        ConfettiRibbon.bounds = new Vector2(0, 0);
+        confetti = {};
+        confetti.Context = function(parent) {
+            var i = 0;
+            var canvasParent = document.getElementById(parent);
+            var canvas = document.createElement('canvas');
+            canvas.width = canvasParent.offsetWidth;
+            canvas.height = canvasParent.offsetHeight;
+            canvasParent.appendChild(canvas);
+            var context = canvas.getContext('2d');
+            var interval = null;
+            var confettiRibbonCount = 7;
+            var rpCount = 30;
+            var rpDist = 8.0;
+            var rpThick = 8.0;
+            var confettiRibbons = new Array();
+            ConfettiRibbon.bounds = new Vector2(canvas.width, canvas.height);
+            for (i = 0; i < confettiRibbonCount; i++) {
+                confettiRibbons[i] = new ConfettiRibbon(Math.random() * canvas.width, -Math.random() * canvas.height * 2, rpCount, rpDist, rpThick, 45, 1, 0.05);
+            }
+            var confettiPaperCount = 25;
+            var confettiPapers = new Array();
+            ConfettiPaper.bounds = new Vector2(canvas.width, canvas.height);
+            for (i = 0; i < confettiPaperCount; i++) {
+                confettiPapers[i] = new ConfettiPaper(Math.random() * canvas.width, Math.random() * canvas.height);
+            }
+            this.resize = function() {
+                canvas.width = canvasParent.offsetWidth;
+                canvas.height = canvasParent.offsetHeight;
+                ConfettiPaper.bounds = new Vector2(canvas.width, canvas.height);
+                ConfettiRibbon.bounds = new Vector2(canvas.width, canvas.height);
+            }
+            this.start = function() {
+                this.stop()
+                var context = this
+                this.interval = setInterval(function() {
+                    confetti.update();
+                }, 1000.0 / frameRate)
+            }
+            this.stop = function() {
+                clearInterval(this.interval);
+            }
+            this.update = function() {
+                var i = 0;
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                for (i = 0; i < confettiPaperCount; i++) {
+                    confettiPapers[i].Update(dt);
+                    confettiPapers[i].Draw(context);
+                }
+                for (i = 0; i < confettiRibbonCount; i++) {
+                    confettiRibbons[i].Update(dt);
+                    confettiRibbons[i].Draw(context);
+                }
+            }
+        }
+        var confetti = new confetti.Context('confetti');
+        confetti.start();
+        $(window).resize(function() {
+            confetti.resize();
+        });
+      });
+
+      $('#clickMe-vince').on('click', function(ev) {
+        $("#video-vince")[0].src += "&autoplay=1";
+        ev.preventDefault();
+      });
+
+      $('#clickMe-alina').on('click', function(ev) {
+        $("#video-alina")[0].src += "&autoplay=1";
+        ev.preventDefault();
+      });
+
+    </script>
+
+    <script>
+      $('li#search').click(function() {
+        $('.mobile-search-wrapper').show().removeClass('slideOutRight').addClass('slideInRight');
+      });
+      $('.input-group-button').click(function() {
+        $('.mobile-search-wrapper').removeClass('slideInRight').addClass('slideOutRight');
+      });
+
+      // $(window).on('scroll', function() {
+      //   console.log( $(this).scrollTop() );
+      // });
+
+      $('.home-show-more').click(function() {
+        $("html, body").animate({ scrollTop: $('.quote-wrapper').offset().top }, 1000);
+      });
+
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+            typeSpeed: 5,
+            backDelay: 400,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed')._typed.reset();
+            });
+        }
+      });
+
+      function newTyped(){ /* A new typed object */ }
+
+      function foo(){ console.log("Callback"); }
+
+    </script>
+
+
+    <!-- SERVICES START -->
+
+
+
+    <script>
+      $( ".show-more" ).click(function() {
+        $(this ).html($('.show-more').text() == 'Less' ? 'More' : 'Less');
+        $('p').toggleClass( "show-all" );
+        $('.orbit-container').toggleClass( "resize" );
+        $('.orbit-container .button').toggleClass( "open" );
+      });
+
+      $( ".tiny" ).click(function() {
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      // $( ".see-more, #intro-advanced, #intro-advanced-mobile" ).click(function( event ) {
+      //   event.stopPropagation();
+      //   $( ".intro-nodes-wrapper, .advanced-nodes-wrapper" ).toggle();
+      //   $("html, body").animate({ scrollTop: $('#nav-viewer').offset().top }, 400);
+      // });
+
+      $( ".see-more" ).click(function() {
+        $('#yes-no').attr('checked', true); // Unchecks it
+      });
+
+      $( ".node" ).hover(function() {
+        $(this ).toggleClass( "show-label" );
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      $( ".checkstar" ).click(function() {
+        $(this).toggleClass( "fa-star fa-star-o" );
+      });
+
+      $( ".checkbox" ).click(function() {
+        $(this).toggleClass( "fa-square-o fa-check-square green fadeIn" );
+      });
+
+      $( ".close-node" ).click(function() {
+        $("#nav-viewer, .navigation-wrapper").slideUp(400);
+        $(".service-backdrop").fadeOut(400);
+        $(".techs-wrapper").fadeIn(800);
+        $('#filemaker').addClass('hover').stop().delay(2000).queue(function () {
+            $('#filemaker').removeClass('hover')
+        })
+
+        $(".nodes-summary-wrapper").delay(200).fadeIn(200);
+        window.dispatchEvent(new Event('resize'));
+      });
+
+      $( ".node-summary" ).click(function() {
+        window.dispatchEvent(new Event('resize'));
+        $(".nodes-summary-wrapper").hide();
+        $(".service-backdrop").fadeIn(800);
+        $("#nav-viewer, .navigation-wrapper").slideDown(800);
+        $(".techs-wrapper").fadeOut(800);
+        // $("html, body").animate({ scrollTop: $('#nav-viewer').offset().top }, 400);
+      });
+
+      $( ".three" ).hover(
+        function() {
+          $(".three .description-wrapper").show().addClass( "slideInDown" );
+        }, function() {
+          $(".three .description-wrapper").removeClass( "bounceIn" ).hide();
+        }
+      );
+
+      $( ".show-all" ).click(function() {
+        // $( this ).toggle();
+        $('.full-list').fadeToggle(400);
+        $('.functional-areas-list-wrapper').toggleClass( "open" );
+        $(this ).html($('.show-all').text() == 'Less' ? 'More' : 'Less');
+
+
+      });
+      $( ".functional-area" ).hover(function() {
+        $(this).find('.description-wrapper').fadeToggle(100);
+      });
+
+      // $( ".show-why" ).click(function() {
+      //   $('.why-wrapper').toggleClass('closed');
+      //
+      //   if ($('.why-wrapper').is(":visible")) {
+      //      var topPos = $('.why-wrapper').offset().top;
+      //      var winHeight = $(window).height();
+      //
+      //      $("html, body").animate({
+      //           scrollTop: topPos - winHeight
+      //      }, 1000);
+      //   }
+      // });
+      // $( ".close-button" ).click(function() {
+      //   $('.why-wrapper').toggleClass('closed');
+      // });
+
+    </script>
+
+    <script type="text/javascript">
+      $( ".show-intrest" ).click(function(event) {
+        $(this).toggleClass('hollow');
+        $(".show-intrest .fa").toggleClass('fa-star-o fa-star');
+        // event.stopPropagation();
+        $(".intrestest-wrapper-bar").show();
+        $(".intrestest-wrapper-bar").removeClass('fadeOutDown');
+        $(".intrestest-wrapper-bar").addClass('fadeInUp');
+        // $(event.target).toggleClass('fa-star-o fa-star');
+      });
+
+      $( ".alert" ).click(function() {
+        $(".intrestest-wrapper-bar").fadeOut(400);
+      });
+
+      $( ".intrest-item" ).click(function() {
+        $(this).fadeOut(400);
+      });
+
+      $( ".intrest-item.last" ).click(function() {
+        $(".intrestest-wrapper-bar").addClass('fadeOutDown');
+      });
+
+      $( ".clear-all-btn" ).click(function() {
+        // $(".intrest-item").addClass('animated fadeOutDown');
+        // $(this).addClass('animated fadeOutDown').delay(1000);
+        $(".intrestest-wrapper-bar").addClass('fadeOutDown');
+      });
+
+
+      $( ".intrestest-wrapper-bar" ).click(function() {
+        $(".intrestest-wrapper-bar").toggleClass('collapsed');
+        $(".toggle").toggleClass('fa-angle-up fa-angle-down');
+      });
+    </script>
+
+
+    <!-- New way to pin intrested-bar -->
+    <!-- <script type="text/javascript">
+      $(function fixedUntilPoint() {
+
+      var container = $('#container');
+      var offsetContainer = container.offset().top;
+
+      function adjustDivPosition() {
+
+          var offsetFloat = $(document).scrollTop() + $(window).height() - container.outerHeight();
+
+          if(offsetContainer <= offsetFloat){
+
+              container.css({
+                  bottom:   'auto',
+                  position: 'absolute',
+                  top:      offsetContainer
+              });
+
+          } else {
+
+              container.css({
+                  bottom:   0,
+                  position: 'fixed',
+                  top:      'auto'
+              });
+
+          }
+
+      }
+
+      $(window).on('scroll resize', adjustDivPosition)
+      	adjustDivPosition();
+
+      });
+    </script> -->
+
+    <script>
+      $( "#show-why-1" ).click(function() {
+        $('#why-1').toggleClass('closed');
+      });
+
+      $( "#close-why-1" ).click(function() {
+        $('#why-1').toggleClass('closed');
+        $('#show-why-1').fadeIn(400);
+      });
+
+      $('#more-why').slideUp(250);
+
+      $( "#show-more-why" ).click(function() {
+        $(this).hide();
+        $('#more-why').removeClass('hide').slideDown(250);
+      });
+    </script>
+
+
+    <script>
+        $(function(){
+          // bind change event to select
+          $('#exp-level').on('change', function () {
+              var url = $(this).val(); // get selected value
+              if (url) { // require a URL
+                  window.location = url; // redirect
+              }
+              return false;
+          });
+        });
+    </script>
+
+    <script type="text/javascript">
+      $( ".promo-wrapper" ).click(function() {
+        $(this).toggleClass('closed');
+        $('.close-me .fa').toggleClass('fa-compress fa-expand');
+        $('.promo-header').toggle();
+      });
+      $( ".close-me" ).click(function() {
+        $('#main-promo').toggleClass('closed');
+        $(this).toggleClass('fa-compress fa-expand');
+      });
+    </script>
+
+
+
+    <!-- SERVICES END -->
+
+    <!-- CLIENTS START -->
+
+    <script>
+      // $(".client-list-wrapper.option-1").hide();
+      $(".one").click(function() {
+        $(".client-list-wrapper").hide();
+        $(".client-list-wrapper.option-1").show();
+      });
+      $(".two").click(function() {
+        $(".client-list-wrapper").hide();
+        $(".client-list-wrapper.option-2").show();
+      });
+
+      $('.option-2 .client-list li').each(function(i) {
+        $(this).fadeOut(0).delay(25*i).fadeIn(450);
+      });
+
+      $('#bee-filter-toggle').click(function(i) {
+        $('.filter-wrapper').toggleClass('closed');
+      });
+
+      $('label').click(function(i) {
+        $(".client-list li:nth-child(odd)").toggleClass("fade-out");
+      });
+
+      $('checkbox1').on('click', function() {
+        if (this.checked) {
+          $('input').not(this).prop('checked', true);
+        }
+      });
+
+      $('input').on('click', function() {
+        if (this.checked) {
+          $('checkbox1').prop('checked', false);
+        }
+      });
+
+      $(".client-list.all").hide();
+
+      $( "#show-middle" ).click(function() {
+        $('.client-list-wrapper').toggleClass('open');
+        $('.client-list.top').toggle();
+        $('.client-list.all').toggle();
+          $("html, body").animate({ scrollTop: $('.client-list-wrapper').offset().top - 75 }, 500);
+        $('.client-list.all li').each(function(i) {
+          $(this).fadeOut(0).delay(10*i).fadeIn(650);
+        });
+        $('.client-list.top li').each(function(i) {
+          $(this).fadeOut(400).delay(10*i).fadeIn(650);
+        });
+        $('#show-middle').html($('#show-middle').text() == 'More' ? 'Less' : 'More');
+      });
+
+      $( ".functional-area" ).hover(function() {
+        $(this).find('.description-wrapper').fadeToggle(100);
+      });
+
+      $( ".featured-casestudy, " ).click(function() {
+        window.location = "case-study.html";
+      });
+
+    </script>
+
+    <!-- CLIENTS-END -->
+
+    <!-- WHO START -->
+
+    <script>
+      $( function() {
+        var handle = $( "#custom-handle" );
+        $( "#slider" ).slider({
+          value:2017,
+          min: 1994,
+          max: 2017,
+          step: 1,
+          create: function() {
+            handle.text( $( this ).slider( "value" ) );
+          },
+          slide: function( event, ui ) {
+            handle.text( ui.value );
+          }
+        });
+      } );
+    </script>
+
+    <script type="text/javascript">
+          // var e = $('.copy-me');
+          //   for (var i = 0; i < 10; i++) {
+          //     e.clone().insertAfter(e);
+          //   }
+
+          // $('div.column').each(function(i) {
+          //   $(this).fadeOut(0).delay(50*i).fadeIn(400);
+          // });
+
+          $('.filter-toggle').click(function(i) {
+            $('.filter-wrapper').toggleClass('closed');
+          });
+
+          $('.column .beez').click(function(i) {
+            window.location = '{{root}}who/bee.html';
+          });
+
+          var cards = $(".column");
+          var newBeeCard = $("#new-bee");
+          var target = Math.floor(Math.random() * cards.length -1) + 1;
+          cards.eq(target).before(newBeeCard);
+        </script>
+
+        <script>
+          $( ".show-why" ).click(function() {
+            $('.life-at-bx ').toggleClass('closed');
+            $('body').animate({scrollTop:450}, 'slow');
+            // $(this).fadeOut(400);
+          });
+
+          $( "#close-lift-at-bx" ).click(function() {
+            $('.life-at-bx').toggleClass('closed');
+            $('.show-why').delay(400).fadeIn(400);
+          });
+        </script>
+    <!-- WHO ENDS -->
+
+
+    <!-- CONACT -->
+    <script>
+      $( document ).ready( function() {
+      //Google Maps JS
+      //Set Map
+      function initialize() {
+      var myLatlng = new google.maps.LatLng(37.8057664,-122.27220190000003);
+      var imagePath = 'https://cdn.shopify.com/s/files/1/0156/2118/products/BeezwaxLogoC_grande.png'
+      var mapOptions = {
+        zoom: 19,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      //Callout Content
+      var contentString = '4206 linnet ave, oakland, ca 94602';
+      //Set window width + content
+      var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 500
+      });
+
+      //Add Marker
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: imagePath,
+      title: 'image title'
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+      });
+
+      //Resize Function
+      google.maps.event.addDomListener(window, "resize", function() {
+      var center = map.getCenter();
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+      });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+      });
+    </script>
+
+
+    <!-- InspectorPro START -->
+    <script type="text/javascript">
+      var amount = 800;
+      var sky = $('.sky');
+
+      for (var i = 0 ; i < amount ; i++ ) {
+      var s = $('<div class="star-blink"><div></div></div>');
+      s.css({
+        'top': Math.random() * 100 + '%',
+        'left': Math.random() * 100 + '%',
+        'animation': 'blinkAfter 15s infinite ' + Math.random() * 100 + 's ease-out',
+        'width': Math.random() * 2 + 7 + 'px',
+        'height': Math.random() * 2 + 7 + 'px',
+        'opacity': Math.random() * 5 / 10 + 0.5
+        });
+      if (i % 8 === 0) {
+        s.addClass('red');
+      } else if (i % 10 === 6) {
+        s.addClass('blue');
+      }
+      sky.append(s);
+      }
+    </script>
+    <!-- InspectorPro END -->
+
+    <script>
+      $( ".node.icon" ).click(function() {
+        $('.node.icon').removeClass('show-label');
+        $(this).addClass('show-label');
+      });
+    </script>
+
+
+    <script type="text/javascript">
+      $( ".profile-industries-wrapper .user-topics.suggested .button" ).click(function() {
+        $(this).appendTo(".profile-industries-wrapper .selected .button-group").addClass("animated fadeIn");
+      });
+      $( ".profile-services-wrapper .user-topics.selected .button" ).click(function() {
+        $(this).appendTo(".profile-services-wrapper .suggested .button-group").addClass("animated fadeIn");
+      });
+
+      $( ".profile-services-wrapper .user-topics.suggested .button" ).click(function() {
+        $(this).appendTo(".profile-services-wrapper .selected .button-group").addClass("animated fadeIn");
+      });
+      $( ".profile-services-wrapper .user-topics.selected .button" ).click(function() {
+        $(this).appendTo(".profile-services-wrapper .suggested .button-group").addClass("animated fadeIn");
+      });
+
+
+      $( ".profile-tech-wrapper .user-topics.suggested .button" ).click(function() {
+        $(this).appendTo(".profile-tech-wrapper .selected .button-group").addClass("animated fadeIn");
+      });
+      $( ".profile-tech-wrapper .user-topics.selected .button" ).click(function() {
+        $(this).appendTo(".profile-tech-wrapper .suggested .button-group").addClass("animated fadeIn");
+      });
+
+      $( ".profile-functions-wrapper .user-topics.suggested .button" ).click(function() {
+        $(this).appendTo(".profile-functions-wrapper .selected .button-group").addClass("animated fadeIn");
+      });
+      $( ".profile-functions-wrapper .user-topics.selected .button" ).click(function() {
+        $(this).appendTo(".profile-functions-wrapper .suggested .button-group").addClass("animated fadeIn");
+      });
+    </script>
+
+    <!-- ORBIT -->
+
+    <!-- <script type="text/javascript">
+      $(document).foundation('orbit', {data-pause-on-hover:true, data-infinite-wrap:true});
+    </script> -->
+
+    <script type="text/javascript">
+      // $(window).on('scroll', function() {
+      //   $(".techs-wrapper li, .client-list li").each(function() {
+      //     if (isScrolledIntoView($(this))) {
+      //       $(this).addClass("animated fadeIn");
+      //     } else {
+      //       $(this).removeClass("animated fadeIn");
+      //     }
+      //   });
+      // });
+
+      $(window).on('scroll', function() {
+        $(".techs-wrapper li, .client-list li").each(function() {
+          if (isScrolledIntoView($(this))) {
+            $(this).addClass("animated fadeIn");
+          } else {
+            $(this).removeClass("animated");
+          }
+        });
+
+        $(".whys-wrapper").each(function() {
+          if (isScrolledIntoView($(this))) {
+            $(this).delay('10000').addClass("open");
+          } else {
+            $(this).removeClass("open");
+          }
+        });
+      });
+
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+      }
+    </script>
+
+    <script type="text/javascript">
+      // $(window).scroll(function () {
+      //    $('.masonry-css-item').each(function () {
+      //       if (isScrolledIntoView(this) === true) {
+      //           $(this).addClass('fadeInUp')
+      //       }
+      //    });
+      // });
+    </script>
+
+    <script>
+
+        $('#intro-nodes').change(function(){
+          $('.intro-nodes-mockups').hide();
+          $('#' + $(this).val()).show();
+        });
+        // $('#oldcastle-headers').change(function(){
+        //   $('.header-poster').removeClass('oldcastle-casestudy-1');
+        //   $('.header-poster' + $(this).val()).show();
+        // });
+        $( ".oc-header-1" ).click(function() {
+          $('.header-poster').removeClass('oldcastle-casestudy oldcastle-casestudy-1  oldcastle-casestudy-2 oldcastle-casestudy-3 oldcastle-casestudy-4');
+          $('.header-poster').addClass('oldcastle-casestudy-1');
+          $('.rings').addClass('hide');
+        });
+        $( ".oc-header-2" ).click(function() {
+          $('.header-poster').removeClass('oldcastle-casestudy oldcastle-casestudy-1  oldcastle-casestudy-2 oldcastle-casestudy-3 oldcastle-casestudy-4');
+          $('.header-poster').addClass('oldcastle-casestudy-2');
+          $('.rings').addClass('hide');
+        });
+        $( ".oc-header-3" ).click(function() {
+          $('.header-poster').removeClass('oldcastle-casestudy oldcastle-casestudy-1  oldcastle-casestudy-2 oldcastle-casestudy-3 oldcastle-casestudy-4');
+          $('.header-poster').addClass('oldcastle-casestudy-3');
+          $('.rings').addClass('hide');
+        });
+        $( ".oc-header" ).click(function() {
+          $('.header-poster').removeClass('oldcastle-casestudy oldcastle-casestudy-1  oldcastle-casestudy-2 oldcastle-casestudy-3 oldcastle-casestudy-4');
+          $('.header-poster').addClass('oldcastle-casestudy');
+          $('.rings').removeClass('hide');
+        });
+    </script>
+
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        $('.joy-of-coding').each(function () {
+          if (isScrolledIntoView(this) === true) {
+            $(this).addClass('animated fadeIn show')
+          }
+        });
+      });
+    </script>
+
+
+    <!-- GUEST PROFILE -->
+    <script type="text/javascript">
+      // $(".active").click(function() {
+      //   $(".chosen-nodes .button").removeClass( "active" );
+      // });
+
+
+
+      $( ".chosen-nodes .button" ).click(function() {
+        // $('.chosen-nodes .button').addClass( "dim" ).removeClass("active");
+        $(this).removeClass("dim").toggleClass( "active" );
+        $('.editing-wrapper').toggleClass( "closed" );
+      });
+
+      $( ".fa-eye, .fa-eye-slash" ).click(function() {
+        event.stopPropagation();
+        $(this).toggleClass( "fa-eye fa-eye-slash" );
+      });
+
+      $('.fa-eye, .fa-eye-slash, .fa-check, .filter-list, .button.toggle-btn, .button.toggle, .toggle-switch').click(function() {
+        var container = $('.recommendations-wrapper'); // Container
+        var nodes = container.children(); // All children
+        for (var i = 1; i < nodes.length; i++) {
+          // Move random child to the end
+          container.append(nodes.eq(Math.floor(Math.random() * nodes.length)));
+        }
+      });
+
+
+      $('.remove').on("click", function () {
+          $(this).parents('.callout').fadeOut();
+      });
+
+      $( ".fa-check" ).click(function() {
+        $(this).toggleClass( "dim" );
+      });
+    </script>
+
+    <script>
+      $( '.loading-toggle' ).click(function() {
+        $('.loading-scrn').removeClass('hide');
+        $('.loading-scrn').delay(2000).queue(function(){
+          $('.loading-scrn').addClass('hide');
+        });
+      });
+
+      $( '.whys-wrapper' ).click(function() {
+        $(this).toggleClass('open');
+      });
+    </script>
+
+
+    <script type="text/javascript">
+      var elems = $(".firststep .columns, .secondstep .columns"); //gives you an array of li
+
+      var len = elems.length, randomNum = 0, randomEl, counter = 1;
+
+      //we keep removing the elements randomly giving them a class
+      //till we are not left with any element
+      //this way you won't have to hard code "6" - the number of slideshow elements
+      while(len--) {
+         randomNum = parseInt(Math.random()*len, 10);
+         randomEl = elems.splice(randomNum, 1);
+         $(randomEl).addClass('nth-child-' + counter);
+         counter++;
+      }
+    </script>
+
+    <!-- USASA -->
+
+    <!-- USASA END-->
+
+
+
+
+
+</html>

@@ -1,0 +1,38 @@
+---
+title: Login
+posterClass: none
+quoteDisplay: hide
+login-page: true
+---
+
+<style media="screen">
+  .intrestest-wrapper-bar {
+    display: none;
+  }
+  .footer.tall {
+    padding-bottom: 0;
+  }
+</style>
+
+<div class="row login-page-wrapper expanded animated fadeIn">
+
+  <div class="small-12 medium-6 large-3 columns form-wrapper animated fadeIn small-centered hide" id="login">
+    {{>login-signup}}
+  </div>
+
+  <div class="small-12 medium-6 large-3 columns form-wrapper animated fadeIn small-centered hide" id="login-updating-account">
+    {{>login-updating-account}}
+  </div>
+
+  <div class="small-12 medium-6 columns large-3 form-wrapper animated fadeIn small-centered hide"  id="sign-up">
+    {{>sign-up-v2}}
+  </div>
+
+  <div class="small-12 medium-6 columns large-3 form-wrapper animated fadeIn small-centered hide" id="temp-pass">
+    {{>temp-pass}}
+  </div>
+
+  <div class="small-12 medium-6 large-3 columns form-wrapper animated fadeIn small-centered hide" id="forgot-pass">
+    {{>forgot-pass}}
+  </div>
+</div>

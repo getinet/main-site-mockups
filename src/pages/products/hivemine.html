@@ -1,0 +1,106 @@
+---
+title: Product Template
+posterClass: hide
+quoteDisplay: hide
+products: true
+---
+
+{{> header-hero}}
+
+<div class="row expanded products-header hivemine">
+  <div class="small-12 large-6 small-centered columns ">
+    <div class="product-logo-wrapper">
+      <img src="{{root}}assets/img/products/HiveMine.png" alt="" >
+    </div>
+    <h2>hivemine {{>interested-btn}}</h2>
+    <p class="lead">
+      Beezwax developers needed a fresh new way to quickly access and update projects. After trying out several iOS Redmine client apps and not being satisfied we decided it was time to build our own! Redmine is an open source Project Management Tool that helps development teams stay organized and up to date on task delegation and completion.
+    </p>
+    <p class="text-center">
+      <img src="{{root}}assets/img/logo-app_store.png" alt="" width="115">
+    </p>
+  </div>
+</div>
+
+<div class="row expanded">
+  <div class="small-12 product-peek hivemine">
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-8 small-centered columns">
+    <p>Now introducing our very own iOS solution, HiveMine! We took the time to interview developers and project managers to discover what works and most importantly, what doesn’t work. Our focus was to create a better experience and believe we’ve achieved just that!</p>
+
+    <h4>SWIPE CELLS FOR DIRECT ACCESS TO ‘EDIT’ ISSUES, ADD A ‘TIME ENTRY’, AND CREATE A ‘NEW’ ISSUE.</h4>
+    <p>
+      We often find ourselves needing to update issues in the most inopportune of times such as between meetings, while jumping on or off a call, and of course at the end of the day when we’re heading out to avoid traffic. Needless to say we’re scrambling in a hurry to get our thoughts out and tasks delegated. By implementing project and issue list views with swipe-to-reveal actions we can quickly navigate to access what we need without jumping through hurdles to get there!
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-8 small-centered columns">
+    <div class="row">
+      <div class="small-12 columns">
+        <hr>
+      </div>
+      <div class="small-12 medium-3 columns">
+        <img src="{{root}}assets/img/products/hivemine/hivemine-screen-4.jpg" alt="">
+        <p class="caption">Caption</p>
+      </div>
+      <div class="small-12 medium-3 columns">
+        <img src="{{root}}assets/img/products/hivemine/hivemine-screen-1.jpg" alt="">
+        <p class="caption">Caption</p>
+      </div>
+      <div class="small-12 medium-3 columns">
+        <img src="{{root}}assets/img/products/hivemine/hivemine-screen-2.jpg" alt="">
+        <p class="caption">Caption</p>
+      </div>
+      <div class="small-12 medium-3 columns">
+        <img src="{{root}}assets/img/products/hivemine/hivemine-screen-3.jpg" alt="">
+        <p class="caption">Caption</p>
+      </div>
+        <hr>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 medium-8 small-centered columns">
+    <h4>REDUCED VERBOSITY IN ISSUE HISTORY LOGS</h4>
+    <p>A very helpful feature of Redmine is the verbosity of history logs associated with an issue to easily view any changes to the task. This is great on the web interface, however, when we’re on the go we don’t need to know that an issue changed from a ‘To Do’ item to a ‘Change Order’.</p>
+    <p>We’ve cut out some of this fat by only displaying History logs where notes were added, thus simplifying how we stay up to date on an issue.</p>
+
+    <h4>SIMPLIFIED DETAIL VIEW</h4>
+
+    <p>We decided that twelve fields was way too much to display on mobile devices. Who wants a cluttered UI anyway? Instead we reduced the list in half and selected the essential information; issue number, project name, description, assignee, priority, and status.</p>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <h4>UNDER THE HOOD</h4>
+          <ul class="multi-column-list two">
+              <li>HiveMine was created using Swift programming language
+              </li><li>Redmine RESTful API integration
+              </li><li>Alamofire open source library for HTTP network calls
+              </li><li>SwiftyJSON open source library for JSON parsing
+              </li><li>SWRevealTableViewCell open source library to add functionality in list view rows
+              </li><li>EthanStrider's ColorPickerPopover open source to display a color picker
+              </li><li>iOS Keychain to securely store passwords
+            </li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row expanded">
+  <!-- <hr class="grey"> -->
+  {{> product-by}}
+</div>
+
+{{> quotes-rotating}}
+
+{{> related-all-items}}
+
+<hr>
+
+{{> products-catalog}}

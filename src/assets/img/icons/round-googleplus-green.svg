@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>round-googleplus-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M14,12.6043654 C14,12.3096862 13.9686849,12.0825372 13.9248435,11.8553887 L9.59081426,11.8553887 L9.59081426,13.4024555 L12.1962423,13.4024555 C12.0897703,14.0593451 11.407098,15.3424283 9.59081426,15.3424283 C8.02505218,15.3424283 6.74739023,14.0716233 6.74739023,12.5 C6.74739023,10.9283763 8.02505218,9.65757137 9.59081426,9.65757137 C10.4864301,9.65757137 11.0814198,10.0320599 11.4196244,10.351296 L12.6659709,9.1787174 C11.8643007,8.44201889 10.8308978,8 9.59081426,8 C7.05427979,8 5,10.0136426 5,12.5 C5,14.9863574 7.05427979,17 9.59081426,17 C12.2400837,17 14,15.1766709 14,12.6043654 Z M19,11.3312102 L17.6687895,11.3312102 L17.6687895,10 L16.3312101,10 L16.3312101,11.3312102 L15,11.3312102 L15,12.6687898 L16.3312101,12.6687898 L16.3312101,14 L17.6687895,14 L17.6687895,12.6687898 L19,12.6687898 L19,11.3312102 Z" id="path-1"></path>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.125" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="round-googleplus-green">
+            <g id="Combined-Shape">
+                <use fill="#8BB018" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

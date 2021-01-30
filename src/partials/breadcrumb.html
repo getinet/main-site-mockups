@@ -1,0 +1,61 @@
+<div class="row expanded breadcrumb-wrapper">
+  <div class="small-12 medium-6 small-centered columns breadcrumb-link hide">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#"><img src="https://beezwax.net/assets/default-images/default-service-icon.svg" alt="" class="icon"> Services</a></li>
+        <!-- <li><a href="#">FILEMAKER DEVELOPMENT </a></li> -->
+        <li>
+          <label>
+            <select>
+              <option value="husker">FileMaker Development</option>
+              <option value="starbuck">Starbuck</option>
+              <option value="hotdog">Hot Dog</option>
+              <option value="apollo">Apollo</option>
+            </select>
+          </label>
+        </li>
+        <li></li>
+        <!-- <li class="disabled">Gene Splicing</li> -->
+        <li>
+          <span class="show-for-sr">Current: </span> {{title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="small-12 small-centered columns breadcrumb-links">
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs">
+        <!-- <li><a href="{{root}}">Home</a></li> -->
+        <li class="logo">
+          <a href="{{root}}services"><img src="{{root}}assets/img/icons/FilemakerDev.svg" alt="" class="icon" style="width:48px;">
+            <!-- <span class="hide-for-small-only">Services </span> -->
+          </a>
+
+          <select id="breadcrumb-options" style="width: 200px;">
+            <option value="FileMaker Development">FileMaker Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Visualization">Visualization</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Integration">Integration</option>
+          </select>
+        </li>
+        <!-- <li><a href="{{root}}services">Services</a></li> -->
+        <!-- <li>
+          <select id="breadcrumb-options">
+            <option value="FileMaker Development">FileMaker Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Visualization">Visualization</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Integration">Integration</option>
+          </select>
+        </li> -->
+        <!-- <li class="disabled"></li> -->
+        <li class="hide-for-small-only">
+          <span class="show-for-sr">Current: </span> {{title}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

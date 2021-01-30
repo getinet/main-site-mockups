@@ -1,0 +1,42 @@
+<div class="row expanded">
+  <div class="small-12 columns">
+    <ul id="hexGrid">
+      {{#repeat 40}}
+      <li class="hex pusher">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <img src="https://beezwax.net/system/attachments/{{photo}}" alt="" />
+            <p>{{name}}</p>
+            <!-- <h5>{{title}}</h5> -->
+            <!-- <p>Some sample text about the article this hexagon leads to</p> -->
+          </a>
+        </div>
+      </li>
+      {{/repeat}}
+
+      {{#each beez.bee-members}}
+
+      <li class="hex">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+            <img src="https://beezwax.net/system/attachments/{{photo}}" alt="" />
+            <p>{{name}}</p>
+            <!-- <h5>{{title}}</h5> -->
+            <!-- <p>Some sample text about the article this hexagon leads to</p> -->
+          </a>
+        </div>
+      </li>
+      {{/each}}
+
+      {{#repeat 3}}
+      <li class="hex pusher">
+        <div class="hexIn">
+          <a class="hexLink" href="#">
+          </a>
+        </div>
+      </li>
+      {{/repeat}}
+    </ul>
+
+  </div>
+</div>

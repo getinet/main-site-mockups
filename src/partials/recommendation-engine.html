@@ -1,0 +1,422 @@
+<style media="screen">
+  .empty-state {
+    display: none;
+  }
+</style>
+
+<div class="row intrests-wrapper" section id="recommendations">
+  <div class="small-12 columns text-center hide">
+    <div class="callout alert">
+      <p><b>&#9660; Still working this out</b> - Let's discuss &#9660;
+        <a href="javascript:void(0)" class="button tiny alert float-right"
+        onclick="$('.empty-state').toggle('');">Empty States</a>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="small-12 columns small-centered">
+    <h4>Recommendations</h4>
+    <div class="row">
+      <div class="small-12 medium-6 columns">
+        <!-- <h4>Recommendations</h4> -->
+        <p>These recommendations are based on interest, proposed, curent and, delivered projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci. </p>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <div class="filter-list">
+              <label>Sort by Date
+                <select>
+                  <option value=""  disabled>Sort by Date</option>
+                  <option value="all">All</option>
+                  <option value="products">Recent</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <div class="filter-list">
+              <label>Filter by Type
+                <select>
+                  <option value=""  disabled>Filter by Type</option>
+                  <option value="all" selected>All Types</option>
+                  <option value="products">Products</option>
+                  <option value="services">Services</option>
+                  <option value="fuctional">Fuctional Areas</option>
+                  <option value="technology">Technology</option>
+                  <option value="database">Database</option>
+                  <option value="events">Events</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="recommendations-wrapper">
+          <div class="empty-state callout">
+            <h4>This can only work if you {{>interested-btn}} intrests.</h4>
+          </div>
+          {{#each global.guest-recomendations}}
+          <div class="callout small {{node-type}}">
+            <div class="section-header">
+              <h4>{{title}}</h4>
+              <!-- <div class="button hollow blue tiny has-tip top show-intrest" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Toggle interest in this service">
+                <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+              </div> -->
+              {{>interested-btn}}
+              <a class="green tiny button" href="javascript:void(0)" data-open="model-services">More Info</a>
+            </div>
+
+            <p>{{description}}</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="reveal small" id="model-services-old" data-reveal>
+        <img src="https://beezwax.net/assets/pages/products/inspectorpro/velocimeter.png" alt="" style="width: 48px;float: left;margin-right: 10px;"><h2>InspectorPro 6.5 {{>interested-btn}}</h2>
+
+        <p class="lead">Better collaboration, performance and insight for your FileMaker teams. Available now for FileMaker Pro Advanced (v12-16) on macOS and Windows.</p>
+        <p class="text-center">
+          <div class="button-group joined show-for-medium">
+            <a class="secondary button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download Free Trial</a>
+            <a class="secondary button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Buy Now</a>
+            <a class="green button"><i class="fa fa-life-ring" aria-hidden="true"></i> Contact Support</a>
+          </div>
+
+          <div class="button-group small expanded joined show-for-small-only">
+            <a class="secondary button">Download</a>
+            <a class="secondary button">Buy</a>
+            <a class="green button">Support</a>
+          </div>
+        </p>
+        <p>
+          We have focused on the most important points that matter to you as a Developer. We are also the first to tackle PDoS ( Process DDR on Server ). When you host InspectorPro, a whole new world of collaboration presents itself. Once you have uploaded your DDR files to the server using InspectorPro, it takes over from
+          there and control is returned back to you so you can continue developing while InspectorPro is busy processing.
+          You’ll love it.
+        </p>
+        <p class="text-center" style="margin-bottom:0">
+        <a class="button green" href="{{root}}/products/inspectorpro.html">Visit Product Page</a>
+        </p>
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        {{>related-all-items}}
+        <!-- <hr>
+        <img src="https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-BF8DC1B9-28C2-4D6B-BE4B-A416B7A88F70/dashboard_1.svg" alt="" style="width: 48px;float: left;margin-right: 10px;border: 1px solid #FFD939;border-radius: 50%;background-color: white;border-top: 0;border-left: 0;"><h2>Dashboards</h2>
+
+        <p class="lead">A dashboard provides at-a-glance views of KPIs (key performance indicators) relevant to particular objectives and/or models. This can be for anything from sales to HR, or from marketing to production.</p>
+
+        <p class="text-center" style="margin-bottom:0">
+        <a class="button green" href="https://beezwax.net/services/dashboards">Visit Service Page</a>
+        </p> -->
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="small-12 medium-6 columns">
+
+        <div class="topic-wrapper">
+          <div class="section-header">
+            <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+              <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+              {{>toggle-on}}
+            </a>
+            <h4 style="display: block;">Interests</h4>
+
+          </div>
+
+          <div class="empty-state callout">
+            <h4>This can only work if you {{>interested-btn}} intrests.</h4>
+          </div>
+
+          <div class="chosen-nodes not-empty">
+            {{#each global.guest-intrestes}}
+            <a class="button toggle hollow small has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="View Details">
+              {{>toggle-on}}
+              <span class="intrest-title">
+                {{title}}
+              </span>
+              <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+              <i class="fa fa-times has-tip top" aria-hidden="true" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove Intrest"></i>
+            </a>
+            {{/each}}
+          </div>
+
+
+          <div class="reveal intrests-wrapper tiny bounce" id="topic-sample" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+            <div class="row">
+              <div class="small-12 columns">
+                <h4>This is a title</h4>
+              </div>
+              <div class="small-12 columns">
+                <textarea name="name" rows="5" cols="80" spellcheck="false">Lorem ipsum dolor sit amet, ne has saepe aliquip insolens, qui ut mucius erroribus. Graecis gloriatur voluptaria ius ei, sed ut autem nemore. Mel utinam mucius intellegam et, his dolore scaevola lucilius ei, sit ei suas exerci. Mea feugiat legimus at, sed an utroque deseruisse instructior. Cu ius dicit virtute nusquam. Saepe intellegam sed ex, per soluta interesset an. Unum melius apeirian te mel, fierent albucius definiebas per et. Lorem ipsum dolor sit amet, ne has saepe aliquip insolens, qui ut mucius erroribus. Graecis gloriatur voluptaria ius ei, sed ut autem nemore. Mel utinam mucius intellegam et, his dolore scaevola lucilius ei, sit ei suas exerci. Mea feugiat legimus at, sed an utroque deseruisse instructior. Cu ius dicit virtute nusquam. Saepe intellegam sed ex, per soluta interesset an. Unum melius apeirian te mel, fierent albucius definiebas per et.
+                </textarea>
+              </div>
+              <div class="small-4 columns">
+                <label>Name</label>
+                <p class="name">Jules Bowie</p>
+              </div>
+              <div class="small-4 columns">
+                <label>Date</label>
+                <p class="date">August 12, 2017</p>
+              </div>
+              <div class="small-4 columns">
+                <div class="filter-list">
+                  <label>Level of intrest
+                    <select>
+                      <option value="10">10</option>
+                      <option value="9">9</option>
+                      <option value="8" selected>8</option>
+                      <option value="7">7</option>
+                      <option value="6">6</option>
+                      <option value="5">5</option>
+                      <option value="4">4</option>
+                      <option value="3">3</option>
+                      <option value="2">2</option>
+                      <option value="1">1</option>
+                      <option value="0">0</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="small-12 columns">
+                <hr>
+                <h4>Services</h4>
+              </div>
+              <div class="small-12 columns">
+                <div class="topic-nodes">
+                  {{#each global.guest-intrestes}}
+                  {{#if service}}
+                  <a class="button hollow small has-tip {{node-type}}">
+                    {{title}}
+                  </a>
+                  {{/if}}
+                  {{/each}}
+                </div>
+              </div>
+              <div class="small-12 columns">
+                <h4>Functional Area</h4>
+              </div>
+              <div class="small-12 columns">
+                <div class="topic-nodes">
+                  {{#each global.guest-intrestes}}
+                  {{#if functional}}
+                  <a class="button hollow small has-tip {{node-type}}">
+                    {{title}}
+                  </a>
+                  {{/if}}
+                  {{/each}}
+                </div>
+              </div>
+
+              <div class="small-12 columns">
+                <h4>Technologies</h4>
+              </div>
+              <div class="small-12 columns">
+                <div class="topic-nodes">
+                  {{#each global.guest-intrestes}}
+                  {{#if tech}}
+                  <a class="button hollow small has-tip {{node-type}}">
+                    {{title}}
+                  </a>
+                  {{/if}}
+                  {{/each}}
+                </div>
+              </div>
+
+              <div class="small-12 columns">
+                <h4>Database</h4>
+              </div>
+              <div class="small-12 columns">
+                <div class="topic-nodes">
+                  {{#each global.guest-intrestes}}
+                  {{#if db}}
+                  <a class="button hollow small has-tip {{node-type}}">
+                    {{title}}
+                  </a>
+                  {{/if}}
+                  {{/each}}
+                </div>
+              </div>
+            </div>
+            <div class="row expanded text-center">
+              <div class="small-12 columns">
+                <hr>
+                <p>Please let us know if you would like to dicuss this <b>Topic</b> further with us.</p>
+                <a href="mailto:someone@beezwax.net?cc=someoneelse@beezwax.net, another@beezwax.net, me@beezwax.net&bcc=lastperson@beezwax.net&subject=Current%20Topic&body=I want to sign the paperwork and get this project started!" class="button green small">Contact Us</a>
+              </div>
+            </div>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="editing-wrapper closed version-2">
+
+            <div class="callout node-instance small has-tip top service expanded">
+              <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+              <p>Added by <b>You</b> on added September 31, 2017</p>
+            </div>
+
+            <div class="callout node-instance small has-tip top service expanded locked"   data-open="topic-sample">
+              <a class="button tiny has-tip top details" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="View Details"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+              <p><i class="fa fa-comments-o" aria-hidden="true"></i> Added by <b>Jules Bowie (PM)</b> on September 31, 2017</p>
+            </div>
+
+            <div class="callout node-instance small has-tip top service expanded">
+              <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </a>
+              <p><b>You</b> atteneded a training session.
+              </p>
+            </div>
+
+            <div class="callout node-instance small has-tip top service expanded">
+              <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </a>
+              <p><b>You</b> downloaded <a href="#" target>InspectorPro</a>.
+              </p>
+            </div>
+
+          </div>
+
+
+          <br>
+
+        </div>
+
+
+        <div class="topic-wrapper proposed hide">
+          <div class="section-header">
+            <a class="button tiny green has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Select / Deselect" >
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </a>
+            <h4> a Potential Project 1</h4>
+          </div>
+
+          <div class="proposed-nodes">
+            {{#each global.guest-proposed}}
+            <a class="button hollow small {{node-type}}">
+              {{>toggle-on}}
+
+              {{title}}
+
+              <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+            </a>
+            {{/each}}
+          </div>
+
+        </div>
+
+        <div class="topic-wrapper proposed hide">
+          <div class="section-header">
+            <a class="button tiny green has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Select / Deselect" >
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </a>
+            <h4> a Potential Project 2</h4>
+          </div>
+
+          <div class="proposed-nodes">
+            {{#each global.guest-proposed}}
+            <a class="button hollow small {{node-type}}">
+              {{title}}  <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i>
+            </a>
+            {{/each}}
+          </div>
+
+        </div>
+
+        <div class="topic-wrapper proposed version-2">
+          <div class="section-header">
+            <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+              <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+              {{>toggle-on}}
+            </a>
+            <h4> Proposed </h4>
+          </div>
+
+          <div class="proposed-nodes not-empty">
+            {{#each global.guest-proposed}}
+            <a class="button hollow small {{node-type}}">
+              {{>toggle-on}}
+              {{title}}
+              <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+            </a>
+            {{/each}}
+          </div>
+
+          <div class="empty-state callout">
+            <h4>No current proposals found.</h4>
+          </div>
+
+        </div>
+
+        <div class="topic-wrapper current version-2">
+          <div class="section-header">
+            <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+              <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+              {{>toggle-on}}
+            </a>
+            <h4> Current </h4>
+          </div>
+
+          <div class="proposed-nodes  not-empty">
+            {{#repeat 1}}
+            {{#each global.guest-proposed}}
+            <a class="button hollow small {{node-type}}">
+              {{>toggle-on}}
+              {{title}}
+              <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+            </a>
+            {{/each}}
+            {{/repeat}}
+          </div>
+
+
+          <div class="empty-state callout">
+            <h4>No active projects found.</h4>
+          </div>
+
+        </div>
+
+        <div class="topic-wrapper delivered version-2">
+          <div class="section-header">
+            <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+              <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+              {{>toggle-on}}
+            </a>
+            <h4 contenteditable="true"> Delivered </h4> <i class="fa fa-pencil text-right" aria-hidden="true"></i>
+          </div>
+          <div class="delivered-nodes not-empty">
+            {{#each global.guest-delivered}}
+            <a class="button hollow small  {{node-type}}">
+              {{>toggle-on}}
+              {{title}}
+              <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+            </a>
+            {{/each}}
+          </div>
+
+
+          <div class="empty-state callout">
+            <h4>No delivered projects found.</h4>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="small-12 columns text-center hide">
+    <div class="callout alert">
+      <p><b>&#9650; Still working this out</b> - Let's discuss &#9650;</p>
+    </div>
+  </div>
+</div>

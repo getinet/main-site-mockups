@@ -1,0 +1,131 @@
+---
+title: Event Name
+posterClass: event animated fadeIn
+quoteDisplay: hide
+show-photo-by: hide
+---
+
+{{> header-hero}}
+
+<div class="row events-wrapper animated fadeIn">
+  <div class="small-12 large-8 columns small-centered">
+    <h2>CUSTOM APPS IN AN IT-FRIENDLY WORLD {{>interested-btn}}</h2>
+
+    <div class="row event-info">
+      <div class="small-6 medium-2 columns">
+
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        <small><b>Date</b></small>
+        <p>1/23/2108</p>
+      </div>
+      <div class="small-6 medium-2 columns">
+
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <small><b>Time</b></small>
+        <p>6 - 8 pm</p>
+      </div>
+      <div class="small-12 medium-4 columns">
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <small><b>Location</b></small>
+        <p style="margin-bottom:0;">6600 Dumbarton Circle,<br>Fremont, CA, 94555</p>
+        <a class="button green tiny" href="https://www.google.com/maps/place/6600+Dumbarton+Cir,+Fremont,+CA+94555/@37.5486305,-122.0613101,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbe42c2577a4d:0xfb16c2a7597342f4!8m2!3d37.5486263!4d-122.0591161" target="_blank">Get Directions <i class="fa fa-location-arrow" style="color: #fff;margin-left:5px;"></i></a>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <a class="button green expanded" href="https://www.meetup.com/Bay-Area-FileMaker-Developer-Group/events/246672921/?gj=te1&rv=te1&rv=te1&_cookie-check=1eCsV7mXJEiNyQsR" target="_blank">Register Now</a>
+
+        <!-- <a class="button green hollow expanded" href="https://www.meetup.com/Bay-Area-FileMaker-Developer-Group/events/246672921/?gj=te1&rv=te1&rv=te1&_cookie-check=1eCsV7mXJEiNyQsR" target="_blank"><i class="fa fa-calendar-o" aria-hidden="true"></i> Add to Calendar</a> -->
+
+        <div title="Add to Calendar" class="addeventatc button green small expanded">
+            <!-- <i class="fa fa-calendar-o" aria-hidden="true"></i>  -->
+            Add to Calendar
+            <span class="start">01/23/2018 06:00 PM</span>
+            <span class="end">01/23/2018 08:00 PM</span>
+            <span class="timezone">America/Los_Angeles</span>
+            <span class="title">Custom Apps In An IT-Friendly World</span>
+            <span class="description">To the creators, ideators, innovators and world changers:  In a new world ruled by Custom Business Apps, nobody needs to let the tools of yesterday limit the problems you can solve tomorrow.  See how FileMaker, Inc., an Apple subsidiary has the competitive advantage in creating and deploying custom business apps.</span>
+            <span class="location">6600 Dumbarton Circle, Fremont, CA, 94555</span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h4>Join Us.</h4>
+    <p  class="lead">
+      To the creators, ideators, innovators and world changers:
+    <br>
+        In a new world ruled by Custom Business Apps, nobody needs to let the tools of yesterday limit the problems you can solve tomorrow.
+      <br><br>
+      See how FileMaker, Inc., an Apple subsidiary has the competitive advantage in creating and deploying custom business apps.
+    </p>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 large-8 small-centered columns advanced-nodes-wrapper in-depth hide">
+    <hr>
+    <div class="small-12 columns">
+      <h4>Our services related to this event</h4>
+      <ul class="accordion advanced-services" data-accordion data-allow-all-closed="true" style="margin-bottom: 0;column-count: 1;">
+        {{#each global.sub-nodes}}
+        {{#if filemaker}}
+        <li class="accordion-item animated fadeIn" data-accordion-item>
+          <a href="#" class="accordion-title {{class}}">
+            <div class="svg-wrapper">
+              <object type="image/svg+xml" data="{{img}}" width="64" height="64"></object>
+            </div>
+            <h4>{{title}}</h4>
+            <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+              <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+            </div>
+          </a>
+          <div class="accordion-content {{class}}" data-tab-content>
+            {{description}}
+            <div class="why-wrapper animated hide" id="why-1">
+              <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                <ul class="orbit-container">
+                  <li class="orbit-slide">
+                    <div class="docs-example-orbit-slide">
+                      <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div><!-- ADVANCED NODES END -->
+
+  </div>
+</div>
+<div class="row events-wrapper last-section">
+  <div class="small-12 large-8 columns small-centered">
+  <hr>
+  <h4>MEETUP DETAILS</h4>
+  <p>
+    It’s a great time to create custom apps. Mobile devices have changed how businesses work. Teams are demanding apps that work across all of their devices. Internal IT organizations can’t deliver them fast enough. This creates a huge opportunity for developers to help businesses create and deploy the custom apps they need.
+  </p>
+
+  <p>This Meetup is sponsored by badge badge <b><a href="https://filemaker.com" target="_blank">FileMaker, Inc., an Apple subsidiary</a></b>, and includes a technical presentation by <b>Beezwax</b>, a FileMaker Business Alliance Platinum Partner.</p>
+
+  <p>At this Meetup, you will:</p>
+    <ul class="event-list">
+      <li>Learn how developers are seeing the competitive advantages of new tools that allow:</li>
+        <ol>
+          <li>“Low Code” cloud-ready rapid development of mobile apps for business users, and... </li>
+          <li>Highly-custom, robust, cross-platform solutions by professional developers.
+          </li>
+        </ol>
+        <li>See examples of these two approaches to building solutions for iOS, Mac, Windows, and Web, and how FileMaker enables developers to deliver Mobility, Flexibility, Scalability, and Agility.</li>
+        <li>Network with other business users and professional developers, as well as representatives from FileMaker Inc., an Apple Subsidiary and FileMaker Business Alliance partners, plus staff and software engineering students from <b><a href="http://42.us.org" target="_blank">42 Silicon Valley</a></b>.</li>
+
+        <li>Hear brief news about the unique partnership between FileMaker and <b><a href="http://42.us.org" target="_blank">42 Silicon Valley</a></b>, to develop the next generation of custom app developers, and the opportunities this partnership is building for training software engineers and in IT recruiting.</li>
+    </ul>
+</div>
+</div>
+
+
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>

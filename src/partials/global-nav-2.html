@@ -1,0 +1,382 @@
+<div data-sticky-container id="main-top-menu">
+
+<div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="large">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">
+    <a href="{{root}}">
+      <img src="{{root}}assets/img/brand/beezwax-logo-mark-only.svg" alt="" style="height: 40px;">
+    </a>
+  </div>
+</div>
+
+<div class="top-bar v2" id="example-animated-menu" data-animate="fade-in fade-out">
+  <div class="top-bar-left animated {{#ifpage 'error'}} error {{/ifpage}}" >
+    <ul class="dropdown menu center show-for-large" data-dropdown-menu id="nav" >
+      <li class="logo show-for-large">
+        <a href="{{root}}">
+          <img src="{{root}}assets/img/brand/beezwax-main-logo.png" alt="" style="width: 200px;">
+        </a>
+      </li>
+      <li class="{{service}}" id="services"><a href="{{root}}services">services</a></li>
+
+      <li class="{{clients}}" id="clients"><a href="{{root}}clients">clients</a></li>
+
+      <li class="{{products}}" id="products"><a href="{{root}}products">products</a></li>
+
+      <li id="blog"><a href="{{root}}blog">blog</a></li>
+
+      <li class="{{who}}" id="who"><a href="{{root}}who">who</a></li>
+
+      <li class="{{careers}}" id="who" id="careers"><a href="{{root}}careers">careers</a></li>
+
+      <li class="{{contact}}" id="contact"><a href="{{root}}contact">contact</a></li>
+
+      <li id="search-desktop"><a href="javascript:void(0)"><i class="fi-magnifying-glass fa-flip-horizontal"></i></a></li>
+    </ul>
+    <div class="search-bar-wrapper animated fadeInDown hide">
+      <input class="site-search-field" id="site-search-field" name="search" type="search" placeholder="Search Term…" value="" ><i class="fi-x"></i>
+      <a data-open="welcome-modal-1" class="button green tiny">Welcome Card</a>
+    </div>
+
+    <ul class="show-for-small hide-for-large mobile-menu">
+      <li class="mobile-search-wrapper animated fadeIn">
+        <input class="site-search-field" id="site-search-field" name="search" type="search" placeholder="Search Term…" value="" >
+        <!-- <i class="fi-x"> </i> -->
+      </li>
+      <li data-open="LogInModal"><a href="javascript:void(0)">
+        <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+        Guest Profile</a></li>
+      <li id="services"><a href="{{root}}services">services</a></li>
+      <!-- <li id="tech"><a href="{{root}}services.html">tech</a></li> -->
+      <li id="clients"><a href="{{root}}clients">clients</a></li>
+      <li id="products"><a href="{{root}}products">products</a></li>
+      <li id="blog"><a href="{{root}}blog">blog</a></li>
+      <li id="who"><a href="{{root}}who">who</a></li>
+      <li id="careers"><a href="{{root}}careers">careers</a></li>
+      <li id="contact"><a href="{{root}}contact">contact</a></li>
+
+
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
+<!-- data-open="LogInModal"  -->
+<div class="user-info" data-toggle="Profile_Panel" title="Login for a more personalized experience.">
+  <i class="fa fa-user-circle-o fa-large" aria-hidden="true"></i>
+  <p>Login for a more <br>personalized experience.</p>
+</div>
+
+
+<div class="tiny reveal animated fadeIn" id="LogInModal" data-reveal>
+  {{>login-signup}}
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="tiny reveal animated fadeIn" id="SignUpModal" data-reveal>
+  <form class="log-in-form">
+    <h4 class="text-center">Sign Up</h4>
+    <small>All fields are required.</small>
+    <label>Name
+      <input type="text" placeholder="First Last">
+    </label>
+    <label>Email
+      <input type="email" placeholder="somebody@example.com">
+    </label>
+    <div class="callout alert hide">
+      <p>We have found a record with the same email.
+      If you are <span>Dave Smith</span> from <span>ACME Inc.</span>, click below to activate your account.<br></p>
+    </div>
+    <label>Phone
+      <input type="tel" placeholder="--- --- ----">
+    </label>
+    <label>Company
+      <input type="text" placeholder="- -">
+    </label>
+    <label>Title
+      <input type="text" placeholder="- -">
+    </label>
+    <label>Password
+      <input type="password" placeholder="Password">
+    </label>
+    <label>Confirm Password
+      <input type="password" placeholder="Password">
+    </label>
+    <!-- <label>Terms of Services
+
+    </label> -->
+    <div class="org-info hide">
+      <hr>
+      <label>Organization Name
+        <input type="text" placeholder="- -" >
+      </label>
+      <label>Phone
+        <input type="tel" placeholder="--- --- ----">
+      </label>
+      <label>Address
+        <input type="text" placeholder="- -">
+      </label>
+      <label>City
+        <input type="text" placeholder="- -">
+      </label>
+      <label>URL
+        <input type="text" placeholder="- -">
+      </label>
+    </div>
+
+    <div class="callout terms hide">
+      <h5>Scroll to the bottom to insure you have read our terms…</h5>
+      <p>
+        BEEZWAX’S TERMS OF SERVICES<br>
+        Your privacy is important. Beezwax provides this Privacy Policy to help you understand how we collect, use, and disclose information that you may provide us. This policy applies to our website and other interactions we may have with you.<br>
+        We may update this Privacy Policy from time to time.<br>
+        PERSONAL INFORMATION<br>
+        Personal information is info which may be used to identify or contact an individual, such as name, mailing address, phone number, or email address. You may be asked to provide this info when in contact with Beezwax. We may use or share this information, consistent with this Privacy Policy, for completing a transaction or performing some action you have requested. We may also internally use or combine this info with other info to improve our products and services, and for advertising and marketing consistent with this Privacy Policy, such as announcements, newsletters and special offers from Beezwax.
+        If you don’t want to be on our mailing list, you can opt out via the “Unsubscribe” option, or by contacting us by phone or email.
+        NON-PERSONAL INFORMATION<br>
+        Through our website, such as via “cookies” and through other applications, we collect non-personal information, which is not directly associated with an individual. We may use, transfer, and disclose this non-personal information for any purpose, such as improving the experience for visitors to our website.
+
+        SPECIAL CASES<br>
+        We may disclose information if we believe it is reasonably necessary by law, court order, litigation, request by governmental authority, or other issues of importance, or to protect our rights. We may transfer information in the event of a merger or sale of Beezwax.
+
+        PROTECTION OF PERSONAL INFORMATION<br>
+        Your privacy is important to Beezwax. We take administrative and technical precautions to protect personal information during and after it is provided to us.
+
+        CHILDREN<br>
+        Beezwax does not knowingly collect any personally identifiable information from children under the age of 13. If we verify that a person under 13 has submitted personal information to Beezwax, we will proceed to delete this info as soon as possible.
+
+        THIRD-PARTIES<br>
+        Any third-party websites, products and services are managed by those third parties, including any privacy policies or other terms of service.
+
+        CONSENT<br>
+        By using our website, you hereby consent to our privacy policy and agree to its terms.
+
+        QUESTIONS<br>
+        If you have questions related to this Privacy Policy, please contact us.
+
+        Beezwax Datatools, Inc., 200 Frank H. Ogawa Plaza, 7th Floor, Oakland CA 94612
+
+        Last updated: March 4th, 2015
+      </p>
+      <p class="text-center">
+      <a href="javascript:void(0)" class="button small blue hollow user-i-agree">I Agree</a></p>
+    </div>
+
+
+    <div class="social-accounts version-3 hide">
+      <p class="text-center or"> <span>or</span> </p>
+
+      <button type="button" class="small expanded button github social"><i class="fa fa-github" aria-hidden="true"></i> Sign Up with GitHub</button>
+
+      <button type="button" class="small expanded button twitter social"><i class="fa fa-twitter" aria-hidden="true"></i> Sign Up with Twitter</button>
+
+      <button type="button" class="small expanded button facebook social"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up with Facebook</button>
+
+      <button type="button" class="small expanded button googleplus social"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign Up with Google+</button>
+
+      <p class="text-center or"> <span>or</span> </p>
+
+      <div class="button-group merged expanded">
+        <button type="button" class="small expanded button github"><i class="fa fa-github" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <!-- <div class="row"> -->
+    <p class="text-center">
+      <input id="checkbox1" type="checkbox" class="user-i-agree">
+      <label for="checkbox1">I agree to the <a href="{{root}}/terms" target="_blank">Terms and Services</a>.</label>
+    </p>
+
+
+
+
+        <a href="javascript:void(0)" class="button expanded green disabled sign-up-btn"  data-open="SignUpModal-ThankYou" SignUpModal-ThankYou>Sign up with Beezwax</a>
+
+    <!-- </div> -->
+
+
+
+    <!-- <p><input type="submit" class="button expanded green disabled sign-up-btn" value="Sign Up" data-open="SignUpModal-2"></input></p> -->
+    <!-- <p><input type="submit" class="button expanded green" value="next" data-open="SignUpModal-2"></input></p> -->
+    <hr class="grey">
+    <p class="text-center">or</p>
+
+    <a href="javascript:void(0)" class="button expanded" data-open="SignUpModal-2">Next</a>
+<hr>
+    <p class="text-center" data-open="LogInModal"><a href="#">Login</a></p>
+  </form>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="small reveal animated fadeIn" id="SignUpModal-2" data-reveal>
+  <form class="log-in-form">
+    <label>Terms of Services</label>
+    <div class="callout terms">
+      <h5>Scroll to the bottom to insure you have read our terms…</h5>
+      <p>
+        BEEZWAX’S TERMS OF SERVICES<br>
+        Your privacy is important. Beezwax provides this Privacy Policy to help you understand how we collect, use, and disclose information that you may provide us. This policy applies to our website and other interactions we may have with you.<br>
+        We may update this Privacy Policy from time to time.<br>
+        PERSONAL INFORMATION<br>
+        Personal information is info which may be used to identify or contact an individual, such as name, mailing address, phone number, or email address. You may be asked to provide this info when in contact with Beezwax. We may use or share this information, consistent with this Privacy Policy, for completing a transaction or performing some action you have requested. We may also internally use or combine this info with other info to improve our products and services, and for advertising and marketing consistent with this Privacy Policy, such as announcements, newsletters and special offers from Beezwax.
+        If you don’t want to be on our mailing list, you can opt out via the “Unsubscribe” option, or by contacting us by phone or email.
+        NON-PERSONAL INFORMATION<br>
+        Through our website, such as via “cookies” and through other applications, we collect non-personal information, which is not directly associated with an individual. We may use, transfer, and disclose this non-personal information for any purpose, such as improving the experience for visitors to our website.
+
+        SPECIAL CASES<br>
+        We may disclose information if we believe it is reasonably necessary by law, court order, litigation, request by governmental authority, or other issues of importance, or to protect our rights. We may transfer information in the event of a merger or sale of Beezwax.
+
+        PROTECTION OF PERSONAL INFORMATION<br>
+        Your privacy is important to Beezwax. We take administrative and technical precautions to protect personal information during and after it is provided to us.
+
+        CHILDREN<br>
+        Beezwax does not knowingly collect any personally identifiable information from children under the age of 13. If we verify that a person under 13 has submitted personal information to Beezwax, we will proceed to delete this info as soon as possible.
+
+        THIRD-PARTIES<br>
+        Any third-party websites, products and services are managed by those third parties, including any privacy policies or other terms of service.
+
+        CONSENT<br>
+        By using our website, you hereby consent to our privacy policy and agree to its terms.
+
+        QUESTIONS<br>
+        If you have questions related to this Privacy Policy, please contact us.
+
+        Beezwax Datatools, Inc., 200 Frank H. Ogawa Plaza, 7th Floor, Oakland CA 94612
+
+        Last updated: March 4th, 2015
+      </p>
+      <p class="text-center">
+      <a href="javascript:void(0)" class="button small blue hollow user-i-agree">I Agree</a></p>
+    </div>
+
+
+    <div class="social-accounts version-3">
+      <p class="text-center or"> <span>or</span> </p>
+
+      <button type="button" class="small expanded button github social"><i class="fa fa-github" aria-hidden="true"></i> Sign Up with GitHub</button>
+
+      <button type="button" class="small expanded button twitter social"><i class="fa fa-twitter" aria-hidden="true"></i> Sign Up with Twitter</button>
+
+      <button type="button" class="small expanded button facebook social"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up with Facebook</button>
+
+      <button type="button" class="small expanded button googleplus social"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign Up with Google+</button>
+
+      <p class="text-center or"> <span>or</span> </p>
+
+      <div class="button-group merged expanded">
+        <button type="button" class="small expanded button github"><i class="fa fa-github" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+
+        <button type="button" class="small expanded button googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+
+
+    <p><input type="submit" class="button expanded green disabled sign-up-btn" value="Sign Up"></input></p>
+
+    <p class="text-center" data-open="LogInModal"><a href="#">Login</a></p>
+  </form>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="tiny reveal animated fadeIn" id="SignUpModal-ThankYou" data-reveal>
+  <div class="small-12 small-centered columns text-center">
+    <h4>Thank You <br><b>{ { Name } }</b>!</h4>
+    <p>We Will Be In Touch Shortly.</p>
+  </div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+<!-- SEARCH -->
+
+<div class="row expanded site-search-results-container hide">
+  <div class="small-12 medium-8 large-6 columns small-centered">
+    <div class="site-search-results-meta">
+      <div class="site-search-result-count">667 Results (10 per page)
+        <a class="button secondary small has-tip top float-right"  data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Close Search" onclick="$('.site-search-results-container').addClass('fadeOutUp ');$('#error-site-search-field').val('');"><i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="site-search-pagination hide">
+        <a class="selected" href="#" data-page="1">1</a>
+        <a href="#" data-page="11">2</a>
+        <a href="#" data-page="21">3</a>
+        <a href="#" data-page="31">4</a><a href="#" data-page="41">5</a><a href="#" data-page="51">6</a><a href="#" data-page="61">7</a><a href="#" data-page="71">8</a><a href="#" data-page="81">9</a><a href="#" data-page="91">10</a><a href="#" data-page="101">11</a><a href="#" data-page="111">12</a><a href="#" data-page="121">13</a><a href="#" data-page="131">14</a><a href="#" data-page="141">15</a>
+      </div>
+    </div>
+    <div class="site-search-spinner"></div>
+    <div class="site-search-results">
+      <div class="site-search-result">
+        <a href="https://beezwax.net/products/inspector-pro">products &gt; inspectorpro 6 is here!</a>
+        <p>Optimized for <span class="highlight">FileMaker</span> 12/13/14/15 with advanced diagnostics, analysis, and visualization. Available now for macOS and Windows. Download Buy Now&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/products/bbox">products &gt; bbox <b>filemaker</b> plugin</a>
+        <p>bBox <span class="highlight">FileMaker</span> external plug-in is a toolbox of functions freely available to all developers. Use it to extend the reach of your Mac OS X-based <span class="highlight">FileMaker</span>&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/">beezwax | software consulting</a><p>Software Consulting boutique specializing in <span class="highlight">FileMaker</span> and Ruby on Rails web applications.</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/products/textmate-bundle">products &gt; textmate bundle for <b>filemaker</b></a>
+        <p>TextMate is the tremendously popular Mac OS X-based text editor and code project manager. Now, <span class="highlight">FileMaker</span> developers can easily integrate its power into their&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/download/bbox">download &gt; bbox <b>filemaker</b> plug-in</a>
+        <p>Software Consulting boutique specializing in <span class="highlight">FileMaker</span> and Ruby on Rails web applications.</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://blog.beezwax.net/2016/11/06/step-by-step-creation-filemaker-cloud/">Step-by-step for <b>FileMaker</b> Cloud – beezwax &gt; blog</a><p>Nov 6, 2016 ... Although setting up your AWS account and creating a new <span class="highlight">FileMaker</span> Cloud instance is a fairly easy process, it does have dozens of steps, and&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://blog.beezwax.net/2015/07/20/enable-debugger-for-a-filemaker-web-viewer/">Enable WebKit debugger in <b>FileMaker</b> Web Viewer – beezwax &gt; blog</a><p>Jul 20, 2015 ... If you are having difficulty getting your HTML, CSS, or JavaScript to render in a <span class="highlight">FileMaker</span> Web Viewer, you may have a struggle ahead of you&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/products/at-sql-sugar">products &gt; @, sql sugar for <b>filemaker</b></a><p>Implemented via a library of custom functions, @ introduces a fresh perspective to <span class="highlight">FileMaker</span> SQL ("FQL"). It offers a deep set of tools to help ensure that code&nbsp;...</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://beezwax.net/services/filemaker">services &gt; <b>filemaker</b> development</a><p>With over nine hundred successful <span class="highlight">FileMaker</span> Pro projects under our belt,
+          Beezwax is a respected industry leader with an unmatched track-record and
+          expertise.</p>
+      </div>
+      <div class="site-search-result">
+        <a href="https://blog.beezwax.net/2017/04/20/filemaker-tableau-building-dashboards-with-interactivity/"><b>FileMaker</b> &amp; Tableau | Building Dashboards with Interactivity ...</a>
+        <p>Apr 20, 2017 ... If you've been working with <span class="highlight">FileMaker</span>, then I don't have to sell you on the fact that it's a great solution to help you manage your data. Whether&nbsp;...</p>
+      </div>
+    </div>
+    <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+        <li class="pagination-previous disabled">Previous</li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+      </ul>
+  </div>
+</div>

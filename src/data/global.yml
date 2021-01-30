@@ -1,0 +1,1645 @@
+photos-by:
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-FFDCC910-239E-4774-8FCD-D800985FC501/products-1400_large.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-12
+    height: 100
+    related: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-BFA160CE-A84D-4716-B0E8-5C8FC26D7C5C/who-1400_large.jpg
+    photographer: Andrew Reichart
+    photographer-avatar: https://beezwax.net/system/attachments/247/square/andrew.reichart.jpg
+    role: director of account management
+    width: medium-6
+    height: 75
+    related: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-804F54E6-9D53-4D39-BC24-E87F13470188/Yosemite-mountains-and-forest-by-Luke_large.jpg
+    photographer: Luke van der Westhuyzen
+    photographer-avatar: https://beezwax.net/system/attachments/405/square/luke_jan2018.jpg
+    role:
+    width: medium-6
+    height: 75
+    related: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-9D2BE53E-F9C0-4A13-8683-0FB3F25927AD/20028319441_d177b2a766_k_large.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-4
+
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-C87059C2-EF54-4F44-BE98-43BE290AF52B/20151211_0017_beezwax_holiday_2015_0lc_3816_236260.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-8
+    related: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90ED50FA-49F8-47A7-8014-5F76B7437C17/underwaterDubrovnikCroatia-who_large.jpg
+    photographer: Ariel Scherman
+    photographer-avatar: https://beezwax.net/system/attachments/341/square/ariel.scherman.jpg
+    role:
+    width:
+    height: 100
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90ED50FA-49F8-47A7-8014-5F76B7437C17/underwaterDubrovnikCroatia-who_large.jpg
+    video-asset: ../assets/vid/Organic_Lines_4K_Motion_Background_Loop.mp4
+    photographer: Mike Smith
+    photographer-avatar: https://beezwax.net/system/attachments/341/square/ariel.scherman.jpg
+    role:
+    width:
+    height: 50
+    video: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-DD743A7B-CD40-43D8-9C87-F496B4C420B7/JulesDearConfer_large.jpg
+    photographer: Jules Bowie
+    photographer-avatar: https://beezwax.net/system/attachments/269/square/jules.bowie.jpg
+    role:
+    width: medium-6
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3029D541-531B-4C41-95BD-7504B26A4722/JulesWaterBuffaloSaysHi_large.jpg
+    photographer: Jules Bowie
+    photographer-avatar: https://beezwax.net/system/attachments/269/square/jules.bowie.jpg
+    role:
+    width: medium-6
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-D644D30A-175D-4C24-85FC-99F7F2C0ADDC/dog-lon_large.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-8
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3949B3DB-99AC-4D09-9D00-C9FD6B53CAA6/IMG_6492_large.jpg
+    photographer: Jay Gonzales
+    photographer-avatar: https://beezwax.net/system/attachments/324/square/jay.gonzales.jpg?1455633756
+    role:
+    width: medium-4
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-ABE9FDBF-B0C6-4DE0-AEFB-F4CD5A08A80B/getinet-20121230-185534_large.jpg
+    photographer: First Last
+    photographer-avatar: https://beezwax.net/system/attachments/360/square/mekuria.g.jpg
+    role:
+    width:
+    height: 75
+
+
+user-invoice:
+  -
+    project: Project A
+    invoice: '41415'
+    sent: 01/01/2018
+    due: 02/01/2018
+    invoiced: $2,601.60
+  -
+    project: Project B
+    invoice: '41415'
+    sent: 01/01/2018
+    due: 02/01/2018
+    invoiced: $2,601.60
+  -
+    project: Project C
+    invoice: '41415'
+    sent: 01/01/2018
+    due: 02/01/2018
+    invoiced: $2,601.60
+    status: paid hide
+  -
+    project: Project D
+    invoice: '41415'
+    sent: 01/01/2018
+    due: 02/01/2018
+    invoiced: $2,601.60
+  -
+    project: Project E
+    invoice: '41415'
+    sent: 01/01/2018
+    due: 02/01/2018
+    invoiced: $2,601.60
+
+guest-recomendations:
+  -
+    title: product - inspectorpro 6.5
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Better collaboration, performance and insight for your FileMaker teams. Available now for FileMaker Pro Advanced (v12-16) on macOS and Windows.
+    node-type: product
+  -
+    title: Service - DASHBOARDS
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: A Dashboard Provides At-A-Glance Views Of KPIs (Key Performance Indicators) Relevant To Particular Objectives And/Or Models. This Can Be For Anything From Sales To HR, Or From Marketing To Production.
+    node-type: service
+  -
+    title: Functional Area - PARTNERSHIP MANAGEMENT
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: A design app. Sometimes, THE design app. Sketch is a powerful design toolkit used for building the UI and UX of modern interfaces.
+    node-type: functional
+  # -
+  #   title: Technology – Sketcht
+  #   img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+  #   alt: FileMaker Dev
+  #   description: A design app. Sometimes, THE design app. Sketch is a powerful design toolkit used for building the UI and UX of modern interfaces.
+  #   node-type: tech
+  # -
+  #   title: Database – MySql
+  #   img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+  #   alt: FileMaker Dev
+  #   description: MySQL is one of the most popular database backends for web and mobile applications. It's a solid and mature choice, although these days we work with many alternatives.
+  #   node-type: db
+  -
+    title: Events – DevCon 2018
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type: event
+
+guest-intrestes:
+  -
+    title: JavaScript Development
+    node-type: service
+    service: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: services-btn
+  -
+    title: Dashbboard
+    node-type: service
+    service: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: services-btn
+  -
+    title: Agile Development
+    node-type: functional
+    functional: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: functional-btn
+  -
+    title: InspectorPro 6.5
+    node-type: product
+    product: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: product-btn
+  -
+    title: LOgiCATOR
+    node-type: product
+    product: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: product-btn
+  -
+    title: MySQL
+    node-type: db
+    db: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: db-btn
+  -
+    title: Business Continuity
+    node-type: functional
+    functional: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+    node-type-class: functional-btn
+  -
+    title: Operations
+    node-type: functional
+    functional: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Software Engineering
+    node-type: functional
+    functional: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Ruby
+    node-type: tech
+    tech: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Node.js
+    node-type: tech
+    tech: true
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+
+guest-proposed:
+  -
+    title: FileMaker Development
+    node-type: service
+  -
+    title: Dashboard
+    node-type: service
+  -
+    title: Logicator
+    node-type: product
+  -
+    title: eCommerce
+    node-type: functional
+
+guest-delivered:
+  -
+    title: Mobile Development
+    node-type: service
+  -
+    title: Adaptive Design
+    node-type: service
+  -
+    title: Filemaker Go
+    node-type: service
+  -
+    title: Node.js
+    node-type: tech
+
+newsletter-options:
+  -
+    title: Beezwax News
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Product Annoucments
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: New Career Opertunities
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: New Offices
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Blog Posts
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+  -
+    title: Events
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci.
+
+sub-nodes-intro:
+  -
+    title: Innovation with JavaScript
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Beezwax blazes new trails with integrating JavaScript with FileMaker, with layout components and widgets using the Web Viewer, data visualization, AJAX methods, and solutions for RESTful integration.
+    show-label: show-label
+    header-class: filemaker
+    class: poster-1
+    columns: medium-6 small-12
+    column-span: all
+    card-image: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-06F43BED-02A8-9741-9F4C-273238C95775/codethatbelongs-card.png
+    main: true
+    why-title: Why Title 1
+    why-description: Remote and mobile. Some days that's how we all roll.
+  -
+    title: Performance Improvement
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-82AE0129-4435-4E15-9A11-CC7CC849E78C/performance.svg
+    alt: FileMaker Dev
+    description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    columns: medium-2 small-12
+  -
+    title: Migrating FileMaker solutions to Web Technologies
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    alt: FileMaker Dev
+    description: If you need to reach more concurrent users, we can migrate the established structure and functionality of your FileMaker system into a Web Application.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    columns: medium-6 small-12
+  -
+    title: CASE STUDY - Ministry of Foreign Affairs of Japan
+    img: assets/img/icons/casestudy.svg
+    card-image: https://beezwax.net/system/attachments/278/original/case-studies-japan-main-2.jpg
+    alt: CASE STUDY - Ministry of Foreign Affairs of Japan
+    description: A custom FileMaker system to support restoration of an ancient Cambodian temple.
+    show-label: show-label
+    class: case-study
+    columns: medium-4 small-12
+  -
+    title: FileMaker License Fullfillment
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-FD96E59B-AE8C-4D00-90A3-5FBA4F36E1EF/FMLicenseFulfillment.svg
+    alt: FileMaker Dev
+    description: Making the most of our strong twenty-year working relationship with FilleMaker Inc., we can process orders of FileMaker products for you.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    columns: medium-4 small-12
+  -
+    title: Web and FileMaker Integration
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    alt: Web and FileMaker Integration
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    columns: medium-4 small-12
+  -
+    title: CASE STUDY - UNICEF
+    img: assets/img/icons/casestudy.svg
+    card-image: https://beezwax.net/system/attachments/231/original/unicef.kid.hdr.jpg
+    alt: CASE STUDY - UNICEF
+    description: Rebuilding a donation website with Google Maps integration.
+    show-label: show-label
+    class: case-study
+    columns: medium-3 small-12
+
+sub-nodes-intro-mixed:
+  -
+    title: Innovation with JavaScript
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Beezwax blazes new trails with integrating JavaScript with FileMaker, with layout components and widgets using the Web Viewer, data visualization, AJAX methods, and solutions for RESTful integration.
+    show-label: show-label
+    header-class: filemaker
+    class: poster-1
+    columns: medium-6 small-12
+    column-span: all
+    card-image: assets/img/homeposters/bowls.jpg
+    service: migrate
+
+  -
+    title: Innovation with JavaScript
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Beezwax blazes new trails with integrating JavaScript with FileMaker, with layout components and widgets using the Web Viewer, data visualization, AJAX methods, and solutions for RESTful integration.
+    show-label: show-label
+    header-class: filemaker
+    class: poster-1
+    columns: medium-6 small-12
+    column-span: all
+    card-image: assets/img/homeposters/bowls.jpg
+    service: web
+  -
+    title: Performance Improvement
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-82AE0129-4435-4E15-9A11-CC7CC849E78C/performance.svg
+    alt: FileMaker Dev
+    description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    columns: medium-2 small-12
+  -
+    title: Migrating FileMaker solutions to Web Technologies
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    alt: FileMaker Dev
+    description: If you need to reach more concurrent users, we can migrate the established structure and functionality of your FileMaker system into a Web Application.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    columns: medium-6 small-12
+  -
+    title: FileMaker License Fullfillment
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-FD96E59B-AE8C-4D00-90A3-5FBA4F36E1EF/FMLicenseFulfillment.svg
+    alt: FileMaker Dev
+    description: Making the most of our strong twenty-year working relationship with FilleMaker Inc., we can process orders of FileMaker products for you.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    columns: medium-4 small-12
+  -
+    title: Web and FileMaker Integration
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    alt: Web and FileMaker Integration
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    columns: medium-4 small-12
+  -
+    title: CASE STUDY - UNICEF
+    img: assets/img/icons/casestudy.svg
+    card-image: https://beezwax.net/system/attachments/231/original/unicef.kid.hdr.jpg
+    alt: CASE STUDY - UNICEF
+    description: Rebuilding a donation website with Google Maps integration.
+    show-label: show-label
+    class: case-study
+    columns: medium-3 small-12
+
+service-nodes-intro:
+  -
+    title: NEW Migrating FileMaker solutions to Web Technologies
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    style: migrate
+    description: If you need to reach more concurrent users, we can migrate the established structure and functionality of your FileMaker system into a Web Application.
+    text-size: 1.5
+    why-title: Why Title 1
+    why-description: Remote and mobile. Some days that's how we all roll.
+    why-1-count: 6
+    why-title-2: Why Title 2
+    why-description-2: Remote and mobile. Some days that's how we all roll 2.
+    why-2-count: 6
+    why-count: 6
+    set:
+      why-title: Why Title 1
+      why-description: Remote and mobile. Some days that's how we all roll.
+  -
+    title: NEW Web and FileMaker Integration
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    style: web
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    text-size: 1
+    why-title: Why Title 1
+    why-description: Remote and mobile. Some days that's how we all roll.
+    why-1-count: 6 end
+
+  -
+    title: NEW PERFORMANCE IMPROVEMENT
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    style: performance
+    description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+    text-size: 2
+  -
+    title: Cloud Storage
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    style: cloud-storage
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    text-size: 1
+  -
+    title: DATA VISUALIZATION
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-321C864E-BD09-440E-A914-A2212042EEC3/DataVis.svg
+    style: data-viz
+    description: We can translate your data into dynamic visual reports or interactive web graphics to help users more quickly and fully understand information.
+    text-size: 1.525
+  -
+    title: System Redesign
+    icon: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90C1862F-6DE9-4BD2-BE20-302F67DD067C/systemredesign.svg
+    style: sys-redesign
+    description: Software ages quickly. Rethinking your system may be daunting, but procrastinating can be just as costly. Leverage your existing solution with innovations, including a new definition of how you work today. Mapped out over months and years in phases, priorities can line up with budget. We approach redesigns incrementally, improvement with integrity, and future flexibility, comes step-by-step.
+    text-size: 1.25
+
+sub-nodes:
+  -
+    title: Innovation with JavaScript
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-CDC5DDA9-567E-4DF3-8D0E-70AB99834B08/InnovationJavascript-FM.svg
+    alt: FileMaker Dev
+    description: Beezwax blazes new trails with integrating JavaScript with FileMaker, with layout components and widgets using the Web Viewer, data visualization, AJAX methods, and solutions for RESTful integration.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    card-class: migrate
+
+  -
+    title: Performance Improvement
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-82AE0129-4435-4E15-9A11-CC7CC849E78C/performance.svg
+    alt: FileMaker Dev
+    description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    card-class: migrate
+  -
+    title: Cloud Storage
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    alt: FileMaker Dev
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+    card-class: cloud-storage
+    intro: yes
+
+  -
+    title: Migrating FileMaker solutions to Web Technologies
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    alt: Migrating FileMaker solutions to Web Technologies
+    description: If you need to reach more concurrent users, we can migrate the established structure and functionality of your FileMaker system into a Web Application.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+    card-class: web
+    intro: yes
+  -
+    title: System Redesign
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90C1862F-6DE9-4BD2-BE20-302F67DD067C/systemredesign.svg
+    alt:
+    description: Software ages quickly. Rethinking your system may be daunting, but procrastinating can be just as costly. Leverage your existing solution with innovations, including a new definition of how you work today. Mapped out over months and years in phases, priorities can line up with budget. We approach redesigns incrementally, improvement with integrity, and future flexibility, comes step-by-step.
+    show-label: show-label
+    header-class:
+    class:
+    filemaker:
+    card-class: sys-redesign
+    intro: yes
+
+  -
+    title: data visualization
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-321C864E-BD09-440E-A914-A2212042EEC3/DataVis.svg
+    alt:
+    description: We can translate your data into dynamic visual reports or interactive web graphics to help users more quickly and fully understand information.
+    show-label:
+    header-class:
+    class:
+    filemaker:
+    card-class: data-viz
+    intro: yes
+  -
+    title: performance improvement
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-5904D0E3-A202-4497-9B9F-CD1D1322FE5E/MigratingFMsolutions_toWebTechnologies.svg
+    alt:
+    description: The measure, reporting and improvement of performance related to your software, systems, and infrastructure.
+    show-label:
+    header-class:
+    class:
+    filemaker:
+    card-class: performance
+    intro: yes
+  -
+    title: Web and FileMaker Integration
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-88EF64AD-947C-469D-88F6-BE8244AF7209/FMwebintegration.svg
+    alt: Web and FileMaker Integration
+    description: We began as a FileMaker shop, and as the web grew, so did we. Our global customers have always been a driving force in such a competitive arena, no one can thrive on a single platform. Modern, native web technologies deliver a global scale.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    filemaker: true
+    intro: yes
+    card-class: webfm
+    row-width: medium-6 large-8
+  -
+    title: FileMaker License Fullfillment
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-FD96E59B-AE8C-4D00-90A3-5FBA4F36E1EF/FMLicenseFulfillment.svg
+    alt: FileMaker Dev
+    description: Making the most of our strong twenty-year working relationship with FilleMaker Inc., we can process orders of FileMaker products for you.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+  -
+    title: Dashboards
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-BF8DC1B9-28C2-4D6B-BE4B-A416B7A88F70/dashboard_1.svg
+    alt: Dashboards
+    description: A dashboard provides at-a-glance views of KPIs (key performance indicators) relevant to particular objectives and/or models. This can be for anything from sales to HR, or from marketing to production.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+  -
+    title: User Interface Design
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-0871A798-1F3B-4CB7-8967-CE6B8C1BF188/UI.svg
+    alt: User Interface Design
+    description: Thoughtful software is the cornerstone of computing the beginning, not the end. Great software demands approachable, rewarding interfaces. Without them, people resist using computers This is a design failure, not a human one. Beezwax prizes visual clarity, but interface design isn’t purely aesthetic.
+    # It’s about grasping the interplay between people and the information they generate and consume. It’s about intuiting and promoting real users’ needs. Ultimately, it’s about improving the relationship between people and work.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    intro: yes
+    card-class: ui-design
+  -
+    title: System Redesign
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90C1862F-6DE9-4BD2-BE20-302F67DD067C/systemredesign.svg
+    alt: System Redesign
+    description: Software ages quickly. Rethinking your system may be daunting, but procrastinating can be just as costly. Leverage your existing solution with innovations, including a new definition of how you work today. Mapped out over months (or years) in phases, priorities can line up with budget. We approach redesigns incrementally improvement with integrity, and future flexibility, comes step-by-step.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+  -
+    title: Migrating To Latest FileMaker Version
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-02378B41-1E76-4DA8-9045-24B1CA4A6152/migratetolatestFM.svg
+    alt: Migrating To Latest FileMaker Version
+    description: You know it's time to move forward to the current version of FileMaker, but aren't sure of all the steps to do this safely and efficiently. We'll look for the gotchas, using our team's knowledge across FileMaker versions, as well as tools like InspectorPro to identify compatibility issues. Meanwhile, many new features are only potential  until you implement them. And, of course, we can help with that, too.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+  -
+    title: FileMaker WebDirect Development
+    img: https://beezwax.net/assets/default-images/default-service-icon.svg
+    description: With FileMaker WebDirect, we can tailor a FileMaker custom app to manage and share business information directly through a secure web browser. WebDirect is your FileMaker database delivered directly to a web browser.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+  -
+    title: Web Services / REST APIs
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-0FFF5EA7-ECD4-4A55-ACB8-F73AC67E2BFD/RESTapis.svg
+    alt: Migrating To Latest FileMaker Version
+    description: Machine-to-machine communication for transferring file formats such as XML and JSON. In practice, the web service typically provides an object-oriented web based interface to a database server ( utilized by another web server, or by a mobile application ). Another common application may be a mashup, where a web server consumes several web services at different machines, and compiles the content into one user interface.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    row-width: medium-6 large-8
+
+  -
+    title: Convert from Excel
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3569F341-3AF0-480A-A244-B1883595C113/ExportExcel.svg
+    description: Many systems we've built started as Excel files, Numbers documents or Google sheets. Smart individuals can quickly organize their own data in spreadsheets, but are challenged to securely share their work with team members, across an organization.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+  -
+    title: Data Analysis
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-73F79F8A-E3F3-4122-B59D-AEC5B6E84E6B/dataanalysis.svg
+    description: Useful information can be derived and decisions made by manipulating, transforming and cleaning data sets.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+  -
+    title: Reports
+    img: https://beezwax.net/assets/default-images/default-service-icon.svg
+    description: Data displayed, nicely.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+  -
+    title: FileMaker Support
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-E888CC6E-75BB-4474-9EA5-12C89C821EC4/FMsupport.svg
+    description: We often provide a few hours of support in how to use your FileMaker system more effectively, before you decide how many more hours to spend in building something new. This support work can include helping our clients make fuller use of the built-in FileMaker tools, or even making minor adjustments to the structure, interface, and scripting.
+    show-label: show-label
+    header-class: filemaker
+    class: even
+    filemaker: true
+  -
+    title: Going Beyond Excel
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-54800AC3-17E9-425D-89B9-122C24FE333E/GoingBeyondExcel.svg
+    description: Excel is a powerful tool in an individual's hands. But FileMaker is a powerful tool for teams. As you grow into a collaborative team, you'll want your data management to mature into systems that handle robust business logic, data workflow, integration, document management, remote access and security... not to mention a modern user experience that supports mobility, notifications, reporting and data visualization via custom business apps built on the FileMaker platform.
+    show-label: show-label
+    header-class: filemaker
+    class: odd
+    end: end
+
+service-node-nav:
+  -
+    img: FilemakerDev.svg
+    img-png: FilemakerDev.png
+    title: FileMaker Development
+    alt: FileMaker Dev
+    description: For more than two decades, and over 1,500 projects, we have delivered custom FileMaker apps to teams of web, mobile and desktop users, across a wide range of industries.
+    show-label: show-label
+    header-class: filemaker
+    id: filemaker
+  -
+    img: MobileDev.svg
+    title: Mobile Development
+    alt: Mobile Development
+    description: iOS and Swift, FileMaker, mobile web and more — we can take your app from idea to App Store, or build a robust backend for your team of mobile users.
+    header-class: filemaker
+  -
+    img: WebDev2.svg
+    title: Web Development
+    alt: Web Development
+    description: We use proven technologies and industry best practices to develop robust, responsive web applications that integrate with a wide range of web services and APIs.
+  -
+    img: Consulting.svg
+    title: Consulting
+    alt: Consulting
+    description: Our clients rely on us as business consultants, as well as programmers, to help design efficient information systems supporting organizational workflow.
+    header-class: filemaker
+  -
+    img: DataVis.svg
+    title: Visualization
+    alt: Visualization
+    description: We can translate your data into dynamic visual reports or interactive web graphics to help users more quickly and fully understand information.
+    header-class: filemaker
+  -
+    img: Integration.svg
+    title: Integration
+    alt: Integration
+    description: A major aspect of our work is connecting systems, technologies and services — if it's got an API, we'll connect to it, or if it needs an API, we'll build it.
+    header-class: filemaker
+  -
+    img: Design.svg
+    title: Design
+    alt: Design
+    description: We bring you modern UX, design patterns and best practices because good design is always a goal, from how software looks to how it works for users.
+    header-class: filemaker
+  -
+    img: Training.svg
+    title: Training & Workshops
+    alt: Training & Workshops
+    description: Beezwax regularly offers training and workshops — for users and developers — tailored to your organization, your skill set and your unique business needs.
+    header-class: training
+
+org-members:
+  -
+    photo: https://beezwax.net/system/attachments/36/original/235.jpeg?1444863926
+    name: Brian Schick
+    role: D.R.I.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+  -
+    photo: https://beezwax.net/system/attachments/369/original/red.whitschonke.jpg
+    name: Andrew "Red" Witschonke
+    role: Power User
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+  -
+    photo: https://beezwax.net/system/attachments/247/original/andrew.reichart.jpg
+    name: Andrew Reichart
+    role: D.R.I.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+  -
+    photo: https://beezwax.net/system/attachments/398/original/hannah-yiu.jpg
+    name: Hannah Yiu
+    role: Power User
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+    # end: end
+  -
+    photo: https://beezwax.net/system/attachments/386/original/jojo--opoku.jpg
+    name: Jojo Opoku
+    role: D.R.I.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+    # end: end
+  -
+    photo: https://beezwax.net/system/attachments/225/original/luke.JPG
+    name: Luke Van Der Westhuyzen
+    role: D.R.I.
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere mi sed tortor pulvinar rutrum. Vivamus suscipit purus et eros semper, pellentesque interdum elit imperdiet. Nam fringilla viverra mattis. Sed elementum orci sed nibh vestibulum, id ornare mi auctor. Aenean dictum pulvinar lectus.
+    # end: end
+
+blogs:
+  -
+    img: https://blog.beezwax.net/wp-content/uploads/2017/06/LOgiCATOR-Icon-Flat_Blog-Header-Inverted-@1280x440.png
+    authur: Mark Scott
+    avatar: https://beezwax.net/system/attachments/356/original/mark.scott.2.jpg
+    title: Introducing LOgiCATOR, Part 2 FileMaker 16 Card Windows and Modular Design
+    summary: In Part 1 of this series, Introducing LOgiCATOR, I mentioned that LOgiCATOR grew out of a search interface I developed for a project several years ago. In ways we’ll briefly consider here, it wasn’t extensible, but all that has changed. As that early search interface grew into LOgiCATOR, it made a quantum leap in context independence. The reason we were able to accomplish that can be attributed to a powerful synergy of card windows, JSON, window improvements, new functions, and the Layout Objects window — in short, FileMaker 16
+    tags: Card Windows, FileMaker 16, JSON, Layout Design, Layout Objects Window, Modular FileMaker, New Window Script Step, SortValues function, UniqueValues function
+    link: https://blog.beezwax.net/2017/10/12/logicator-part-3-ready-set-integrate-into-your-filemaker-apps/#more-4179
+  -
+    img: https://blog.beezwax.net/wp-content/uploads/2017/10/IMG_9387.jpg
+    authur: Jay Gonzales
+    avatar: https://secure.gravatar.com/avatar/ba37e805c545d67ef01f5854b3673e78?s=116&d=mm&r=g
+    title: FileMaker Konferenz, Salzburg 2017
+    summary: IThe 8th FileMaker Konferenz is happening October 12 – 14, 2017 at the Crowne Plaza Pitter Event Center in Salzburg, Austria.
+    tags: Layout Objects Window, Modular FileMaker, New Window Script Step, SortValues function, UniqueValues function
+  -
+    img: https://blog.beezwax.net/wp-content/uploads/2017/06/Screen-Shot-2017-08-10-at-13.28.17.png
+    authur:  Federico Ramirez
+    avatar: https://secure.gravatar.com/avatar/29a43fece1306dd17094707ccab4dfc5?s=76&d=mm&r=g
+    title: Writing a Markdown Compiler – Part 2
+    summary: Hello, and welcome to the second part of the Markdown Compiler series! In case you’ve missed it, here is the first part.
+    tags: all, ruby on rails, software design, web development
+  -
+    img: https://blog.beezwax.net/wp-content/uploads/2017/06/Screen-Shot-2017-08-10-at-13.28.17.png
+    authur:  Federico Ramirez
+    avatar: https://secure.gravatar.com/avatar/29a43fece1306dd17094707ccab4dfc5?s=76&d=mm&r=g
+    title: Writing a Markdown Compiler – Part 2
+    summary: Hello, and welcome to the second part of the Markdown Compiler series! In case you’ve missed it, here is the first part.
+    tags: all, ruby on rails, software design, web development
+
+case-study:
+  -
+    img: /assets/img/gap-card.png
+    title: The Gap
+    summary: Beezwax helped The Gap, Inc. find consensus, and savings, by rebuilding their marketing briefs management system.
+    link: https://beezwax.net/clients
+    span: large-6 medium-6
+  -
+    img: /assets/img/headers/bayan-header-1.jpg
+    title: Ministry Of Foreign Affairs Of Japan
+    summary: A custom FileMaker system to support restoration of an ancient Cambodian temple.
+    link: https://beezwax.net/clients
+    span: large-6 medium-6
+  -
+    img: https://beezwax.net/system/attachments/417/original/oldcastle-background.jpg?1510699272
+    title: Oldcastle, Inc.
+    summary: Founded in 1978, Oldcastle is a staple of North America's construction industry - the first place contractors look for building materials. Oldcastle’s mission is to help build not just long lasting buildings, but also long-lasting relationships and to make sure Oldcastle materials are close at hand wherever customers are.
+    link: https://beezwax.net/clients/oldcastle
+    span: large-3 medium-6
+  -
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-51795860-25C3-4A87-BEFE-B0DED7C03801/8J3A9281.jpg
+    title: University Engineering Department
+    summary: A top-tier University in the Bay Area had a space problem. Students and faculty needed physical locations for study groups and meetings, while classrooms were left underutilized outside of class time. There was an online booking system in place, but it was difficult to get information about room availability on the fly. They needed to match the need with the availability.
+    link: https://beezwax.net/clients/university-engineering-department
+    span: large-3 medium-6
+  -
+    img: https://beezwax.net/system/attachments/431/original/nanowrimo-header.jpg?1513282362
+    title: National Novel Writing Month
+    summary: Write a novel of 50,000 words. In one month. That's the challenge of NaNoWriMo, or National Novel Writing Month, a worldwide event occurring every November.
+    link: https://beezwax.net/clients/nanowrimo
+    span: large-3 medium-6
+  -
+    img: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-AC6E72F8-7D07-AB49-B995-0F21730F9D33/sf-buildings-by-milhouse.jpg
+    title: Neukom Institute
+    summary: The mission of Dartmouth College's Neukom Institute is to offer grants to students and faculty who work in separate academic departments, creating bridges between disciplines. They wanted a visual tool to show their community the connections they've assisted in creating. As a prestigious university they needed a quality product and most important, something easy to read and understand, as it was going to be part of a presentation first, and then be available on their website.
+    link: https://beezwax.net/clients/nanowrimo
+    span: large-3 medium-6 end
+
+tech-nodes:
+  -
+    name: AWS
+    img: AmazonWebService.svg
+    description: Our IT consulting team is experienced with Amazon Web Services (AWS), including setup, deployment, security, scalability and performance for systems that run your web, mobile or desktop applications.
+  -
+    name: AngularJS
+    img: Angular.svg
+    description: Developed and maintained by Google, AngularJS is a popular open source Javascript framework used for building applications for web, mobile and desktop.
+  -
+    name: Backbone.js
+    img: Backbone.svg
+    description: Backbone.js is an MVC (Model/View/Controller) JavaScript framework that allows for better organization of web applications. Applications built using Backbone are easier and faster to build and maintain.
+  -
+    name: D3.js
+    img: D3.svg
+    description: D3 is a powerful and widely used data visualization JavaScript library. It is capable of delivering detailed, interactive and scalable visualizations of your data in a web browser.
+  -
+    name: Ember
+    img: Ember.svg
+    description: Ember is a popular JavaScript framework. We use it for building scalable, responsive Web solutions with the rich UI of native mobile and desktop applications.
+  -
+    name: FileMaker
+    img: FileMaker.svg
+    description: FileMaker is a cross-platform rapid application development tool and server platform for Mac, Windows, iOS, Web and the Cloud. FileMaker can help transform your business and we here at Beezwax speak deep FileMaker... for over 20 years.
+  -
+    name: JavaScript
+    img: JavaScript.svg
+    description: JavaScript plays important roles the UI and logic of modern web applications. Beezwax can be light on the JavaScript when necessary, but we definitely enjoy getting elbows-deep in more robust JavaScript implementations.
+
+  -
+    name: Node.js
+    img: Node.svg
+    description: Node.js is the most pouplar open-source, cross-platform JavaScript engine. We use it to power the backend for modular, scalable web applications, mobile apps and microservice integrations.
+
+  -
+    name: PHP
+    img: PHP.svg
+    description: PHP is a popular open source programming language. We use it for web development and building content-driven applications on platforms including WordPress, FileMaker, Drupal and Joomla.
+  -
+    name: Python
+    img: Python.svg
+    description: Python is popular, open source programming and systems scripting language. We use it for everything from managing servers and handling email, to integrating FileMaker with other platforms (using our free bBox plugin).
+  -
+    name: Rails
+    img: Rails.svg
+    description: A platform of choice across a wide range of projects, Ruby on Rails is ideal for responsive web applications that organize complex data interaction through elegant UIs, and integrate with a wide range of APIs.
+  -
+    name: React.js
+    img: React.svg
+    description: React is a popular JavaScript front-end library. We use it for building lightweight, lightning-fast user interfaces for web applications.
+  -
+    name: Ruby
+    img: Ruby.svg
+    description: Ruby is a popular open source programming language, especially well known for its simplicity and power. It's at the heart of the Ruby on Rails web development framework, and can also be used for other programming tasks and integrations.
+  -
+    name: Swift
+    img: Swift.svg
+    description: Swift is a powerful, modern programming language for building incredible mobile apps and robust backend services for iOS, Mac, and more.
+  -
+    name: Tableau
+    img: Tableau.svg
+    description: Tableau is a modern data visualization tool that features ease of use, live updates, fast visual analysis of data and publishing to the web. Tableau integrates with many modern databases systems, including FileMaker 16.
+  -
+    name: WordPress
+    img: WordPress.svg
+    description: WordPress is a web content management system that drives about one fourth of the websites on the internet. The WordPress ecosystem includes a vast array of plugins, themes and integration techniques. The platform can be used for anything from simple blogs to publishing workflows, ecommerce platforms and more.
+
+tech-additional-nodes:
+  -
+    name: Barcode
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: FileMaker WebDirect
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Ruby
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: CSS
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: SQL
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: React.js
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: nix
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: SQL Server
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Microsoft Excel
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Microsoft Word
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Oracle
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: AppleScript
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: QuickBooks
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: SMS
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Swift
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Go
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Google Maps
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: FileMaker Server
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Sketch
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: FileMaker Data API
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Active Directory
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Git
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Elastic Search
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: SVG
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Node.js
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: RSpec
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: JSON
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Bluetooth
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: iBeacon
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: FileMaker XML API
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: QuickBooks
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: FileMaker Cloud
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Heroku
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Vapor
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Server Side Swift
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+
+functional-areas:
+  -
+    name: Account Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Accounting
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Administration
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Advertising
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Asset Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Big Data
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Billing/Invoicing
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Business Continuity
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Calendaring
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Communications
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Compliance
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Contact Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Content Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Contract Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Credit Card Processing
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Curriculum
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Customer Relationship Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Document Generation
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Document Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: eCommerce
+    description: eCommerce is the process of selling goods and services online. It interfaces with many areas, including web development, transaction processing, inventory control, funds transfer, marketing and data management.
+  -
+    name: Email Marketing
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Event Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Facilities Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Finance
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Forecasting
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Fundraising
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Globalization
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Hardware Engineering
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Human Resources
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: IT Services
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Incident Tracking
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Information Security
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Intellectual Property
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Inventory Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Issue Tracking
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Laboratory Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Legal
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Legal Notices
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Manufacturing
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Market Research
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Marketing
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Office Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Operations
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Ordering Systems
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: POS
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Partnership Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Print Production
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Process Design
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Process Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Procurement Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Program Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Project Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Recruitment
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Registration
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Research and Development
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Royalties Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Sales
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Scheduling
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Security
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Software Engineering
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Space Planning
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Strategic Planning
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Studio Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Supply Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Surveys
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Telecommunications
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Time Tracking
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Training
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Transportation
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Vendor Management
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+  -
+    name: Video and Audio production
+    description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+
+goals:
+  -
+    name:	Reporting
+  -
+    name:	Security enhancement
+  -
+    name:	Increase efficiency
+  -
+    name:	Offer a new service
+  -
+    name:	Strengthen partnerships
+  -
+    name:	Use Web more effectively
+  -
+    name:	Know what's happening in your business
+  -
+    name:	Start a new business
+  -
+    name:	Goof off
+  -
+    name:	Productivity
+  -
+    name:	Teamwork
+  -
+    name:	Brainstorm
+  -
+    name:	Return On Investment
+  -
+    name:	Building Trust
+  -
+    name:	Transparency
+  -
+    name:	Collaboration ; )
+  -
+    name:	Innovation
+  -
+    name:	Sustainability / the Triple Bottom Line
+  -
+    name:	Recession Preparedness
+  -
+    name:	Mindfulness
+  -
+    name:	Relaxation
+  -
+    name:	Competitive Advantage
+  -
+    name:	Love your job
+  -
+    name:	Creativity
+  -
+    name:	Exactly So
+  -
+    name:	Work Flexibility
+  -
+    name:	Work-life Balance
+  -
+    name:	Accountability
+  -
+    name:	Distributed Workforce
+  -
+    name:	Scaling Your Business
+  -
+    name:	Hiring
+  -
+    name:	Train Staff
+  -
+    name:	Communicate your offerings to customers
+  -
+    name:	Better understand your business
+  -
+    name:	Figure it out as we go
+  -
+    name:	Resource conservation
+  -
+    name:	Paperless Office
+  -
+    name:	Diversity and Inclusion
+  -
+    name:	Remote User Performance
+  -
+    name:	Mergers & Acquisitions
+  -
+    name:	Reduce your costs
+  -
+    name:	Confidence in Technology Partner
+  -
+    name:	"No commitment required; On-call support"
+  -
+    name:	Mobile Workforce
+  -
+    name:	Not having to think about our info systems
+  -
+    name:	Better Managerial Oversight
+
+industry:
+  -
+    name: Publishing
+  -
+    name: Arts & Entertainment
+  -
+    name:	Consulting
+  -
+    name:	Creative & Media
+  -
+    name:	Education
+  -
+    name:	Engineering
+  -
+    name:	Environmental
+  -
+    name:	Finance & Legal
+  -
+    name:	Food
+  -
+    name:	Government
+  -
+    name:	Health
+  -
+    name:	Hospitality & Transportation
+  -
+    name:	Human Resources
+  -
+    name:	Marketing & Communications
+  -
+    name:	Non-Profit
+  -
+    name:	Organization Development
+  -
+    name:	Real Estate
+  -
+    name:	Science & Research
+  -
+    name:	Spirituality
+  -
+    name:	Technology
+  -
+    name:	Wholesale & Retail
+  -
+    name:	Construction
+  -
+    name:	Insurance
+  -
+    name:	Sports
+  -
+    name:	Manufacturing
+
+prodcuts:
+  -
+    name: InspectorPro 6.5
+    card-image: ../assets/img/products/inspector_pro.png
+    ribbon: hide
+    tag-line: For FileMaker Superheroes!
+    summary: InspectorPro is a Beezwax product that allows a FileMaker developer to create, navigate and analyze all of the objects in a FileMaker solution.
+    moreinfolink: inspectorpro.html
+    2nd-btn-label: Demo
+    cta-btn-label: buy
+    cta-btn-color: green
+    cta-link: inspectorpro.html
+    solo:
+    medium: '6'
+  -
+    name: OfficeHub
+    card-image: ../assets/img/products/OfficeHub-Icon@3x.png
+    ribbon:
+    tag-line: Coming Soon. Check the star button above to be notified upon the release.
+    summary: For the small to medium size business that uses FileMaker, OfficeHub makes running your office space simpler and easier.
+    moreinfolink: officehub.html
+    2nd-btn-label: Demo
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity: hide
+    cta-btn-label:
+    cta-btn-color: green
+    cta-link: ../officehub.html
+    solo: solo
+    medium: '6'
+  -
+    name: LOgiCATOR
+    card-image: ../assets/img/products/logicator/logicator-product-page-logo.png
+    ribbon:
+    tag-line: An advnaced search module for FileMaker
+    summary: LOgiCATOR builds on the immense power of FileMaker’s native Find mode, and wraps that power in a sleek and intuitive interface.
+    moreinfolink: logicator.html
+    2nd-btn-label: Demo
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: logicator.html
+    solo:
+    medium: '4'
+  -
+    name: bBox FileMaker Plug-in
+    card-image: ../assets/img/products/bBox FileMaker Plug-in.png
+    ribbon:
+    tag-line: A plug-in for FileMaker Pro
+    summary: Plug Python, Ruby, JS, PHP, bash/sh, XPath, and SQLite into FileMaker.
+    moreinfolink: bbox.html
+    2nd-btn-label: Demo
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: bbox.html
+    solo:
+    medium: '4'
+  -
+    name: textMate Bundle
+    card-image: ../assets/img/products/textmate_bundle.png
+    ribbon:
+    tag-line: Use TextMate as a text editor for FileMaker Pro.
+    summary: Use TextMate as a text editor for FileMaker Pro.
+    moreinfolink: textmate-bundle.html
+    2nd-btn-label: github
+    2nd-btn-visiablity:
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: textmate-bundle.html
+    solo:
+    medium: '4'
+  -
+    name: HiveMine
+    card-image: ../assets/img/products/HiveMine.png
+    ribbon:
+    tag-line: iOS App
+    summary: Redmine Project teams, issues and budgets on your iOS device.
+    moreinfolink: hivemine.html
+    2nd-btn-label:
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: hivemine.html
+    solo:
+    medium: '4'
+  -
+    name: '@ - SQL Sugar'
+    card-image: ../assets/img/products/@ SQL Sugar for FileMaker.png
+    ribbon:
+    tag-line: For FileMaker
+    summary: A fluid and nimble SQL powertool designed expressly for FileMaker developers.
+    moreinfolink: sql.html
+    2nd-btn-label:
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: sql.html
+    solo:
+    medium: '4'
+  -
+    name: 'Publish to Apple News'
+    card-image: ../assets/img/products/Publish to Apple News.png
+    ribbon:
+    tag-line: Your WordPress content into Apple News.
+    summary: Publish your WordPress blog content to your Apple News channel.
+    moreinfolink: publish-to-apple-news.html
+    2nd-btn-label:
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Download
+    cta-btn-color: green
+    cta-link: publish-to-apple-news.html
+    solo:
+    medium: '4'
+  -
+    name: We are always building
+    card-image: https://beezwax.net/system/attachments/381/original/careers.png
+    ribbon: hide
+    tag-line: Customized solutions
+    summary: Let us know how you can help us help you find your next solution.
+    moreinfolink-visiablity: hide
+    moreinfolink:
+    2nd-btn-label:
+    2nd-btn-visiablity: hide
+    cta-btn-visiablity:
+    cta-btn-label: Contact Us
+    cta-btn-color: green
+    cta-link: contact.html
+    solo: solo
+    medium: '4'
+    end: end
+    class: hide custom
+
+clients:
+  -
+    name: Adobe
+    logo: ../assets/img/clients/adobe.png
+    link-to-casestudy: https://beezwax.net/clients/adobe
+  -
+    name: Pacific Institute
+    logo: ../assets/img/clients/pacific-institute.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: California Alliance for Jobs
+    logo: https://beezwax.net/assets/clients/cafj-2b8047d350e0dedceae44255ad60d5c7.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Kaiser Permanente
+    logo: https://beezwax.net/assets/clients/kaiser_permanente-40194a9ae723b9f72031f9f6db869476.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Oakland Museum of CA
+    logo: https://beezwax.net/assets/clients/omca-98c8a8d48b6dd802fe73b6b6c30f4529.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Sony
+    logo: https://beezwax.net/assets/clients/sony-e9de9541447480b380b43ab2a6cbf532.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Caltrans
+    logo: https://beezwax.net/assets/clients/caltrans-dc3f3f9e0a8fb5f2d1e8a55550184179.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: GAP
+    logo: ../assets/img/clients/gap.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Reel Security
+    logo: https://pbs.twimg.com/profile_images/537507913237942272/JPtzo5rP_400x400.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Headlands Center for the Arts
+    logo: http://www.headlands.org/wp-content/themes/headlands-2012/assets/images/main-logo.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Childrens Miracle Network
+    logo: ../assets/img/clients/CMNHospitals.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Neukom Institute
+    logo: ../assets/img/clients/neukom_logo.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: UNICEF
+    logo: ../assets/img/clients/UNICEF_Logo.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Oldcastle Inc.
+    logo: ../assets/img/clients/Oldcastle-logo.png
+    link-to-casestudy: https://beezwax.net/clients
+
+  -
+    name: U.C. Berkeley
+    logo: ../assets/img/clients/ucberkeley_logo.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Kroka Expeditions
+    logo: ../assets/img/clients/kroka.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: Marin Arts Council
+    logo: ../assets/img/clients/MarinArts_logo_new.png
+    link-to-casestudy: https://beezwax.net/clients
+  -
+    name: The Burning Man Project
+    logo: ../assets/img/clients/burningman.png
+    link-to-casestudy: https://beezwax.net/clients
+
+skills:
+  -
+    name: Ruby
+    learn-toggle-id: learn_ruby
+    mentor-toggle-id: mentor_ruby
+    icon: Ruby.svg
+  -
+    name: Ruby on Rails
+    learn-toggle-id: learn_rubyonrails
+    mentor-toggle-id: mentor_rubyonrails
+    icon: Rails.svg
+  -
+    name: JavaScript
+    learn-toggle-id: learn_JavaScript
+    mentor-toggle-id: mentor_JavaScript
+    icon: JavaScript.svg
+  -
+    name: Node.js
+    learn-toggle-id: learn_node
+    mentor-toggle-id: mentor_node
+    icon: Node.svg
+  -
+    name: Node.js
+    learn-toggle-id: learn_node
+    mentor-toggle-id: mentor_node
+    icon: Node.svg
+  -
+    name: Node.js
+    learn-toggle-id: learn_node
+    mentor-toggle-id: mentor_node
+    icon: Node.svg
+
+videos:
+  -
+    title: Student Interview - Alina, Software Engineer Intern at Beezwax
+    id: NnGiHcw2FQc
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+    columns: small-12
+    related: true
+
+  -
+    title: Using Tableau actions to interact with FileMaker data
+    id: 6Y4yTtb8Vl8
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+    columns: medium-6 small-12
+    related: true
+
+  -
+    title: InspectorPro 6 - Comparisons
+    id: 63qbT2cgmos
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+    columns: medium-6 small-12
+    related: true
+
+  -
+    title: InspectorPro 6 - Importing a DDR
+    id: IoxIPR6NIPs
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+    columns: medium-6 large-4 small-12 end
+  # -
+  #   title: InspectorPro 6 - Navigation
+  #   id: AJS3ha9rbvc
+  #   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+  #   columns: medium-6 large-4 small-12
+  # -
+  #   title: InspectorPro 6 - Importing a DDR when hosted
+  #   id: aGIXRXqVCjk
+  #   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at consectetur magna. Nunc malesuada sem sit amet odio vulputate ornare. Quisque dapibus euismod diam at volutpat.
+  #   columns: medium-6 large-4 small-12 end
+
+feedback-projects:
+  -
+    project-name: USASA.ORG Application
+    id: 1
+  -
+    project-name: FileMaker System Development
+    id: 2
+  # -
+  #   project-name: FileMaker Server Maintenance & Support
+  #   id: 3

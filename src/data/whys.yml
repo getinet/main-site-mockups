@@ -1,0 +1,27 @@
+filemaker:
+  -
+    title: Distributed Workforce
+    why-description: Remote and mobile. Some days that's how we all roll.
+    data-slide: 0
+    class: is-active
+  -
+    title: Innovation
+    why-description: If your organization is unique, you can’t rely on an out-of-the-box solution. Custom software that's tailored to your workflow will inevitably propel it forward. Seeing your innovation baked into your own software allows for better training, insights, pivots, breakthroughs. Fun stuff.
+    data-slide: 1
+  -
+    title: Platinum FileMaker partner
+    why-description: Beezwax is a Platinum member of the FileMaker Business Alliance. Beezwax staff regularly speak at industry events, create widely-used development tools and offer ongoing workshops that teach other FileMaker developers the tricks of the trade.
+    data-slide: 2
+  -
+    title: Over 1,500 successful FileMaker projects.
+    why-description: We've built over one-thousand-five-hundred custom software solutions for [our clients](https://beezwax.net/clients). Chances are high we have already solved your problem for someone else.
+    data-slide: 3
+
+  -
+    title: Leadership in the FileMaker community.
+    why-description: We are a recognized leader in FileMaker development, contributing some of the leading developer Tools like Inspector Pro and providing thought leadership in our blog articles and regular conference presentations.
+    data-slide: 4
+  -
+    title: Breadth in our client base.
+    why-description: Beezwax has delivered successful FileMaker solutions across a full range of industries. Fortune 500 companies, non-profits, academic institutions, government agencies and more.
+    data-slide: 5

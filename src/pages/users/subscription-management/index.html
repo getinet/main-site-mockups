@@ -1,0 +1,257 @@
+---
+title: subscription management
+posterClass: contact
+quoteDisplay: hide
+show-photo-by: hide
+subscription-management: true
+---
+
+{{> header-hero}}
+
+<div class="row subscription-management-options option-1" style="display: none;">
+  <div class="small-12 large-6 columns small-centered">
+    <div class="text-center" id="unsubscribe-part1">
+      <p class="text-center"><span class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="mary.smith@acme.com"><b>Mary</b></span>, so sorry to see you would like to unsubscribe to our newsletter.<br>Are you sure?<br>
+
+     </p>
+     <a href="welcome-back.html" class="button secondary small">cancel</a>
+      <a href="#" class="button green small" onclick="$('#unsubscribe-part1, #unsubscribe-part2').toggle();">Unsubscribe</a>
+
+    </div>
+
+    <div class="text-center animated fadeIn" id="unsubscribe-part2" style="display:none;">
+      <h4>mary.smith@acme.com<br> has been unsubscribed from our mailing list</h4>
+      Have a sec? We'd love your feedback.<br>Tell us why your're opting out at this time and we will really apprecaite it.<br>
+      <div class="row">
+        <div class="small-12 medium-6 columns small-centered">
+          <select>
+            <option value="" selected disabled>Select…</option>
+            <option value="">Reason 1</option>
+            <option value="">Reason 2</option>
+            <option value="">Reason 3</option>
+            <option value="">Reason 4</option>
+          </select>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="button green small" data-open="feedback-confirm">Submit Feedback</a>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 medium-6 small-centered columns">
+    <div class="toggle-wrapper">
+      <!-- <p>Flip the switch to see the truth depth of our capabilities.</p> -->
+      <div class="switch small">
+        <span class="pre">Logged In</span>
+        <input class="switch-input" id="unsubscribe-mode" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="unsubscribe-mode">
+          <span class="show-for-sr">How deeap do you want to get</span>
+          <span class="switch-inactive" aria-hidden="true"></span>
+          <span class="switch-active" aria-hidden="true"></span>
+        </label>
+        <span class="post">Logged out</span>
+      </div>
+    </div>
+    <!-- <small>If the user is logged in</small> -->
+
+
+  </div>
+  <div class="row newsletter-options-wrapper logged-in-view">
+    <div class="small-12 medium-6 columns small-centered">
+      <p class="text-center"><span class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="mary.smith@acme.com"><b>Mary</b></span>, so sorry to see you would like to unsubscribe to our newsletter. <br>Uncheck topics that no longer intrest you. <br>Hope you will change your mind in the near future.
+      <span class="hide">Here is the list of newletters you are currently subscribed too. Uncheck what you dont need.</span>
+      Cheers!
+     </p>
+      <div class="small-12 large-6 columns ">
+        <div class="one">
+          <ul  class="one">
+            {{#each global.newsletter-options}}
+            <li>
+              <p class="email-type"><i class="fa checkbox fa-check-square" aria-hidden="true"></i> {{title}}</p>
+              <p class="email-why"><small>{{description}}</small></p>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 large-6 columns ">
+        <!-- {{#each global.guest-intrestes}}
+        <fieldset>
+          <legend>Check these out</legend>
+          <input id="{{title}}" type="checkbox" checked><label for="{{title}}">{{title}}</label>
+          <br><small>this is the reason why this is being shown to you</small>
+        </fieldset>
+        {{/each}} -->
+        <div>
+          <ul class="one">
+            {{#each global.guest-intrestes}}
+            <li>
+              <p class="email-type"><i class="fa checkbox fa-check-square" aria-hidden="true"></i> {{title}}</p>
+              <p class="email-why"><small>{{description}}</small></p>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+
+      <div class="small-12 columns text-center">
+        <p class="button tiny secondary unselect-all" >Unselect All</p>
+        <p class="button tiny green select-all">Select All</p>
+      </div>
+
+      <div class="small-12 columns text-center">
+        <p class="button green" data-open="unsbuscribe-confirm">Confirm Changes</p>
+      </div>
+      <hr>
+      <div class="small-12 columns">
+        <h4>Recommendations</h4>
+      </div>
+      <div class="small-12 columns" style="column-count: 2;">
+        <ul class="one">
+          {{#each global.functional-areas}}
+          <li>
+            <p class="email-type has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" data-click-open="false" data-allow-html="true" title="<b>Why?</b> {{description}}"><i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}</p>
+            <!-- <p class="email-why"><small>{{description}}</small></p> -->
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="small-12 columns text-center">
+        <div class="small-12 columns text-center">
+          <p class="button tiny secondary unselect-all" >Unselect All</p>
+          <p class="button tiny green select-all">Select All</p>
+        </div>
+      </div>
+
+      <div class="small-12 columns text-center">
+        <p class="button green" data-open="unsbuscribe-confirm">Update Subscriptions</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row expanded login-wrapper logged-out-view hide">
+  <div class="small-12 large-3 columns small-centered ">
+    <!-- <small>if not logged in, show this UI</small> -->
+    {{>login-signup}}
+  </div>
+</div>
+
+<div class="row subscription-management-options option-2 last-section logged-out-view hide">
+
+  <div class="small-12 large-6 columns small-centered">
+    <br>
+    <p><span class="has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="mary.smith@acme.com"><b>mary.smith@acme.com</b></span><br>So sorry to see you would like to unsubscribe to our newsletter.If  you have an account with us, please login above to see details on why you were receiving our newsletters.</p>
+    <p>Uncheck topics that no longer intrest you. Hope you will change your mind in the near future.
+    <span class="hide">Here is the list of newletters you are currently subscribed too. Uncheck what you dont need.</span>
+    Cheers!
+   </p>
+  </div>
+
+  <div class="row newsletter-options-wrapper">
+    <div class="small-12 medium-6 columns small-centered">
+      <div class="small-12 large-6 columns ">
+        <div class="one">
+          <ul  class="one">
+            {{#each global.newsletter-options}}
+            <li>
+              <p class="email-type"><i class="fa checkbox fa-check-square" aria-hidden="true"></i> {{title}}</p>
+              <!-- <p class="email-why"><small>{{description}}</small></p> -->
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 large-6 columns ">
+
+        <div>
+          <ul class="one">
+            {{#each global.guest-intrestes}}
+            <li>
+              <p class="email-type"><i class="fa checkbox fa-check-square" aria-hidden="true"></i> {{title}}</p>
+              <!-- <p class="email-why"><small>{{description}}</small></p> -->
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="small-12 columns text-center">
+        <br>
+        <!-- <p class="button blue small unselect-all">unselect all</p> -->
+          <!-- <fieldset>
+        <input type="checkbox" id="checkAll" checked><label for="checkAll"> Select All</label>
+          </fieldset> -->
+          <br>
+          <p class="email-type"><i class="fa checkbox fa-check-square green animated" aria-hidden="true"></i> Select All</p>
+      </div>
+      <div class="small-12 columns text-center">
+        <br>
+        <p class="button green" data-open="unsbuscribe-confirm">Confirm Changes</p>
+      </div>
+      <hr>
+      <div class="small-12 columns">
+        <h4>Recommendations</h4>
+      </div>
+      <div class="small-12 columns" style="column-count: 2;">
+        <ul class="one">
+          {{#each global.functional-areas}}
+          <li>
+            <p class="email-type has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" data-click-open="false" data-allow-html="true" title="<b>Why?</b> {{description}}"><i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}</p>
+            <!-- <p class="email-why"><small>{{description}}</small></p> -->
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="small-12 columns text-center">
+          <!-- <fieldset>
+        <input type="checkbox" id="checkAll" checked><label for="checkAll"> Select All</label>
+          </fieldset> -->
+          <br>
+          <p class="email-type"><i class="fa checkbox fa-check-square green animated" aria-hidden="true"></i> Select All</p>
+      </div>
+      <div class="small-12 columns text-center">
+        <br>
+        <p class="button green" data-open="unsbuscribe-confirm">Update Subscriptions</p>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+
+
+<div class="reveal" id="unsbuscribe-confirm" data-reveal>
+  <!-- <h4>Unsubsribed</h4> -->
+  <p class="text-center">Your email address <br><b>mary.smith@acme.com</b><br> has been unsubscribed from our mailing list :[<br><br>
+      <!-- <a class="button green small" href="javascript:void(0)">Undo</a> -->
+    </p>
+    <ul class="inline-list hide">
+      {{#each global.newsletter-options}}
+      <li>{{title}}, </li>
+      {{/each}}
+      {{#each global.guest-intrestes}}
+      <li>{{title}}, </li>
+      {{/each}}
+    </ul>
+
+  <!-- <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button> -->
+
+  <p class="text-center"> <a class="button green small" href="{{root}}index.html">Done</a></p>
+</div>
+
+
+<div class="reveal" id="feedback-confirm" data-reveal>
+  <h4 class="text-center">Thank you for your feedback</h4>
+  <div class="text-center"> <a class="button green small" href="{{root}}index.html">Done</a></div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

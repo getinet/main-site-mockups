@@ -1,0 +1,505 @@
+<form data-abide novalidate>
+  <div class="row">
+    <div class="columns">
+      <div data-abide-error class="alert callout" style="display: none;">
+        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row intake-wrapper">
+    <div class="small-12 columns text-center">
+      <div class="orbit" role="region" aria-label="Beezwax In-Take Form" data-orbit data-auto-play="false" data-nav-buttons="true" data-infinite-wrap="false" data-use-m-u-i="false">
+
+          {{>orbit-controlers}}
+
+        <ul class="orbit-container intake">
+          <li class="is-active orbit-slide">
+            <div class="row" style="    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;">
+              <div class="small-10 small-centered columns">
+                <div class="toggle-wrapper profile">
+                  <div class="switch small">
+                    <span class="pre">New Client/User</span>
+                    <input class="switch-input" id="intro-advanced" type="checkbox" name="exampleSwitch">
+                    <label class="switch-paddle" for="intro-advanced">
+                      <span class="show-for-sr"> </span>
+                      <span class="switch-inactive" aria-hidden="true"></span>
+                      <span class="switch-active" aria-hidden="true"></span>
+                    </label>
+                    <span class="post">Existing Client/User</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="orbit-slide">
+              <div class="small-11 small-centered small-centered columns">
+                <div class="row">
+                  <div class="medium-6 columns">
+                    <label>
+                      <input type="text" placeholder="First Name *" required>
+                    </label>
+                  </div>
+                  <div class="medium-6 columns">
+                    <label>
+                      <input type="text" placeholder="Last Name *" required>
+                    </label>
+                  </div>
+
+                  <div class="small-12 columns">
+                    <label>
+                      <input type="text" placeholder="Organization / Company *" >
+                    </label>
+                  </div>
+
+                  <div class="small-12 medium-4 columns">
+                    <label>
+                      <input type="text" placeholder="Email *" required>
+                    </label>
+                  </div>
+                  <div class="small-12 medium-3 columns">
+                    <label>
+                      <input type="text" placeholder="Phone" required>
+                    </label>
+                  </div>
+
+                  <div class="small-12 medium-5 columns">
+                    <label>
+                      <input type="text" placeholder="Company URL" required>
+                    </label>
+                  </div>
+
+                  <div class="small-12 columns">
+                    <h4>IT Contact</h4>
+                  </div>
+                  <div class="small-12 medium-8 columns">
+                    <label>
+                      <input type="text" placeholder="Name" >
+                    </label>
+                  </div>
+
+                  <div class="small-12 medium-4 columns">
+                    <label>
+                      <input type="text" placeholder="Title" required>
+                    </label>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <label>
+                      <input type="text" placeholder="Phone" required>
+                    </label>
+                  </div>
+
+                  <div class="small-12 medium-6 columns">
+                    <label>
+                      <input type="text" placeholder="Email" required>
+                    </label>
+                  </div>
+                </div>
+
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Please tell us about your business</h4>
+            </div>
+
+            <div class="small-11 small-centered columns"> <!-- INDUSTRY -->
+              <label>
+                <select id="user-intrests-industry" multiple="multiple" style="width:100%;">
+                  {{#each global.industry}}
+                   <option value="{{name}}">{{name}}</option>
+                   {{/each}}
+                </select>
+              </label>
+            </div>
+            <div class="small-11 small-centered columns"> <!-- USERS -->
+              <label>
+                <select>
+                  <option selected >Number of users</option>
+                  <option value="1 - 49">1 - 49</option>
+                  <option value="50 - 99">50 - 99</option>
+                  <option value="100 - 199">100 - 199</option>
+                  <option value="200+">200+</option>
+                </select>
+              </label>
+            </div>
+            <div class="small-11 small-centered columns"> <!-- HOW -->
+              <label>
+                <!-- <input type="text" placeholder="How did you hear about us?"> -->
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="How did you hear about us"></textarea>
+                <div id="charNum">500</div>
+              </label>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <div class="toggle-wrapper profile">
+                <div class="switch small">
+                  <span class="pre">New Solution</span>
+                  <input class="switch-input" id="intro-advanced" type="checkbox" name="exampleSwitch">
+                  <label class="switch-paddle" for="intro-advanced">
+                    <span class="show-for-sr"> </span>
+                    <span class="switch-inactive" aria-hidden="true"></span>
+                    <span class="switch-active" aria-hidden="true"></span>
+                  </label>
+                  <span class="post">Existing Solution</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>IF - Existing </h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>What are the main tools and systems that you and/or your team currently use?</h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="e.g. FileMaker (please specify versions in use), QuickBooks 2012, Google Apps. "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>IF - Existing </h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>Do you have an existing system that this new project will enhance or replace?</h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>IF - Existing </h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>What are the issues or gaps with your existing systems?</h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>IF - Existing </h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>Do you need to integrate the new project with any of these existing systems?</h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>IF - Existing </h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>Are prior developers of relevant existing systems available to answer questions and  provide information?</h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Project Information – Please tell us about your project</h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>Please describe the project. </h5>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+                <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Project Information – Please tell us about your project</h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>What services are you interested in?</h5>
+
+              <select id="intake-goals" multiple="multiple" style="width: 100%;">
+                {{#each global.goals}}
+                 <option value="{{name}}">{{name}}</option>
+                 {{/each}}
+              </select>
+              <!-- <div class="intake-check-list two">
+                <ul>
+                  {{#each global.goals}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Project Information – Please tell us about your project</h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>What do business improvements do you hope to achieve with this new system?</h5>
+              <div class="intake-check-list two">
+                <ul>
+                  {{#each global.goals}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Project Information – Please tell us about your project</h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>How do you envision the system will achieve these improvements?</h5>
+              <div class="intake-check-list two">
+                <ul>
+                  {{#each global.goals}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h4>Project Information – Please tell us about your project</h4>
+            </div>
+            <div class="small-11 small-centered columns">
+              <h5>Do you have any specific technology preferences for this project? </h5>
+              <div class="intake-check-list two">
+                <ul>
+                  {{#each global.goals}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h5>Please explain any special security requirements.</h5>
+              <div class="intake-check-list two">
+                <ul>
+                  {{#each global.goals}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h5>Please explain any performance requirements.</h5>
+              <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+              <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns">
+              <h5>What are your UI Design and Performance priorities? </h5>
+              <div class="intake-check-list one">
+                <ul>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Keep UI as simple and cost-effective as possible
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Prioritize  system performance over all else, including look/feel
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Focus on look/feel over all else, including performance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns section">
+              <h5>Primary designer will be provided by </h5>
+
+              <fieldset class="large-6 cell">
+                <input type="radio" name="pokemon" value="Red" id="pokemonRed" required checked><label for="pokemonRed">Client team</label>
+                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Beezwax</label>
+              </fieldset>
+            </div>
+          </li>
+
+          <li class="orbit-slide">
+            <div class="small-11 small-centered columns section">
+              <h4>Tell us about your users</h4>
+
+              <h5>Is the system going to be primarily for internal users (e.g. tracking and reporting tool)  or external users (e.g. website)? </h5>
+
+              <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;" placeholder="- "></textarea>
+              <div id="charNum">500</div>
+            </div>
+          </li>
+
+          <li class="orbit-slide in-take-last-card">
+            <div class="small-11 small-centered columns section">
+              <h5>What types of devices would you like your users to be able to access the system? </h5>
+
+              <div class="intake-check-list inline">
+                <ul>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Desktop
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Laptops
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Tablet
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> Mobile
+                  </li>
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true" onclick="$('#devices-other').toggle();"></i> Other
+                  </li>
+                </ul>
+                <textarea maxlength="500" id="devices-other" style="resize: none;height: 50px;display:none;" placeholder="Other Devices" ></textarea>
+                <div id="charNum">500</div>
+              </div>
+            </div>
+
+            <div class="small-11 small-centered columns text-center">
+                <button type="button" class="green small button">Submit</button>
+            </div>
+          </li>
+
+
+          <!-- <li class="orbit-slide">
+            <h4>This project is a …</h4>
+            <div class="project-type-toggle-wrapper">
+              <a href="#" class="button hollow green">New Solution</a>
+              <small> or </small>
+              <a href="#" class="button hollow green">Update Existing Solution</a>
+            </div>
+            <div class="intake-nav">
+              <a href="javascript:void(0)" class="button tiny blue hide">back</a>
+              <a href="javascript:void(0)" class="button tiny blue">next &#9654;&#xFE0E;</a>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <h4>Goals…</h4>
+            <div class="intake-check-list two">
+              <ul>
+                {{#each global.goals}}
+                <li>
+                  <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="intake-nav">
+              <a href="#" class="button tiny">&#9664;&#xFE0E; back</a>
+              <a href="#" class="button tiny">&#9654;&#xFE0E;next</a>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <h4>This project requires these services</h4>
+
+            <div class="intake-check-list">
+              <ul>
+                {{#each global.service-node-nav}}
+                <li>
+                  <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{title}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="intake-nav">
+              <a href="#" class="button tiny">back</a>
+              <a href="#" class="button tiny">next</a>
+            </div>
+          </li>
+          <li class="orbit-slide">
+            <div class="docs-example-orbit-slide">
+              <h4>Technical Requirements</h4>
+              <div class="intake-check-list">
+                <ul>
+                  {{#each global.tech-nodes}}
+                  <li>
+                    <i class="fa fa-square-o checkbox" aria-hidden="true"></i> {{name}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+
+              <!-- {{#each global.service-node-nav}}
+              <div class="promo-parts">
+                <label style="cursor: pointer;">
+                  <i class="fa fa-star checkstar" aria-hidden="true"></i> {{title}}
+                </label>
+              </div>
+              {{/each}} -->
+            </div>
+          </li>
+          <!-- <li class="orbit-slide">
+            <div class="docs-example-orbit-slide">
+              <h4>Functional Requirements</h4>
+              <div class="intake-check-list">
+                <ul>
+                  {{#each functions}}
+                  <li>
+                    <i class="fa fa-square-o checkbox animated" aria-hidden="true"></i> {{title}}
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </li> -->
+          <!-- <li class="orbit-slide">
+            <div class="docs-example-orbit-slide">
+              <h4>Brief Summary</h4>
+                <textarea cols="30" maxlength="500" id="field" style="resize: none;height: 150px;"></textarea>
+                <div id="charNum">500</div>
+                <small class="text-right">500 Charecters Limit</small>
+            </div>
+          </li> -->
+        </ul>
+        <!-- <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+          <button data-slide="4"><span class="show-for-sr">Submit</span></button>
+        </nav> -->
+      </div>
+
+      <!-- <div class="small-12 columns text-center">
+          <button type="button" class="green small button disabled intake-submit-btn">Submit</button>
+      </div> -->
+
+
+    </div>
+  </div>
+</form>

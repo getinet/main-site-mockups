@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>round-twitter-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M19,8.30625005 C18.4847717,8.52109366 17.9251269,8.67578134 17.3477157,8.73593778 C17.9428933,8.3921876 18.3959392,7.85078122 18.6091371,7.2062499 C18.0583755,7.52421897 17.4365483,7.75624998 16.7880709,7.87656233 C16.2639595,7.33515647 15.5177664,7 14.6916245,7 C13.1015227,7 11.8223349,8.24609362 11.8223349,9.77578149 C11.8223349,9.9906251 11.8489845,10.2054687 11.8934011,10.4117186 C9.51269013,10.2914062 7.38959413,9.19140609 5.97715733,7.50703105 C5.72842667,7.91953136 5.5862944,8.3921876 5.5862944,8.90781235 C5.5862944,9.87031274 6.09263947,10.721094 6.86548213,11.2195313 C6.39466987,11.2023439 5.95050773,11.0734373 5.568528,10.8671874 C5.568528,10.8757811 5.568528,10.8929685 5.568528,10.9015628 C5.568528,12.2507813 6.55456853,13.3679689 7.8692896,13.6257815 C7.6294416,13.6859374 7.3718272,13.7203128 7.11421333,13.7203128 C6.92766507,13.7203128 6.75,13.7031248 6.57233493,13.6773437 C6.93654827,14.7773439 7.99365493,15.5765624 9.25507627,15.602344 C8.26903573,16.3499998 7.034264,16.7882812 5.69289333,16.7882812 C5.45304587,16.7882812 5.23096427,16.7796875 5,16.7539064 C6.27030453,17.5445312 7.78045707,18 9.4060912,18 C14.6827413,18 17.5697968,13.771875 17.5697968,10.1023438 C17.5697968,9.98203139 17.5697968,9.86171853 17.5609136,9.74140617 C18.1205584,9.34609377 18.6091371,8.85625013 19,8.30625005 Z" id="path-1"></path>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0.125" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="round-twitter-green">
+            <g id="Combined-Shape">
+                <use fill="#8BB018" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

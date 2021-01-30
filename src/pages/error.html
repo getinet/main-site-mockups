@@ -1,0 +1,28 @@
+---
+title: We ran out of honey
+posterClass: none
+quoteDisplay: hide
+show-photo-by: hide
+body-class: error error-wrapper
+---
+
+{{> header-hero}}
+<div class="error-bg animated fadeInBear">
+
+</div>
+
+<div class="row expanded bear-wrapper">
+  <!-- <div class="error-graphics-container"> </div> -->
+  <div class="small-12 medium-8 large-6 columns small-centered text-center">
+    <!-- <img src="{{root}}assets/img/Bear.svg" alt="" class="error-bear animated "><br> -->
+    <h4 class="error-message animated fadeInUp">Oh my, oh my goodness gracious.<br>
+    We can't seem to find the page you are looking for.</h4>
+
+    <div class="search-bar-wrapper  animated fadeInUp">
+      <input class="site-search-field" id="error-site-search-field" name="search" type="search" placeholder="What can we help you find…"
+       onfocus="(this.value == 'What can we help you find…') && (this.value = '')"
+       onblur="(this.value == '') && (this.value = 'What can we help you find…')" >
+       <i class="fi-x" onclick="$('#error-site-search-field').val('');"></i>
+    </div>
+  </div>
+</div>

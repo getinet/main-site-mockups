@@ -1,0 +1,97 @@
+<form class="log-in-form">
+  <h4 class="text-center">Sign Up</h4>
+  <!-- <small>All fields are required.</small> -->
+  <div class="small-12 medium-6 columns">
+    <label>
+      <!-- Name -->
+      <input type="text" placeholder="Name">
+    </label>
+    <label>
+      <!-- Email -->
+      <input type="email" placeholder="Email">
+    </label>
+    <div class="callout alert hide">
+      <p>We have found a record with the same email.
+      If you are <span>Dave Smith</span> from <span>ACME Inc.</span>, click below to activate your account.<br></p>
+    </div>
+    <label>
+      <!-- Phone -->
+      <input type="tel" placeholder="Phone Number">
+    </label>
+    <label>
+      <!-- Company -->
+      <input type="text" placeholder="Company">
+    </label>
+    <label>
+      <!-- Title -->
+      <input type="text" placeholder="Title">
+    </label>
+  </div>
+
+  <div class="small-12 medium-6 columns">
+
+    <label>
+      <!-- Password -->
+      <input type="password" placeholder="Password">
+    </label>
+    <label>
+      <!-- Confirm Password -->
+      <input type="password" placeholder="Confirm Password">
+    </label>
+    <p class="text-center">
+      <input id="checkbox1" type="checkbox" class="user-i-agree">
+      <label for="checkbox1">I agree to the <a href="{{root}}/terms" target="_blank">Terms and Services</a>.</label>
+    </p>
+
+    <a href="javascript:void(0)" class="button expanded green disabled sign-up-btn"  data-open="SignUpModal-ThankYou" SignUpModal-ThankYou>Sign up with Beezwax</a>
+    <hr>
+    <p><a href="{{root}}users/jane-smith" >Login</a> </p>
+  </div>
+
+
+
+  <div class="org-info hide">
+    <hr>
+    <label>Organization Name
+      <input type="text" placeholder="- -" >
+    </label>
+    <label>Phone
+      <input type="tel" placeholder="--- --- ----">
+    </label>
+    <label>Address
+      <input type="text" placeholder="- -">
+    </label>
+    <label>City
+      <input type="text" placeholder="- -">
+    </label>
+    <label>URL
+      <input type="text" placeholder="- -">
+    </label>
+  </div>
+
+  <div class="social-accounts version-3 hide">
+    <p class="text-center or"> <span>or</span> </p>
+
+    <button type="button" class="small expanded button github social"><i class="fa fa-github" aria-hidden="true"></i> Sign Up with GitHub</button>
+
+    <button type="button" class="small expanded button twitter social"><i class="fa fa-twitter" aria-hidden="true"></i> Sign Up with Twitter</button>
+
+    <button type="button" class="small expanded button facebook social"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up with Facebook</button>
+
+    <button type="button" class="small expanded button googleplus social"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign Up with Google+</button>
+
+    <p class="text-center or"> <span>or</span> </p>
+
+    <div class="button-group merged expanded">
+      <button type="button" class="small expanded button github"><i class="fa fa-github" aria-hidden="true"></i></button>
+
+      <button type="button" class="small expanded button twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+
+      <button type="button" class="small expanded button facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+
+      <button type="button" class="small expanded button googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <!-- <div class="row"> -->
+
+</form>

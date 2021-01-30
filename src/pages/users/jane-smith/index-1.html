@@ -1,0 +1,1154 @@
+---
+title: Profile • Jane Smith
+posterClass: none
+quoteDisplay: hide
+show-photo-by: hide
+user-profile: true
+body-class: video-page
+---
+
+{{> mockup-options}}
+{{> header-hero}}
+<div class="row">
+  <div class="small-12 medium-10 large-8 columns small-centered">
+    <form data-abide novalidate>
+      <div class="row">
+        <div class="columns">
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> We have spotted a few errors.</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="row expanded">
+  <div class="small-12 columns profile-sub-menu" data-sticky-container >
+    <nav class="columns sticky" data-sticky data-anchor="exampleId" data-sticky-on="large" data-offset="150">
+      <ul class="horizantol menu" data-magellan>
+        <li><a href="#profile" class="button tiny blue">Profile</a></li>
+        <li><a href="#org-members" class="button tiny blue">Organization Members</a></li>
+        <li><a href="#projects" class="button tiny blue">Projects</a></li>
+        <li><a href="#downloads" class="button tiny blue">Downloads</a></li>
+        <li><a href="#recommendations" class="button tiny blue">Recommendations</a></li>
+        <li><a href="#blogs" class="button tiny blue">Blogs</a></li>
+      </ul>
+    </nav>
+  </div>
+</div> -->
+
+
+<div id="the-main-stuff">
+
+<div class="row expanded">
+  <div class="small-12 text-center small-centered profile-sub-menu version-2" data-sticky-container>
+    <div class="sticky" data-sticky data-anchor="the-main-stuff" data-sticky-on="small" >
+      <div class="show-for-small hide-for-medium">
+        <ul class="multilevel-accordion-menu vertical menu" data-accordion-menu>
+          <li>
+            <a href="#">Go To …</a>
+            <ul class="menu vertical sublevel-1">
+              <li>
+                <a class="subitem" href="#profile">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile
+                </a>
+              </li>
+
+              <li>
+                <a href="#org-members">
+                  <i class="fa fa-users" aria-hidden="true"></i> Organization Members
+                </a>
+              </li>
+
+              <li>
+                <a href="#projects">
+                  <i class="fa fa-clipboard" aria-hidden="true"></i> Projects
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class=" menu hide-for-small show-for-medium" data-magellan>
+        <a href="#profile" class="button small yellow"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span>Profile</span></a>
+        <a href="#org-members" class="button small yellow version-1"><i class="fa fa-users" aria-hidden="true"></i><span>Organization Members</span></a>
+        <a href="#projects" class="button small yellow version-2"><i class="fa fa-clipboard" aria-hidden="true"></i> <span>Projects</span></a>
+        <a href="#invoices" class="button small yellow version-2"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Invoices</span></a>
+        <a href="#newsletters" class="button small yellow version-3"> <i class="fa fa-envelope-o" aria-hidden="true"></i> <span>News Stories</span></a>
+        <a href="#downloads" class="button small yellow version-2"> <i class="fa fa-download" aria-hidden="true"></i><span>Downloads</span></a>
+        <a href="#recommendations" class="button small yellow"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span>Recommendations</span></a>
+        <a href="#blogs" class="button small yellow version-3"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Blogs</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row expanded user-profile-info-wrapper" section id="profile"> <!-- Profiles -->
+  <div class="small-12 large-8 columns small-centered">
+    <div class="row">
+      <div class="small-12 large-6 columns">
+        <h4>User Profile</h4>
+        <label>
+          <input type="text" value="Jane Smith" placeholder="Name">
+        </label>
+
+        <label>
+          <input type="text" value="jane.smith@jsmith.com" placeholder="Email">
+        </label>
+
+        <label>
+          <input type="tel" value="888 555 1212" placeholder="Phone">
+        </label>
+
+        <label>
+          <input type="text" value="CEO / Founder" placeholder="Title">
+        </label>
+
+
+        <label>
+          <input type="password" id="password" placeholder="New Password" aria-describedby="exampleHelpText" required >
+          <span class="form-error">
+            I'm required!
+          </span>
+        </label>
+        <!-- <p class="help-text" id="exampleHelpText">Enter a password please.</p> -->
+        <label>
+          <input type="password" placeholder="Confirm New Password" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+          <span class="form-error">
+            Hey, passwords are supposed to match!
+          </span>
+        </label>
+
+        <p class="text-center">
+          <button class="button green small " type="submit" value="Submit">Update User Profile</button></p>
+      </div>
+
+      <div class="small-12 large-6 columns org-profile-wrapper">
+        <h4>Organization Profile</h4>
+        <label>
+          <input type="text" value="ACME Inc." placeholder="Organization Name">
+        </label>
+        <label>
+          <input type="tel" value="888 555 1212" placeholder="Phone">
+        </label>
+        <label>
+          <input type="text" value="123 Main Street" placeholder="Address">
+        </label>
+        <div class="row">
+          <div class="small-7 columns" style="padding-left: 0;">
+            <label>
+              <input type="text" value="Oakland" placeholder="City">
+            </label>
+          </div>
+          <div class="small-2 columns">
+            <label>
+              <input type="text" value="CA" placeholder="State">
+            </label>
+          </div>
+          <div class="small-3 columns">
+            <label>
+              <input type="text" value="94612" placeholder="Zip">
+            </label>
+          </div>
+        </div>
+
+        <label>
+          <input type="text" value="U.S.A." placeholder="Country">
+        </label>
+
+        <label>
+          <input type="text" value="http://www.jsmith.com" placeholder="URL">
+        </label>
+        <div class="small-12 columns">
+          <p class="text-center">
+            <button class="button green small " type="submit" value="Submit">Update Organization Profile</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="the-main-stuff"> -->
+
+
+
+  <div class="row version-1 version-2" style="padding-top: 50px;" section id="org-members">
+    <div class="small-12 large-10 columns small-centered">
+      <h4>Oranization Members</h4>
+
+      <div class="empty-state callout">
+        <h4>No organization members to display.</h4>
+      </div>
+
+    </div>
+
+    <div class="small-12 large-10 columns small-centered not-empty">
+      <div class="row">
+        {{#each global.org-members}}
+        <div class="large-4 medium-6 small-12 columns" >
+          <div class="card-wrapper org-members">
+            <div class="photo-wrapper" style="background-image: url('{{photo}}');">
+            </div>
+            <div class="member-info-wrapper">
+              <h4>{{name}}</h4>
+              <p class="role">{{role}}</p>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      <div class="row version-2">
+        <div class="large-4 medium-6 small-12 columns small-centered" data-open="add-new-members">
+          <a href="#" class="button hollow green expanded"><i class="fa fa-plus-circle" aria-hidden="true"></i> Invite Others in Your Org</a>
+          <!-- <div class="card-wrapper org-members">
+            <h4 class="text-center"><i class="fa fa-plus-circle" aria-hidden="true"></i> Invite Others in Your Org</h4>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="reveal small" id="add-new-members" data-reveal>
+        <h4>Invite members from your orgainization</h4>
+        <form>
+          <small>* Required Field</small></p>
+          <label>Name *
+            <input type="text" placeholder="First last">
+          </label>
+          <label>Email*
+            <input type="email" placeholder="-@organization.com">
+          </label>
+
+          <label>Title
+            <input type="text" placeholder="- -">
+          </label>
+          <label>Message
+            <input type="text" placeholder="Message">
+          </label>
+
+          <div class="org-info hide">
+            <hr>
+            <label>Organization Name
+              <input type="text" placeholder="- -" >
+            </label>
+            <label>Phone
+              <input type="tel" placeholder="--- --- ----">
+            </label>
+            <label>Address
+              <input type="text" placeholder="- -">
+            </label>
+            <label>City
+              <input type="text" placeholder="- -">
+            </label>
+            <label>URL
+              <input type="text" placeholder="- -">
+            </label>
+          </div>
+        </form>
+        <p class="text-center">
+          <button class="button green small " type="submit" value="Submit" data-open="new-member-invite-thankyou">Send Invitation</button></p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="reveal" id="new-member-invite-thankyou" data-reveal>
+        <h4 class="text-center">Invite has been sent. Thank you</h4>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <hr>
+    </div>
+
+  </div>
+
+  <div class="row version-2" section id="user-org-info"><!-- user-org-info -->
+    <div class="small-12 medium-10 columns small-centered">
+      <div class="toggle-wrapper profile">
+        <div class="switch small">
+          <span class="pre">User</span>
+          <input class="switch-input" id="intro-advanced" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="intro-advanced">
+            <span class="show-for-sr"> </span>
+            <span class="switch-inactive" aria-hidden="true"></span>
+            <span class="switch-active" aria-hidden="true"></span>
+          </label>
+          <span class="post">Organization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row version-2"  section id="projects"> <!-- PROJECTS -->
+    <div class="small-12 medium-10 columns small-centered">
+      <hr>
+      <h4>Projects</h4>
+
+      <div class="empty-state callout">
+        <h4>No Projects to display.</h4>
+      </div>
+
+      <table class="hover stack unstriped">
+        <thead>
+          <tr>
+            <th class="checkbox hide-when-print">Project</th>
+            <th title="Sort by &quot;#&quot;">#</th>
+            <th title="Sort by &quot;Tracker&quot;">Tracker</th>
+            <th title="Sort by &quot;Status&quot;">Status</th>
+            <th title="Sort by &quot;Priority&quot;">Priority</th>
+            <th title="Sort by &quot;Subject&quot;">Subject</th>
+            <th title="Sort by &quot;Assignee&quot;">Assignee</th>
+            <th title="Sort by &quot;Due date&quot;">Due date</th>
+            <th title="Sort by &quot;Estimated time&quot;">Estimated time</th>
+            <th title="Sort by &quot;Target version&quot;">Target version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Project A</td>
+            <td class="id"><a href="/issues/41415">41415</a></td>
+            <td class="tracker">Change Order</td>
+            <td class="id">New</td>
+            <td class="priority">Normal</td>
+            <td class="subject"><a href="/issues/41416">UI/UX Wireframe</a></td>
+            <td class="assigned_to"><a class="user active" href="/users/298">Bee Bot</a></td>
+            <td class="due_date">2018-12-05</td>
+            <td class="estimated_hours">10.00</td>
+            <td class="fixed_version"></td>
+          </tr>
+          <tr>
+            <td>Project A</td>
+            <td class="id"><a href="/issues/41415">41415</a></td>
+            <td class="tracker">Change Order</td>
+            <td class="status">New</td>
+            <td class="priority">Normal</td>
+            <td class="subject"><a href="/issues/41415">Design, Analyze, Document</a></td>
+            <td class="assigned_to"><a class="user active" href="/users/298">Bee Bot</a></td>
+            <td class="due_date">2018-12-05</td>
+            <td class="estimated_hours">12.00</td>
+            <td class="fixed_version"></td>
+          </tr>
+          <tr>
+            <td>Project B</td>
+            <td class="id"><a href="/issues/41414">41414</a></td>
+            <td class="tracker">Change Order</td>
+            <td class="status">New</td>
+            <td class="priority">Normal</td>
+            <td class="subject"><a href="/issues/41414">Meetings and Review</a></td>
+            <td class="assigned_to"><a class="user active" href="/users/298">Bee Bot</a></td>
+            <td class="due_date">2018-12-05</td>
+            <td class="estimated_hours">20.00</td>
+            <td class="fixed_version"></td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row version-2"  section id="invoices"> <!-- INVOICES -->
+    <div class="small-12 medium-10 columns small-centered">
+      <hr>
+      <h4>Invoices<a href="javascript:void(0)" class="button tiny green float-right" onclick="$('.paid').toggleClass('hide');">Show Paid </a></h4>
+
+      <div class="empty-state callout">
+        <h4>You do not have any invoices.</h4>
+      </div>
+
+      <table class="hover stack unstriped">
+        <thead>
+          <tr>
+            <th class="checkbox hide-when-print" style="width: 45%;">Project</th>
+            <th title="Sort by &quot;#&quot;">Invoice #</th>
+            <th title="Sort by &quot;Tracker&quot;">Sent</th>
+            <th title="Sort by &quot;Tracker&quot;">Due</th>
+            <th title="Sort by &quot;Status&quot;">Invoiced</th>
+            <th title="Sort by &quot;Priority&quot;"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each global.user-invoice}}
+          <tr class="{{status}}">
+            <td>{{project}}</td>
+            <td>{{invoice}}</td>
+            <td>{{sent}}</td>
+            <td>{{due}}</td>
+            <td>{{invoiced}}</td>
+            <td class="subject">
+            <a class="button tiny green" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size: .825rem;"></i></a>
+            <!-- <a class="button tiny green" href="#"><i class="fa fa-credit-card-alt" aria-hidden="true" style="font-size: .825rem;"></i></a></td> -->
+          </tr>
+          {{/each}}
+          <tr class="total-wrapper">
+            <td> </td>
+            <td> </td>
+            <td>{{sent}}</td>
+            <td>Total Due</td>
+            <td>$999,999</td>
+            <td></td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row version-3"  section id="newsletters"> <!-- newsletters -->
+    <div class="small-12 medium-10 columns small-centered">
+      <hr>
+      <h4>News Stories</h4>
+      <div class="row">
+        <div class="small-12 columns ">
+          <div class="two">
+            <ul  class="two">
+              {{#each global.newsletter-options}}
+              <li>
+                <p class="email-type"><i class="fa checkbox fa-check-square" aria-hidden="true"></i> {{title}}</p>
+                <p class="email-why"><small>{{description}}</small></p>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row version-2" section id="downloads">  <!--Downloads -->
+    <div class="small-12 large-10 columns small-centered">
+      <hr>
+      <h4>Downloads</h4>
+      <div class="empty-state callout">
+        <h4>You do not have any downloads.
+        Visit our <a href="{{root}}/products">Product</a> page.</h4>
+      </div>
+      <table class="table-scroll stack unstriped">
+        <thead>
+          <tr>
+            <th width="200">App</th>
+            <th>Version</th>
+            <th width="150">Type</th>
+            <th width="150">Date</th>
+            <th width="250">Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="javascript:void(0)">InspectorPro</a></td>
+            <td>6.5</td>
+            <td>Trial</td>
+            <td>01.25.17</td>
+            <td>Latest</td>
+          </tr>
+          <tr>
+            <td><a href="javascript:void(0)">Logicator</a></td>
+            <td>.5</td>
+            <td>Beta</td>
+            <td>06.30.17</td>
+            <td><button type="button" name="button" class="button tiny green"> Update</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row hide">
+    <div class="small-12 medium-10 columns small-centered">
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Organization</a></li>
+        <li class="tabs-title"><a href="#panel2">Jane Smith</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <div class="row">  <!-- Downloads -->
+            <div class="small-12 columns small-centered">
+              <h4>Downloads</h4>
+
+              <table class="table-scroll stack">
+                <thead>
+                  <tr>
+                    <th width="200">App</th>
+                    <!-- <th>Version</th> -->
+                    <th width="150">Type</th>
+                    <th width="150">Date</th>
+                    <th width="250">Version</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="javascript:void(0)">InspectorPro</a></td>
+                    <!-- <td>6.5</td> -->
+                    <td>Trial</td>
+                    <td>01.25.17</td>
+                    <td><b>6.5</b> - Latest</td>
+                  </tr>
+                  <!-- <tr>
+                    <td><a href="javascript:void(0)">InspectorPro</a></td>
+                    <td>6.5</td>
+                    <td>Trial</td>
+                    <td>01.25.17</td>
+                    <td>Latest</td>
+                  </tr>
+                  <tr>
+                    <td><a href="javascript:void(0)">Logicator</a></td>
+                    <td>.5</td>
+                    <td>Beta</td>
+                    <td>06.30.17</td>
+                    <td><button type="button" name="button" class="button tiny green"> Update</button></td>
+                  </tr> -->
+                  <tr>
+                    <td><a href="javascript:void(0)">Logicator</a></td>
+                    <!-- <td>.5</td> -->
+                    <td>Beta</td>
+                    <td>06.30.17</td>
+                    <td><button type="button" name="button" class="button small green expanded"> Update to .5</button></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <div class="row">  <!-- Downloads -->
+            <div class="small-12 columns">
+              <h4>Downloads</h4>
+              <table class="table-scroll">
+                <thead>
+                  <tr>
+                    <th width="200">App</th>
+                    <!-- <th>Version</th> -->
+                    <th width="150">Type</th>
+                    <th width="150">Date</th>
+                    <th width="250">Version</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="javascript:void(0)">InspectorPro</a></td>
+                    <!-- <td>6.5</td> -->
+                    <td>Trial</td>
+                    <td>01.25.17</td>
+                    <td>6.5 - Latest</td>
+                  </tr>
+                  <tr>
+                    <td><a href="javascript:void(0)">Logicator</a></td>
+                    <!-- <td>.5</td> -->
+                    <td>Beta</td>
+                    <td>06.30.17</td>
+                    <td><button type="button" name="button" class="button tiny green"> Update to .5</button></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row intrests-wrapper" section id="recommendations"> <!-- recommendations -->
+    <div class="small-12 medium-10 columns small-centered">
+      <h4>Recommendations</h4>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <!-- <h4>Recommendations</h4> -->
+          <p>These recommendations are based on interest, proposed, curent and, delivered projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quam eros, eu congue diam facilisis sit amet. Nunc nec vulputate enim, eu sagittis orci. </p>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <div class="filter-list">
+                <label>Sort by Date
+                  <select>
+                    <option value=""  disabled>Sort by Date</option>
+                    <option value="all">All</option>
+                    <option value="products">Recent</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <div class="filter-list">
+                <label>Filter by Type
+                  <select>
+                    <option value=""  disabled>Filter by Type</option>
+                    <option value="all" selected>All Types</option>
+                    <option value="products">Products</option>
+                    <option value="services">Services</option>
+                    <option value="fuctional">Fuctional Areas</option>
+                    <option value="technology">Technology</option>
+                    <option value="database">Database</option>
+                    <option value="events">Events</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="recommendations-wrapper">
+            <div class="empty-state callout">
+              <h4>This can only work if you {{>interested-btn}} intrests.</h4>
+            </div>
+            {{#each global.guest-recomendations}}
+            <div class="callout small {{node-type}}">
+              <div class="section-header">
+                <h4>{{title}}</h4>
+                <!-- <div class="button hollow blue tiny has-tip top show-intrest" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Toggle interest in this service">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div> -->
+                {{>interested-btn}}
+                <a class="green tiny button" href="javascript:void(0)" data-open="moreInfo">More Info</a>
+              </div>
+
+              <p>{{description}}</p>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="reveal small" id="moreInfo" data-reveal>
+          <img src="https://beezwax.net/assets/pages/products/inspectorpro/velocimeter.png" alt="" style="width: 48px;float: left;margin-right: 10px;"><h2>InspectorPro 6.5 {{>interested-btn}}</h2>
+
+          <p class="lead">Better collaboration, performance and insight for your FileMaker teams. Available now for FileMaker Pro Advanced (v12-16) on macOS and Windows.</p>
+          <p class="text-center">
+            <div class="button-group joined show-for-medium">
+              <a class="secondary button"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download Free Trial</a>
+              <a class="secondary button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Buy Now</a>
+              <a class="green button"><i class="fa fa-life-ring" aria-hidden="true"></i> Contact Support</a>
+            </div>
+
+            <div class="button-group small expanded joined show-for-small-only">
+              <a class="secondary button">Download</a>
+              <a class="secondary button">Buy</a>
+              <a class="green button">Support</a>
+            </div>
+          </p>
+          <p>
+            We have focused on the most important points that matter to you as a Developer. We are also the first to tackle PDoS ( Process DDR on Server ). When you host InspectorPro, a whole new world of collaboration presents itself. Once you have uploaded your DDR files to the server using InspectorPro, it takes over from
+            there and control is returned back to you so you can continue developing while InspectorPro is busy processing.
+            You’ll love it.
+          </p>
+          <p class="text-center" style="margin-bottom:0">
+          <a class="button green" href="{{root}}/products/inspectorpro.html">Visit Product Page</a>
+          </p>
+
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          {{>related-all-items}}
+          <!-- <hr>
+          <img src="https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-BF8DC1B9-28C2-4D6B-BE4B-A416B7A88F70/dashboard_1.svg" alt="" style="width: 48px;float: left;margin-right: 10px;border: 1px solid #FFD939;border-radius: 50%;background-color: white;border-top: 0;border-left: 0;"><h2>Dashboards</h2>
+
+          <p class="lead">A dashboard provides at-a-glance views of KPIs (key performance indicators) relevant to particular objectives and/or models. This can be for anything from sales to HR, or from marketing to production.</p>
+
+          <p class="text-center" style="margin-bottom:0">
+          <a class="button green" href="https://beezwax.net/services/dashboards">Visit Service Page</a>
+          </p> -->
+
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="small-12 medium-6 columns">
+
+          <div class="topic-wrapper">
+            <div class="section-header">
+              <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+                <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                {{>toggle-on}}
+              </a>
+              <h4>Interests</h4>
+            </div>
+
+            <div class="empty-state callout">
+              <h4>This can only work if you {{>interested-btn}} intrests.</h4>
+            </div>
+
+            <div class="chosen-nodes not-empty">
+              {{#each global.guest-intrestes}}
+              <a class="button toggle hollow small has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="View Details">
+                {{>toggle-on}}
+                <span class="intrest-title">
+                  {{title}}
+                </span>
+                <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+                <i class="fa fa-times has-tip top" aria-hidden="true" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove Intrest"></i>
+              </a>
+              {{/each}}
+            </div>
+
+
+            <div class="reveal intrests-wrapper tiny bounce" id="topic-sample" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+              <div class="row">
+                <div class="small-12 columns">
+                  <h4>This is a title</h4>
+                </div>
+                <div class="small-12 columns">
+                  <textarea name="name" rows="5" cols="80" spellcheck="false">Lorem ipsum dolor sit amet, ne has saepe aliquip insolens, qui ut mucius erroribus. Graecis gloriatur voluptaria ius ei, sed ut autem nemore. Mel utinam mucius intellegam et, his dolore scaevola lucilius ei, sit ei suas exerci. Mea feugiat legimus at, sed an utroque deseruisse instructior. Cu ius dicit virtute nusquam. Saepe intellegam sed ex, per soluta interesset an. Unum melius apeirian te mel, fierent albucius definiebas per et. Lorem ipsum dolor sit amet, ne has saepe aliquip insolens, qui ut mucius erroribus. Graecis gloriatur voluptaria ius ei, sed ut autem nemore. Mel utinam mucius intellegam et, his dolore scaevola lucilius ei, sit ei suas exerci. Mea feugiat legimus at, sed an utroque deseruisse instructior. Cu ius dicit virtute nusquam. Saepe intellegam sed ex, per soluta interesset an. Unum melius apeirian te mel, fierent albucius definiebas per et.
+                  </textarea>
+                </div>
+                <div class="small-4 columns">
+                  <label>Name</label>
+                  <p class="name">Jules Bowie</p>
+                </div>
+                <div class="small-4 columns">
+                  <label>Date</label>
+                  <p class="date">August 12, 2017</p>
+                </div>
+                <div class="small-4 columns">
+                  <div class="filter-list">
+                    <label>Level of intrest
+                      <select>
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8" selected>8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="small-12 columns">
+                  <hr>
+                  <h4>Services</h4>
+                </div>
+                <div class="small-12 columns">
+                  <div class="topic-nodes">
+                    {{#each global.guest-intrestes}}
+                    {{#if service}}
+                    <a class="button hollow small has-tip {{node-type}}">
+                      {{title}}
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                  </div>
+                </div>
+                <div class="small-12 columns">
+                  <h4>Functional Area</h4>
+                </div>
+                <div class="small-12 columns">
+                  <div class="topic-nodes">
+                    {{#each global.guest-intrestes}}
+                    {{#if functional}}
+                    <a class="button hollow small has-tip {{node-type}}">
+                      {{title}}
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                  </div>
+                </div>
+
+                <div class="small-12 columns">
+                  <h4>Technologies</h4>
+                </div>
+                <div class="small-12 columns">
+                  <div class="topic-nodes">
+                    {{#each global.guest-intrestes}}
+                    {{#if tech}}
+                    <a class="button hollow small has-tip {{node-type}}">
+                      {{title}}
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                  </div>
+                </div>
+
+                <div class="small-12 columns">
+                  <h4>Database</h4>
+                </div>
+                <div class="small-12 columns">
+                  <div class="topic-nodes">
+                    {{#each global.guest-intrestes}}
+                    {{#if db}}
+                    <a class="button hollow small has-tip {{node-type}}">
+                      {{title}}
+                    </a>
+                    {{/if}}
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+              <div class="row expanded text-center">
+                <div class="small-12 columns">
+                  <hr>
+                  <p>Please let us know if you would like to dicuss this <b>Topic</b> further with us.</p>
+                  <a href="mailto:someone@beezwax.net?cc=someoneelse@beezwax.net, another@beezwax.net, me@beezwax.net&bcc=lastperson@beezwax.net&subject=Current%20Topic&body=I want to sign the paperwork and get this project started!" class="button green small">Contact Us</a>
+                </div>
+              </div>
+
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="editing-wrapper closed version-2">
+
+              <div class="callout node-instance small has-tip top service expanded">
+                <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <p>Added by <b>You</b> on added September 31, 2017</p>
+              </div>
+
+              <div class="callout node-instance small has-tip top service expanded locked"   data-open="topic-sample">
+                <a class="button tiny has-tip top details" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="View Details"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                <p><i class="fa fa-comments-o" aria-hidden="true"></i> Added by <b>Jules Bowie (PM)</b> on September 31, 2017</p>
+              </div>
+
+              <div class="callout node-instance small has-tip top service expanded">
+                <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                <p><b>You</b> atteneded a training session.
+                </p>
+              </div>
+
+              <div class="callout node-instance small has-tip top service expanded">
+                <a class="button tiny has-tip top remove" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                <p><b>You</b> downloaded <a href="#" target>InspectorPro</a>.
+                </p>
+              </div>
+
+            </div>
+
+
+            <br>
+
+          </div>
+
+
+          <div class="topic-wrapper proposed hide">
+            <div class="section-header">
+              <a class="button tiny green has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Select / Deselect" >
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+              <h4> a Potential Project 1</h4>
+            </div>
+
+            <div class="proposed-nodes">
+              {{#each global.guest-proposed}}
+              <a class="button hollow small {{node-type}}">
+                {{>toggle-on}}
+
+                {{title}}
+
+                <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+              </a>
+              {{/each}}
+            </div>
+
+          </div>
+
+          <div class="topic-wrapper proposed hide">
+            <div class="section-header">
+              <a class="button tiny green has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Select / Deselect" >
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+              <h4> a Potential Project 2</h4>
+            </div>
+
+            <div class="proposed-nodes">
+              {{#each global.guest-proposed}}
+              <a class="button hollow small {{node-type}}">
+                {{title}}  <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i>
+              </a>
+              {{/each}}
+            </div>
+
+          </div>
+
+          <div class="topic-wrapper proposed version-2">
+            <div class="section-header">
+              <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+                <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                {{>toggle-on}}
+              </a>
+              <h4> Proposed </h4>
+            </div>
+
+            <div class="proposed-nodes not-empty">
+              {{#each global.guest-proposed}}
+              <a class="button hollow small {{node-type}}">
+                {{>toggle-on}}
+                {{title}}
+                <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+              </a>
+              {{/each}}
+            </div>
+
+            <div class="empty-state callout">
+              <h4>No current proposals found.</h4>
+            </div>
+
+          </div>
+
+          <div class="topic-wrapper current version-2">
+            <div class="section-header">
+              <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+                <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                {{>toggle-on}}
+              </a>
+              <h4> Current </h4>
+            </div>
+
+            <div class="proposed-nodes  not-empty">
+              {{#repeat 1}}
+              {{#each global.guest-proposed}}
+              <a class="button hollow small {{node-type}}">
+                {{>toggle-on}}
+                {{title}}
+                <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+              </a>
+              {{/each}}
+              {{/repeat}}
+            </div>
+
+
+            <div class="empty-state callout">
+              <h4>No active projects found.</h4>
+            </div>
+
+          </div>
+
+          <div class="topic-wrapper delivered version-2">
+            <div class="section-header">
+              <a class="button toggle-btn small green has-tip top" data-tooltip aria-haspopup="true" data-click-open="false" data-disable-hover="false"  tabindex="2" title="Select / Deselect" >
+                <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                {{>toggle-on}}
+              </a>
+              <h4 contenteditable="true"> Delivered </h4> <i class="fa fa-pencil text-right" aria-hidden="true"></i>
+            </div>
+            <div class="delivered-nodes not-empty">
+              {{#each global.guest-delivered}}
+              <a class="button hollow small  {{node-type}}">
+                {{>toggle-on}}
+                {{title}}
+                <!-- <i class="fa fa-eye has-tip top {{node-type}}" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Remove item from recomendations / Add item to recomendations"></i> -->
+              </a>
+              {{/each}}
+            </div>
+
+
+            <div class="empty-state callout">
+              <h4>No delivered projects found.</h4>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row hide">
+    <div class="small-11 medium-10 columns small-centered">
+      <h3>Profile</h3>
+      <div class="row">
+        <div class="small-12 medium-4 columns profile-industries-wrapper">
+          <h4>Industries</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">Medial</a>
+              <a class="button expanded">Real Estate</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <!-- <p>suggested</p> -->
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns profile-tech-wrapper">
+          <h4>Functional Area</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">FileMaker Development</a>
+              <a class="button expanded">User Interface Design (UI)</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <!-- <p>suggested</p> -->
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+              <!-- <a class="button expanded">Data Cleanup</a>
+              <a class="button expanded">Migrating To Latest FileMaker Version</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns profile-functions-wrapper">
+          <h4>Goals</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">FileMaker Development</a>
+              <a class="button expanded">User Interface Design (UI)</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <!-- <p>More Industries</p> -->
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="small-11 medium-10 columns small-centered">
+      <h3>Interests</h3>
+      <div class="row">
+        <div class="small-12 medium-4 columns profile-services-wrapper">
+          <h4>Services</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">FileMaker Development</a>
+              <a class="button expanded">User Interface Design (UI)</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <p>suggested</p>
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+              <!-- <a class="button expanded">Data Cleanup</a>
+              <a class="button expanded">Migrating To Latest FileMaker Version</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns profile-tech-wrapper">
+          <h4>Technologies</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">FileMaker Development</a>
+              <a class="button expanded">User Interface Design (UI)</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <p>suggested</p>
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+              <!-- <a class="button expanded">Data Cleanup</a>
+              <a class="button expanded">Migrating To Latest FileMaker Version</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-4 columns profile-functions-wrapper">
+          <h4>Products</h4>
+          <div class="callout success user-topics selected">
+            <div class="button-group small">
+              <a class="button expanded">FileMaker Development</a>
+              <a class="button expanded">User Interface Design (UI)</a>
+              <a class="button expanded">Charting</a>
+              <a class="button expanded">Mobile Development</a>
+              <a class="button expanded">Training & Workshops</a>
+              <a class="button expanded">Integration</a>
+              <a class="button expanded">FileMaker Support</a>
+            </div>
+          </div>
+
+          <div class="callout secondary user-topics suggested">
+            <p>suggested</p>
+            <div class="button-group tiny">
+              <a class="button expanded">Networking</a>
+              <a class="button expanded">IT</a>
+              <a class="button expanded">Web Development</a>
+              <!-- <a class="button expanded">Data Cleanup</a>
+              <a class="button expanded">Migrating To Latest FileMaker Version</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Phase 1
+Basic info
+Goals
+
+Phase 2
+SERVICES
+functions -->
+
+
+
+  <div class="row version-3 last-section" section id="blogs"> <!-- blogs-wrapper -->
+    <div class="small-12 medium-10 columns small-centered">
+      <hr>
+        <h4>Blog Comments</h4>
+        <div class="empty-state callout">
+          <h4>Visit our <a href="{{root}}/blogs.html">blog</a> to participate in the larger discussion.</h4>
+        </div>
+        <table class="hover stack unstriped">
+          <thead>
+            <tr>
+              <th width="300">Title</th>
+              <th>Comment</th>
+              <th width="85">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="javascript:void(0)">Introducing LOgiCATOR, Part 2: FileMaker 16 Card Windows and Modular Design</a></td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat eget nunc ut tincidunt. Donec posuere mi vitae dapibus imperdiet. Fusce vel lorem eget est convallis pretium. Praesent nec lacus vel purus efficitur vehicula. Nunc eget magna ultricies, eleifend purus a, fermentum ipsum.</td>
+              <td><span class="show-for-small-only"><b>Date</b> </span>01.25.17</td>
+            </tr>
+            <tr>
+              <td><a href="javascript:void(0)">Introducing LOgiCATOR, Part 2: FileMaker 16 Card Windows and Modular Design</a></td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat eget nunc ut tincidunt. Donec posuere mi vitae dapibus imperdiet. Fusce vel lorem eget est convallis pretium. Praesent nec lacus vel purus efficitur vehicula. Nunc eget magna ultricies, eleifend purus a, fermentum ipsum.</td>
+              <td><span class="show-for-small-only"><b>Date</b> </span> 01.25.17</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>

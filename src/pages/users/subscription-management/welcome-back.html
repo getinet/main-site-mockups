@@ -1,0 +1,94 @@
+---
+title: Contact Us
+posterClass: contact
+quoteDisplay: hide
+show-photo-by: hide
+---
+
+{{> header-hero}}
+
+<div id="confetti"></div>
+
+<div class="row" style="margin-bottom: 20px;height:20vh;padding-top:5vh;">
+ <div class="small-12 large-6 columns small-centered">
+  <h4 class="text-center"> Welcome Back !!!</h4>
+ </div>
+ <!-- <div class="dev-notes text-center">
+   <small>The messaging should be vertically centered and the the footer should try to be all in view.</small>
+ </div> -->
+</div>
+
+<div class="row animated fadeIn" style="margin-bottom: 50px;"  data-equalizer data-equalize-on="medium">  <!-- Cards -->
+  <div class="large-4 medium-6 small-12 columns">
+    <a href="ministry-of-foreign-affairs-japan-case-study.html">
+    <div class="card-wrapper card-1">
+      <div class="image-wrapper"  style="background-image: url('{{root}}/assets/img/headers/bayan-header-1.jpg')"> </div>
+      <p class="title">Ministry Of Foreign Affairs Of Japan</p>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <p>
+            A custom FileMaker system to support restoration of an ancient Cambodian temple. We were proud to help restore the sacred Bayon Temple in Angkor Thom, Cambodia, a World Heritage site. Before a major restoration effort had begun, the temple had been neglected for a long time. Attention and care was needed from all sorts of professionals to restore this UNESCO World Heritage site, and help the temple last to future centuries.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="button small">Case Study</a>
+    </div>
+    </a>
+  </div>
+  <div class="large-4 medium-6 small-12 columns">
+    <a href="oldcastle-case-study.html">
+    <div class="card-wrapper card-1">
+      <div class="image-wrapper"  style="background-image: url('{{root}}/assets/img/headers/oldcastle-header.jpg');    background-position: right center;"> </div>
+      <p class="title">We helped Oldcastle be more Oldcastle, online</p>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <p>
+            Founded in 1978, Oldcastle is a staple of North America's construction industry - the first place contractors look for building materials. Oldcastle’s mission is to help build not just long lasting buildings, but also long-lasting relationships and to make sure Oldcastle materials are close at hand wherever customers are.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="button small">Case Study</a>
+    </div>
+    </a>
+  </div>
+
+  <div class="large-4 medium-6 small-12 columns">
+    <div class="card-wrapper card-1">
+      <a href="officehub.html">
+      <div class="image-wrapper"  style="background-image: url('{{root}}/assets/img/officehub-card.png')"> </div>
+      <p class="title">OfficeHub App</p>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <p>
+            For the small- to medium-sized business that uses FileMaker, OfficeHub makes running your office space simpler and easier.
+          </p>
+        </div>
+      </div>
+      <a class="button small">Prodcut</a>
+      </a>
+    </div>
+
+  </div>
+
+  {{#each global.blogs}}
+  <div class="large-3 medium-6 small-12 columns">
+
+    <div class="card-wrapper card-1"  data-equalizer-watch>
+      <a href="{{link}}" target="_blank">
+      <div class="image-wrapper" style="background-image: url('{{img}}')"> </div>
+      <p class="title">{{title}}</p>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <p>
+            {{summary}}
+          </p>
+        </div>
+      </div>
+      <a class="button small">Blog</a>
+      </a>
+    </div>
+
+  </div>
+  {{/each}}
+
+</div>

@@ -1,0 +1,187 @@
+pages:
+
+  -
+    title: Interests and Filters
+    link: https://invis.io/HYOQE52CD8T
+    note: v4
+    date: 10/23/18
+    category: sidepanel
+  -
+    title: Assets Gallery
+    link: http://beezwax.net/asset_gallery
+    note: Use Active Admin Credentials
+    date: 10/22/18
+    category: ios
+  -
+    title: Contact
+    link: contact
+    date: 7/10/18
+    category: contact
+  -
+    title: Oakland
+    link: contact/offices/oakland.html
+    date: 7/10/18
+    category: contact
+  -
+    title: Styleguide
+    link: styleguide
+    date: 7/10/18
+    category: misc
+  -
+    title: Event Pages
+    link: events
+    date: 3/9/18
+    category: misc
+  -
+    title: Privacy
+    link: privacy
+    date: 3/9/18
+    category: misc
+  -
+    title: Terms
+    link: terms
+    date: 3/9/18
+    category: misc
+  -
+    title: Errors
+    link: error.html
+    date: 3/9/18
+    category: misc
+  -
+    title: Login
+    link: users/login/
+    date: 11/01/18
+    category: credentials
+  -
+    title: Account Being Updated
+    link: users/login?updating
+    date: 11/01/18
+    category: credentials
+  -
+    title: Temporary Password
+    link: users/login?temp-pass
+    date: 11/01/18
+    category: credentials
+  -
+    title: Forgot Password
+    link: users/login?forgot-pass
+    date: 11/01/18
+    category: credentials
+  -
+    title: Sign Up
+    link: users/login?sign-up
+    date: 11/01/18
+    category: credentials
+  -
+    title: Akamai Client Page
+    link: clients/akamai/
+    date: 7/10/18
+    category: guest-profile
+  -
+    title: Guest Profile
+    link: users/jane-smith
+    date: 3/16/18
+    category: guest-profile
+  -
+    title: Guest Feedback
+    link: clients/usasa/feedback
+    date: 10/8/18
+    category: guest-profile
+  -
+    title: Guest Feedback - Temparary Password
+    link: clients/usasa/feedback/?temp-pass
+    date: 10/8/18
+    category: guest-profile
+  -
+    title: Guest Feedback - SignUp
+    link: clients/usasa/feedback/?signup
+    date: 10/8/18
+    category: guest-profile
+  -
+    title: Subscription Management
+    link: users/subscription-management
+    date: 9/1/18
+    category: guest-profile
+  -
+    title: Subscription Management - Welcome Back
+    link: users/subscription-management/welcome-back.html
+    date: 9/1/18
+    category: guest-profile
+  -
+    title: Careers
+    link: Careers
+    date: 10/1/18
+    category: career
+  -
+    title: Job Form
+    link: careers/job.html
+    date: 10/1/18
+    category: career
+  -
+    title: Skills Form
+    link: careers/skills.html
+    date: 10/1/18
+    category: career
+
+  -
+    title: Blog Home
+    link: blog
+    date: 10/1/18
+    category: blog
+  -
+    title: Blog Post
+    link: blog/blog-post.html
+    date: 10/1/18
+    category: blog
+  -
+    title: Video on Homepage
+    link: ?videos
+    date: 10/10/18
+    category: video
+  -
+    title: Videos Page
+    link: videos
+    date: 10/1/18
+    category: video
+  -
+    title: FBA Video
+    link: videos/fba
+    date: 10/1/18
+    category: video
+  -
+    title: Oldcastle
+    link: clients/oldcastle/oldcastle-case-study.html
+    date: 10/1/18
+    category: casestudy
+  -
+    title: USASA
+    link: clients/usasa
+    date: 10/1/18
+    category: casestudy
+  -
+    title: GAP
+    link: clients/gap
+    date: 10/1/18
+    category: casestudy
+
+  -
+    title: Default Newsletter
+    link: newsletters/product-owner.html
+    date: 10/1/18
+    category: email
+  -
+    title: Product Owner Sig
+    link: newsletters/product-owner.html
+    date: 10/1/18
+    category: email
+  -
+    title: Signup
+    link: newsletters/signup.html
+    date: 10/1/18
+    category: email
+
+  -
+    title: Handheld Signup
+    link: newsletters/signup-handheld.html
+    date: 10/1/18
+    category: email

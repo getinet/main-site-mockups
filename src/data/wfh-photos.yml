@@ -1,0 +1,87 @@
+  -
+    img-url: https://d37odzu8uxzyhh.cloudfront.net/system/inv_srv/filtered/NODE_ATTRIBUTE_VALUE-E04D9EDB-46D1-4651-84D9-C5CA8E9D09A7/wfh_42_medium.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-4
+    height: 33
+    related: true
+  -
+    img-url: https://d37odzu8uxzyhh.cloudfront.net/system/inv_srv/filtered/NODE_ATTRIBUTE_VALUE-A5ACED4D-D108-4667-A3AB-26C6E5A0913C/wfh_7_medium.jpg
+    photographer: Andrew Reichart
+    photographer-avatar: https://beezwax.net/system/attachments/247/square/andrew.reichart.jpg
+    role: director of account management
+    width: medium-4
+    height: 33
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-804F54E6-9D53-4D39-BC24-E87F13470188/Yosemite-mountains-and-forest-by-Luke_large.jpg
+    photographer: Luke van der Westhuyzen
+    photographer-avatar: https://beezwax.net/system/attachments/405/square/luke_jan2018.jpg
+    role:
+    width: medium-4
+    height: 33
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-9D2BE53E-F9C0-4A13-8683-0FB3F25927AD/20028319441_d177b2a766_k_large.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-4
+
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-C87059C2-EF54-4F44-BE98-43BE290AF52B/20151211_0017_beezwax_holiday_2015_0lc_3816_236260.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-4
+    related: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90ED50FA-49F8-47A7-8014-5F76B7437C17/underwaterDubrovnikCroatia-who_large.jpg
+    photographer: Ariel Scherman
+    photographer-avatar: https://beezwax.net/system/attachments/341/square/ariel.scherman.jpg
+    role:
+    width: medium-4
+    height: 100
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-90ED50FA-49F8-47A7-8014-5F76B7437C17/underwaterDubrovnikCroatia-who_large.jpg
+    video-asset: ../assets/vid/Organic_Lines_4K_Motion_Background_Loop.mp4
+    photographer: Mike Smith
+    photographer-avatar: https://beezwax.net/system/attachments/341/square/ariel.scherman.jpg
+    role:
+    width:
+    height: 50
+    video: true
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-DD743A7B-CD40-43D8-9C87-F496B4C420B7/JulesDearConfer_large.jpg
+    photographer: Jules Bowie
+    photographer-avatar: https://beezwax.net/system/attachments/269/square/jules.bowie.jpg
+    role:
+    width: medium-6
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3029D541-531B-4C41-95BD-7504B26A4722/JulesWaterBuffaloSaysHi_large.jpg
+    photographer: Jules Bowie
+    photographer-avatar: https://beezwax.net/system/attachments/269/square/jules.bowie.jpg
+    role:
+    width: medium-6
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-D644D30A-175D-4C24-85FC-99F7F2C0ADDC/dog-lon_large.jpg
+    photographer: Lon Cook
+    photographer-avatar: https://beezwax.net/system/attachments/254/square/lon.cook.jpg?1447877344
+    role: senior developer
+    width: medium-8
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-3949B3DB-99AC-4D09-9D00-C9FD6B53CAA6/IMG_6492_large.jpg
+    photographer: Jay Gonzales
+    photographer-avatar: https://beezwax.net/system/attachments/324/square/jay.gonzales.jpg?1455633756
+    role:
+    width: medium-4
+    height: 50
+  -
+    img-url: https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-ABE9FDBF-B0C6-4DE0-AEFB-F4CD5A08A80B/getinet-20121230-185534_large.jpg
+    photographer: First Last
+    photographer-avatar: https://beezwax.net/system/attachments/360/square/mekuria.g.jpg
+    role:
+    width:
+    height: 75

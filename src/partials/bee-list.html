@@ -1,0 +1,195 @@
+<div class="row" style="padding-top: 20px;">  <!-- Filter -->
+  <div class="small-12 columns right">
+    <div class="button secondary hollow small float-right" id="bee-filter-toggle">
+      Filter The Beez <i class="fa fa-sliders right" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 small-centered columns filter-wrapper closed">
+    <div class="row">
+      <div class="small-12 columns">
+        <input type="text" placeholder="search by name">
+      </div>
+      <div class="small-3 columns">
+        <div class="switch tiny">
+          <input class="switch-input" id="all" type="checkbox" name="all" checked>
+          <label class="switch-paddle" for="all">
+            <span class="show-for-sr">All</span>
+          </label>
+          <p style="line-height: 28px;"><b>All</b></p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="FileMaker" type="checkbox" name="FileMaker">
+          <label class="switch-paddle" for="FileMaker">
+            <span class="show-for-sr">FileMaker</span>
+          </label>
+          <p>FileMaker</p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="Mobile" type="checkbox" name="Mobile">
+          <label class="switch-paddle" for="FileMaker">
+            <span class="show-for-sr">Mobile</span>
+          </label>
+          <p>Mobile</p>
+        </div>
+      </div>
+
+      <div class="small-3 columns">
+        <div class="switch tiny">
+          <input class="switch-input" id="IT" type="checkbox" name="IT">
+          <label class="switch-paddle" for="IT">
+            <span class="show-for-sr">IT</span>
+          </label>
+          <p>IT</p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="Artist" type="checkbox" name="Artist">
+          <label class="switch-paddle" for="Artist">
+            <span class="show-for-sr">Artist</span>
+          </label>
+          <p>Artist</p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="Film Aficionados" type="checkbox" name="Film Aficionados">
+          <label class="switch-paddle" for="Film Aficionados">
+            <span class="show-for-sr">Film Aficionados</span>
+          </label>
+          <p>Film Aficionados</p>
+        </div>
+      </div>
+
+      <div class="small-3 columns">
+        <div class="switch tiny">
+          <input class="switch-input" id="Foodies" type="checkbox" name="Foodies">
+          <label class="switch-paddle" for="Foodies">
+            <span class="show-for-sr">Foodies</span>
+          </label>
+          <p>Foodies</p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="Multi-linguists" type="checkbox" name="Multi-linguists">
+          <label class="switch-paddle" for="Multi-linguists">
+            <span class="show-for-sr">Multi-linguists</span>
+          </label>
+          <p>Multi-linguists</p>
+        </div>
+
+        <div class="switch tiny">
+          <input class="switch-input" id="Nature Buffs" type="checkbox" name="Nature Buffs">
+          <label class="switch-paddle" for="Nature Buffs">
+            <span class="show-for-sr">Nature Buffs</span>
+          </label>
+          <p>Nature Buffs</p>
+        </div>
+
+      </div>
+
+      <div class="small-3 columns">
+        <h4 style="margin-top: 0;">Team member since</h4>
+
+        <div class="timeline-wrapper">
+          <span>then</span>
+          <div class="slider" data-slider data-initial-start='2017' data-end='2017' data-start='1994'>
+            <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+            <span class="slider-fill" data-slider-fill></span>
+            <input type="hidden">
+          </div>
+          <!-- <div id="slider">
+            <div id="custom-handle" class="ui-slider-handle"></div>
+          </div> -->
+          <span>now</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row small-up-1 medium-up-3 large-up-5">
+  {{#each beez.bee-members}}
+  <div class="column">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper" style="background-image: url('https://beezwax.net/system/attachments/{{photo}}')"> </div>
+      <!-- https://beezwax.net/system/attachments/192/square/aaron.leese.jpg?1444863993 -->
+      <!-- <a href="#"><p class="title">&nbsp;</p></a> -->
+      <div class="description-wrapper">
+        <div class="description-text">
+          <h4>{{name}}</h4>
+          <h5>{{title}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+  <!-- <div class="column">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper" style="background-image: url('https://beezwax.net/system/attachments/363/original/abe2.jpg?1492716449')"> </div>
+      <a href="#"><p class="title">&nbsp;</p></a>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <h4>abe zaidi</h4>
+          <h5>project manager</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column copy-me">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper" style="background-image: url('https://beezwax.net/system/attachments/192/original/aaron.leese.jpg?1444863993')"> </div>
+      <a href="#"><p class="title">&nbsp;</p></a>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <h4>aaron leese</h4>
+          <h5>developer</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column copy-me">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper" style="background-image: url('https://beezwax.net/system/attachments/277/profile_inner_one/adam-casual-920a.jpg?1452106418')"> </div>
+      <a href="#"><p class="title">&nbsp;</p></a>
+      <div class="description-wrapper">
+        <div class="description-text">
+          <h4>adam sugerman</h4>
+          <h5>developer</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column copy-me">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper" style="background-image: url('https://beezwax.net/system/attachments/314/profile_inner_two/alexei.casual.920b.jpg?1454473100')"> </div>
+      <a href="#"><p class="title">&nbsp;</p></a>
+      <div class="description-wrapper">
+        <div class="description-text animated fadeIn">
+          <h4>alexei folger</h4>
+          <h5>developer</h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="column" id="new-bee">
+    <a href="jobs.html">
+    <div class="card-wrapper card-1 beez">
+      <div class="image-wrapper hire" style="background-image: url('assets/img/placeholder-bee@2x.png');"> </div>
+      <!-- <a href="#"><p class="title">&nbsp;</p></a> -->
+      <div class="description-wrapper position">
+        <div class="description-text">
+          <h4>Join Us at Beezwax</h4>
+          <h5>beezwax.net/jobs</h5>
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>
+
+</div>

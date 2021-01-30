@@ -1,0 +1,32 @@
+---
+title: Services
+posterClass: services
+quote: Just a note to pass along our rave reviews to you for the system you guys made for us. The transition was a dream come true, as if a weight were lifted off of our shoulders! I'll sing the praises of Beezwax to anyone who will listen.
+quoteBy: Gregg McVicar
+quoteRole: Producer
+quoteCompany: Radiocamp
+photographer: Lon Cook
+---
+{{> mockup-options}}
+
+{{> header-hero}}
+
+<div class="row">
+  {{#each inv_ser_pbd.nodes}}
+  {#if `type == "Bee"`}}
+
+    <div class="large-3 medium-6 small-12 columns {{last}}" >
+      <div class="card-wrapper node-summary v7" data-equalizer-watch>
+        <div class="svg-wrapper">
+          <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+        </div>
+        <h4>{{name}}</h4>
+        <h6>{{title}}</h4>
+        <!-- <p>{{description}}</p> -->
+      </div>
+    </div>
+    {{elseif}}
+    code to be executed
+    {{/if}}
+  {{/each}}
+</div>

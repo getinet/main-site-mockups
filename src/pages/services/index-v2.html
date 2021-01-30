@@ -1,0 +1,1356 @@
+---
+title: Services
+posterClass: services
+services: true
+quote: Just a note to pass along our rave reviews to you for the system you guys made for us. The transition was a dream come true, as if a weight were lifted off of our shoulders! I'll sing the praises of Beezwax to anyone who will listen.
+quoteBy: Gregg McVicar
+quoteRole: Producer
+quoteCompany: Radiocamp
+photographer: Lon Cook
+quote-hide: hide
+
+service: active
+---
+
+{{> header-hero}}
+{{>breadcrumb}}
+
+
+<!-- - - - - V2 - - - - -->
+
+<a href="javascript:void(0)" class="button v2-toggle"> Toggle </a>
+
+<div class="cards-v2">
+  <div class="row intro-v2">
+    <div class="small-12 columns intro-nodes-wrapper">
+      <div class="intro-nodes-mockups last-section">
+        {{#each global.sub-nodes}}
+          {{#ifequal intro 'yes'}}
+            <div class="small-12 columns ">
+              <div class="row service-cards-v2  animated fadeIn {{card-class}}" >
+                <div class="small-12 medium-5 columns">
+                  &nbsp;
+                </div>
+                <div class="small-12 medium-7 columns">
+                  <div class="card">
+                    <div class="svg-wrapper background" style="background-image: url('');">&nbsp;</div>
+                    <div class="content-wrapper">
+                      <div class="card-section">
+                        <p>{{description}}</p>
+                      </div>
+                      <div class="card-divider">
+                        <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                        <h4>{{title}}</h4>
+                        {{>interested-btn}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-12 small-centered columns">
+                <div class="intro-why">
+                  {{>quotes-single}}
+                </div>
+              </div>
+            </div>
+          {{/ifequal}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row small-collapse medium-uncollapse expanded in-depth-v2 hide" data-equalizer data-equalize-on="small">
+    <div class="small-12 columns">
+      In-Depth
+    </div>
+      {{#each global.sub-nodes}}
+        <div class="small-12 medium-6 large-4 {{row-width}} columns {{end}}" >
+            <div class="row service-cards-v2 animated fadeIn in-depth {{card-class}} animated fadeIn" data-equalizer-watch>
+              <div class="small-12 medium-1 large-0 columns">
+                &nbsp;
+              </div>
+              <div class="small-12 medium-11 large-12 columns">
+                <div class="card">
+                  <div class="svg-wrapper background" style="background-image: url('');">&nbsp;</div>
+                  <div class="content-wrapper">
+                    <div class="card-section">
+                      <p>{{description}}</p>
+                    </div>
+                    <div class="card-divider">
+                      <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                      <h4>{{title}}</h4>
+                      {{>interested-btn}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      {{/each}}
+  </div>
+</div>
+
+<!-- - - - V2 End - - - -->
+
+<a href="https://invis.io/62NMATME8AZ" target="_blank" class="tiny green button">Invision Mockups of Cards</a>
+
+<a href="javascript:void(0)" class="tiny button" onclick="
+  $('.firststep .columns').toggleClass('zoomIn zoomOut');
+  $('.secondstep .columns').toggleClass('zoomIn zoomOut');">Show In-DEPTH</a>
+
+<!-- <a href="javascript:void(0)" class="tiny button" onclick="
+  $('.secondstepfirststep .columns').addClass('zoomOut');$('.firststep .columns').removeClass('hide').addClass('zoomIn')">Show Intro</a> -->
+
+<!-- <div class="row expanded firststep animated" style="    position: absolute;">
+   {{#repeat 10}}
+   <div class="small-12 medium-6 columns animated zoomIn">
+     <div class="card">
+       <div class="card-divider">
+         Service - Intro
+       </div>
+       <img src="assets/img/generic/rectangle-1.jpg">
+       <div class="card-section">
+         <h4>Service Name</h4>
+         <p>In aut eram fabulas, o hic adipisicing ita quorum constias occaecat de esse incididunt philosophariarbitrantur.</p>
+       </div>
+     </div>
+   </div>
+  {{/repeat}}
+</div>
+
+
+
+<div class="row expanded secondstep">
+   {{#repeat 16}}
+   <div class="small-12 medium-4 large-3 columns animated zoomOut">
+     <div class="card">
+       <div class="card-divider">
+         Service - In-Depth
+       </div>
+       <img src="assets/img/generic/rectangle-1.jpg">
+       <div class="card-section">
+         <h4>This is a card.</h4>
+         <p>In aut eram fabulas, o hic adipisicing ita quorum constias occaecat de esse incididunt philosophariarbitrantur.</p>
+       </div>
+     </div>
+   </div>
+  {{/repeat}}
+</div> -->
+
+<div class="new-whys-testimonials hide">
+
+  <div class="row">
+    <div class="small-11 medium-8 small-centered columns">
+    {{>whys}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-11 medium-10 small-centered columns">
+    {{>testimonials-v1}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-11 medium-8 small-centered columns">
+    {{>testimonials-v1}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-11 medium-6 small-centered columns">
+    {{>testimonials-v1}}
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row expanded">
+    <div class="small-12 small-centered columns">
+    {{>testimonials-v2}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-10 small-centered columns">
+    {{>testimonials-v2}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-8 small-centered columns">
+    {{>testimonials-v2}}
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="small-12 medium-8 small-centered columns">
+    {{>testimonials-v2-b}}
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row expanded">
+    <div class="small-12 medium-8 small-centered columns">
+    {{>testimonials-v3}}
+    </div>
+  </div>
+
+  <div class="row expanded">
+    <div class="small-12 medium-6 small-centered columns">
+    {{>testimonials-v3}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-4 small-centered columns">
+    {{>testimonials-v3}}
+    </div>
+  </div>
+
+  <hr>
+
+</div>
+
+
+
+<div class="service-wrapper">
+
+  <div class="row hide" data-equalizer data-equalize-on="small">
+    {{#each global.sub-nodes}}
+        <div class="small-12 medium-6 columns service-cards {{card-class}}" data-equalizer-watch>
+          <div class="row">
+            <div class="small-12 medium-1 columns">
+              &nbsp;
+            </div>
+            <div class="small-12 medium-11 columns">
+              <div class="card beginners even">
+                <div class="content-wrapper">
+                  <div class="card-section animated fadeIn">
+                    <p>{{description}}</p>
+                  </div>
+                  <div class="card-divider animated fadeIn">
+                    <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                    <h4>INDEPTH {{title}}</h4>
+                    {{>interested-btn}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    {{/each}}
+  </div>
+
+  <div id="nav-viewer">
+
+    <div class="row navigation-wrapper {{navigation-wrapper}} show-for-medium"> <!-- Collapsed Navigation -->
+      <div class="columns small-12 medium-10 medium-offset-1" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="nav-viewer" style="top:300px !important;">
+          <div class="navigation">
+            {{#each global.service-node-nav}}
+              <div class="node icon {{show-label}}">
+                <div class="svg-wrapper">
+                  <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+                </div>
+                <div class="name">{{title}}</div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row navigation-wrapper hide navigation show-for-small-only">
+      <div class="small-2 small-offset-1 columns">
+        <div class="node icon show-label" data-id="18215" data-name="FileMaker Development" data-url="/services/filemaker">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">FileMaker</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18220" data-name="Mobile Development" data-url="/services/mobile">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/MobileDev.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Mobile</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18225" data-name="Web Development" data-url="/services/web">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/WebDev2.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Web</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18258" data-name="Data Visualization" data-url="/services/data-visualization">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/DataVis.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Data Visualization</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18222" data-name="Integration" data-url="/services/integration">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/Integration.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Integration</div>
+        </div>
+      </div>
+      <div class="small-1 columns end">&nbsp;</div>
+      <div class="small-2 small-offset-1 columns">
+        <div class="node icon" data-id="18234" data-name="Consulting" data-url="/services/consulting">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/Consulting.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Consulting</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18262" data-name="WordPress Development" data-url="/services/wordpress">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/WordpressDev.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">WordPress</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18274" data-name="Design" data-url="/services/design">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/Design.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Design</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18224" data-name="IT Services" data-url="/services/it">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/IT.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">IT Services</div>
+        </div>
+      </div>
+      <div class="small-2 columns">
+        <div class="node icon" data-id="18221" data-name="Training &amp; Workshops" data-url="/services/training">
+          <div class="svg-wrapper">
+            <object type="image/svg+xml" data="assets/img/icons/Training.svg" width="64" height="64"></object>
+          </div>
+          <div class="name">Training &amp; Workshops</div>
+        </div>
+      </div>
+      <div class="small-1 columns">&nbsp;</div>
+    </div>
+
+    <div class="single-service-wrapper hide animated fadeIn">
+      <div class="row single-service-top ">
+        <div class="small-12 medium-2 columns service-icon">&nbsp;</div>
+        <div class="small-12 medium-10 columns">
+          <div class="node-page">
+            <div class="node-header-wrapper">
+              <h3>Lorem ipsum dolor sit amet
+                <a class="button secondary small close-single has-tip top"  data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Close Service. This does not show if the user arrives at this page from a direct link." style="margin-left:20px;"><i class="fa fa-times" aria-hidden="true"></i></a>
+              {{>interested-btn}}
+              {{>share-btn}}</h3>
+
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus nunc mi, ut luctus libero tristique eget. Aenean egestas nunc eget imperdiet semper. Phasellus rutrum a ligula non vestibulum. Curabitur nec massa ac eros semper hendrerit a quis velit. Morbi consequat diam ac quam finibus eleifend. Praesent suscipit diam ac pulvinar dictum. Sed ac eros magna. Vestibulum nec nulla tempus, placerat tellus nec, rhoncus lorem. Donec et tellus vehicula, molestie felis non, interdum erat. In in finibus nunc, in eleifend erat. Nam non laoreet lacus, non mollis nisl.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row single-details-wrapper">
+        <div class="small-12 medium-10 columns small-centered">
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="intro-why">
+                {{>quotes-single}}
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>User Interface Design (UI)</h4>
+                    {{>interested-btn}}
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>Across all the technologies we work in, we are great at making it look good. We create interfaces that are elegant and make it easier, more enjoyable, more accurate to enter and review information.</p>
+
+                    <div class="why-wrapper animated" id="why-1">
+                      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                        <ul class="orbit-container">
+                          <li class="orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                              <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title even">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>FileMaker System Redesign</h4>
+                    <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                      <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                    </div>
+                  </a>
+                  <div class="accordion-content even" data-tab-content>
+                    <p>If your FileMaker system is a few years old and/or has been worked on by less-than-top-notch developers, it is worth considering re-design, rather than extending. While this may seem scary and is to some extent tossing away work that has been done -- not really. Part of the value of FileMaker is that it is readily portable, especially to a new FileMaker context. Of course, the data comes along for the ride. As well, much of the structure can be ported into the new system fairly easily. So, we leverage what is there, while building a new foundation, more ready for modern technique and possibilities, and more able to capture the business needs as they are today... and tomorrow.</p>
+
+                    <div class="why-wrapper animated">
+                      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                          <ul class="orbit-container">
+                            <li class="orbit-slide">
+                              <div class="docs-example-orbit-slide">
+                                <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>Migrating To Latest FileMaker Version</h4>
+                    <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Service to your intrests">
+                      <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                    </div>
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>Moving existing FileMaker Pro databases from legacy versions to the current version. This is a great way to make use of native functionality of an ever-improving framework.</p>
+
+                    <p>Migration is not time-intensive, as the bulk is handled automatically. However, depending on techniques currently used, there may be some gotchas which we know how to look for. Meanwhile, many of the new features are only a potential until you implement them. And, of course, we can help with that.</p>
+
+                    <div class="why-wrapper animated">
+                      <!-- <h4>Why Us</h4>
+                      <p>Beezwax aims to be the best place you’ll ever work.
+                        We pride ourselves on building a sustainable, friendly workplace that empowers us in our work and our lives beyond. This isn’t just a mantra, it’s a primary reason the company exists.
+                      </p> -->
+
+                        <!-- <div id="more-why"> -->
+
+                          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                                <ul class="orbit-container">
+                                  <!-- <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+                                  <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button> -->
+                                  <li class="orbit-slide">
+                                    <div class="docs-example-orbit-slide">
+                                      <p><strong>Reason 1 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                  </li>
+                                  <li class="orbit-slide">
+                                    <div class="docs-example-orbit-slide">
+                                      <p><strong>Reason 2 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                  </li>
+                                  <li class="orbit-slide">
+                                    <div class="docs-example-orbit-slide">
+                                      <p><strong>Reason 3 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <nav class="orbit-bullets">
+                                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                                </nav>
+                              </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title even">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>Data Visualization</h4>
+                    <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                      <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                    </div>
+                  </a>
+                  <div class="accordion-content even" data-tab-content >
+                    <p>A picture is worth a thousand words. We can translate your data into dynamic visual reports to help users more quickly understand the information.</p>
+
+                    <div class="row" style="padding-left:30px;">
+                      <div class="small-6 columns">
+                        <div class="card-wrapper card-4">
+                          <div class="image-wrapper"  style="background-image: url('https://picsum.photos/400/?image=0')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <a href="#" class="button small">Blog</a>
+                        </div>
+                      </div>
+                      <div class="small-6 columns">
+                        <div class="card-wrapper card-4">
+                          <div class="image-wrapper"  style="background-image: url('https://picsum.photos/400/?image=1')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <a href="#" class="button small">Blog</a>
+                        </div>
+                      </div>
+                      <div class="small-6 columns">
+                        <div class="card-wrapper card-4">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/404/200/sports/3')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <a href="#" class="button small">Blog</a>
+                        </div>
+                      </div>
+                      <div class="small-6 columns">
+                        <div class="card-wrapper card-4">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/405/200/sports/4')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <a href="#" class="button small">Blog</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>Going Beyond Excel</h4>
+                    <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                      <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                    </div>
+                  </a>
+                  <div class="accordion-content" data-tab-content >
+                    <p>You could say that FileMaker is to a spreedsheet what a spreedsheet is to a text document... It is a significant additional layer of abstraction and cross-referencing. So, it is common for users and teams to come to us when they have found they are relying heavily on ever-expanding, somewhat chaotic spreadsheets. We can import those sheets, and arrange into a relational structure, with a much clearer and more-directed way of accessing and reviewing the information. Without losing the established computational logic. And, of course, now all this can be easily shared with colleagues -- each leveraging the parts of the information that apply to their job function. </p>
+
+                    <div class="row" style="padding-left:30px;">
+                      <div class="small-12 columns">
+                        <div class="card-wrapper card-5">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/401/200/sports/1')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <!-- <a href="#" class="button small">Blog</a> -->
+                        </div>
+                      </div>
+                      <div class="small-12 columns">
+                        <div class="card-wrapper card-5">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/403/200/sports/2')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server...</p></a>
+                          <!-- <a href="#" class="button small">Blog</a> -->
+                        </div>
+                      </div>
+                      <div class="small-12 columns">
+                        <div class="card-wrapper card-5">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/404/200/sports/3')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server...</p></a>
+                          <!-- <a href="#" class="button small">Blog</a> -->
+                        </div>
+                      </div>
+                      <div class="small-12 columns">
+                        <div class="card-wrapper card-5">
+                          <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/405/200/sports/4')"> </div>
+                          <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                          <!-- <a href="#" class="button small">Blog</a> -->
+                        </div>
+                      </div>
+                      <div class="small-12 columns">
+                        <div class="card-wrapper card-5">
+                          {{>quotes-single}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title even">
+                    <div class="svg-wrapper">
+                      <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                    </div>
+                    <h4>FileMaker and Web Integration</h4>
+                    <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                      <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                    </div>
+                  </a>
+                  <div class="accordion-content even" data-tab-content >
+                    <p>For a decade and a half, we've been on the leading edge of integrating FileMaker and the web. In 2002, we won an award for FileMaker Inc, for developing a new tool for tying FileMaker to the web. Ever since, we've made the most of the tools that FileMaker Inc, our peers in the community, and we ourselves have invented to achieve a performant experience having portions of a FileMaker system accessed through a browser.</p>
+
+                    <p>We call this a FileMaker-web hybrid system, and brings the best of FileMaker's rapid development efficiencies and the web's vast reach and ease of deployment.</p>
+
+                    <div class="button green" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Let get this party started."  data-open="promotion-revel" style="margin-left:25px;">
+                      <strong>Get Your Free assessment Now</strong>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              {{> related-all-items}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{>promo-2}}
+    {{>promo-3}}
+    {{>promo-tiny}}
+
+    <div class="row node-details">
+      <div class="small-12 medium-10 small-centered columns">
+        <div class="node-page">
+          <div class="node-header-wrapper">
+            <h3>FileMaker Development</h3>
+            <a class="button secondary small close-node has-tip top"  data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Close Service"><i class="fa fa-times" aria-hidden="true"></i>
+            {{>interested-btn}}
+            {{>share-btn}}
+            </a>
+          </div>
+          <div class="description">
+            <p>For more than <strong>two decades</strong>, and over <strong>1,500 projects</strong>, we have delivered custom FileMaker apps to teams of web, mobile and desktop users, across a wide range of industries. Beezwax is a Platinum Partner in the FileMaker Business Alliance, with Certified developers through FileMaker v16.</p>
+          </div>
+          <div class="cert-wrapper">
+            <img src="../assets/img/fm-all-certs.png" alt="" class="show-for-medium">
+            <img src="../assets/img/fm-all-certs-mobile.png" alt="" class="show-for-small-only">
+          </div>
+        </div>
+      </div>
+
+      <div class="small-12 columns intro-nodes-wrapper intro-only last-section">
+
+        <!-- <div class="row" id="version-4" data-equalizer data-equalize-on="small">
+          {{#each global.sub-nodes}}
+              <div class="small-12 medium-6 columns wide-node in-depth {{card-class}}" data-equalizer-watch>
+                <div class="row">
+                  <div class="small-12 medium-1 columns">
+                    &nbsp;
+                  </div>
+                  <div class="small-12 medium-11 columns">
+                    <div class="card beginners even">
+                      <div class="content-wrapper">
+                        <div class="card-section animated fadeIn">
+                          <p>{{description}}</p>
+                        </div>
+                        <div class="card-divider animated fadeIn">
+                          <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                          <h4>INDEPTH {{title}}</h4>
+                          {{>interested-btn}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {{/each}}
+        </div> -->
+      </div>
+
+
+      <div class="small-12 columns intro-nodes-wrapper intro-only last-section">
+        <div class="intro-nodes-mockups version-4 last-section" id="version-4">
+          {{#each global.sub-nodes}}
+            {{#ifequal intro 'yes'}}
+              <div class="small-12 columns wide-node {{card-class}}">
+                <div class="row">
+                  <div class="small-12 medium-5 columns">
+                    &nbsp;
+                  </div>
+                  <div class="small-12 medium-7 columns">
+                    <div class="card beginners even">
+                      <div class="svg-wrapper background" style="background-image: url('');">&nbsp;</div>
+                      <div class="content-wrapper">
+                        <div class="card-section animated fadeIn">
+                          <p>{{description}}</p>
+                        </div>
+                        <div class="card-divider animated fadeIn">
+                          <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                          <h4>{{title}}</h4>
+                          {{>interested-btn}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="small-12 small-centered columns">
+                  <div class="intro-why">
+                    {{>quotes-single}}
+                  </div>
+                </div>
+              </div>
+            {{/ifequal}}
+          {{/each}}
+        </div>
+
+        <div class="intro-nodes-mockups version-4 last-section" id="version-4">
+          {{#each global.sub-nodes}}
+              <div class="small-12 medium-6 columns wide-node {{card-class}}">
+                <div class="row">
+                  <div class="small-12 medium-5 columns">
+                    &nbsp;
+                  </div>
+                  <div class="small-12 medium-6 columns">
+                    <div class="card beginners even">
+                      <div class="svg-wrapper background" style="background-image: url('');">&nbsp;</div>
+                      <div class="content-wrapper">
+                        <div class="card-section animated fadeIn">
+                          <p>{{description}}</p>
+                        </div>
+                        <div class="card-divider animated fadeIn">
+                          <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+                          <h4>INDEPTH {{title}}</h4>
+                          {{>interested-btn}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {{/each}}
+        </div>
+      </div>
+
+
+
+
+      <div class="small-12 medium-11 small-centered columns advanced-nodes-wrapper in-depth hide">
+        <br>
+        <br>
+        <!-- <div class="background-image"> </div> -->
+        <div class="small-12 columns"> <!-- Advanced NODES Start -->
+          <ul class="accordion advanced-services" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item animated fadeIn child-promo is-active" data-accordion-item>
+              <a href="#" class="accordion-title {{class}}">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="https://beezwax.net/system/inv_srv/NODE_ATTRIBUTE_VALUE-82AE0129-4435-4E15-9A11-CC7CC849E78C/performance.svg" width="64" height="64"></object>
+                </div>
+                <h4>Performance Improvement</h4>
+                <!-- <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div> -->
+                {{>interested-btn}}
+              </a>
+              <div class="accordion-content {{class}}" data-tab-content style="padding:0;">
+                <p  style="padding-left: 30px;">The Measure, Reporting And Improvement Of Performance Related To Your Software, Systems, And Infrastructure.<br>
+                  <a href="javascript:void(0)"><b>Learn More</b></a></p>
+
+                {{>child-promo}}
+                <div class="why-wrapper animated" id="why-1">
+                  <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                    <ul class="orbit-container">
+                      <li class="orbit-slide">
+                        <div class="docs-example-orbit-slide">
+                          <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div class="row">
+                  <div class="small-12 columns"> -->
+                    {{>whys}}
+                  <!-- </div>
+                </div> -->
+
+
+              </div>
+            </li>
+
+            {{#each global.sub-nodes}}
+            <li class="accordion-item animated fadeIn" data-accordion-item>
+              <a href="#" class="accordion-title {{class}}">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="{{img}}" width="64" height="64"></object>
+                </div>
+                <h4>{{title}}</h4>
+                <!-- <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div> -->
+                {{>interested-btn}}
+              </a>
+              <div class="accordion-content {{class}}" data-tab-content>
+                {{description}}
+                <div class="why-wrapper animated" id="why-1">
+                  <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                    <ul class="orbit-container">
+                      <li class="orbit-slide">
+                        <div class="docs-example-orbit-slide">
+                          <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div><!-- ADVANCED NODES END -->
+
+        <!-- ADVANCED NODES-->
+        <div class="large-6 small-12 columns hide">
+          <ul class="accordion" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>User Interface Design (UI)</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content" data-tab-content>
+                <p>Across all the technologies we work in, we are great at making it look good. We create interfaces that are elegant and make it easier, more enjoyable, more accurate to enter and review information.</p>
+
+                <div class="why-wrapper animated" id="why-1">
+                  <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                    <ul class="orbit-container">
+                      <li class="orbit-slide">
+                        <div class="docs-example-orbit-slide">
+                          <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title even">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>FileMaker System Redesign</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content even" data-tab-content>
+                <p>If your FileMaker system is a few years old and/or has been worked on by less-than-top-notch developers, it is worth considering re-design, rather than extending. While this may seem scary and is to some extent tossing away work that has been done -- not really. Part of the value of FileMaker is that it is readily portable, especially to a new FileMaker context. Of course, the data comes along for the ride. As well, much of the structure can be ported into the new system fairly easily. So, we leverage what is there, while building a new foundation, more ready for modern technique and possibilities, and more able to capture the business needs as they are today... and tomorrow.</p>
+
+                <div class="why-wrapper animated">
+                  <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                      <ul class="orbit-container">
+                        <li class="orbit-slide">
+                          <div class="docs-example-orbit-slide">
+                            <p><strong>Reason Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="button hollow green tiny show-intrest" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="I have interest in this subject.">
+                  <i class="fa fa-star" aria-hidden="true"></i> <span>interested</span>
+                </div> -->
+              </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>Migrating To Latest FileMaker Version</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Service to your intrests">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content" data-tab-content>
+                <p>Moving existing FileMaker Pro databases from legacy versions to the current version. This is a great way to make use of native functionality of an ever-improving framework.</p>
+
+                <p>Migration is not time-intensive, as the bulk is handled automatically. However, depending on techniques currently used, there may be some gotchas which we know how to look for. Meanwhile, many of the new features are only a potential until you implement them. And, of course, we can help with that.</p>
+
+                <div class="why-wrapper animated">
+                  <!-- <h4>Why Us</h4>
+                  <p>Beezwax aims to be the best place you’ll ever work.
+                    We pride ourselves on building a sustainable, friendly workplace that empowers us in our work and our lives beyond. This isn’t just a mantra, it’s a primary reason the company exists.
+                  </p> -->
+
+                    <!-- <div id="more-why"> -->
+
+                      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                            <ul class="orbit-container">
+                              <!-- <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+                              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button> -->
+                              <li class="orbit-slide">
+                                <div class="docs-example-orbit-slide">
+                                  <p><strong>Reason 1 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                              </li>
+                              <li class="orbit-slide">
+                                <div class="docs-example-orbit-slide">
+                                  <p><strong>Reason 2 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                              </li>
+                              <li class="orbit-slide">
+                                <div class="docs-example-orbit-slide">
+                                  <p><strong>Reason 3 Title</strong> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                              </li>
+                            </ul>
+                            <nav class="orbit-bullets">
+                              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                            </nav>
+                          </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="large-6 small-12 columns hide">
+          <ul class="accordion" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title even">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>Data Visualization</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content even" data-tab-content >
+                <p>A picture is worth a thousand words. We can translate your data into dynamic visual reports to help users more quickly understand the information.</p>
+
+                <div class="row" style="padding-left:30px;">
+                  <div class="small-6 columns">
+                    <div class="card-wrapper card-4">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/401/200/sports/1')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <a href="#" class="button small">Blog</a>
+                    </div>
+                  </div>
+                  <div class="small-6 columns">
+                    <div class="card-wrapper card-4">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/403/200/sports/2')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <a href="#" class="button small">Blog</a>
+                    </div>
+                  </div>
+                  <div class="small-6 columns">
+                    <div class="card-wrapper card-4">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/404/200/sports/3')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <a href="#" class="button small">Blog</a>
+                    </div>
+                  </div>
+                  <div class="small-6 columns">
+                    <div class="card-wrapper card-4">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/405/200/sports/4')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <a href="#" class="button small">Blog</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>Going Beyond Excel</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content" data-tab-content >
+                <p>You could say that FileMaker is to a spreedsheet what a spreedsheet is to a text document... It is a significant additional layer of abstraction and cross-referencing. So, it is common for users and teams to come to us when they have found they are relying heavily on ever-expanding, somewhat chaotic spreadsheets. We can import those sheets, and arrange into a relational structure, with a much clearer and more-directed way of accessing and reviewing the information. Without losing the established computational logic. And, of course, now all this can be easily shared with colleagues -- each leveraging the parts of the information that apply to their job function. </p>
+
+                <div class="row" style="padding-left:30px;">
+                  <div class="small-12 columns">
+                    <div class="card-wrapper card-5">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/401/200/sports/1')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <!-- <a href="#" class="button small">Blog</a> -->
+                    </div>
+                  </div>
+                  <div class="small-12 columns">
+                    <div class="card-wrapper card-5">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/403/200/sports/2')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server...</p></a>
+                      <!-- <a href="#" class="button small">Blog</a> -->
+                    </div>
+                  </div>
+                  <div class="small-12 columns">
+                    <div class="card-wrapper card-5">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/404/200/sports/3')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server...</p></a>
+                      <!-- <a href="#" class="button small">Blog</a> -->
+                    </div>
+                  </div>
+                  <div class="small-12 columns">
+                    <div class="card-wrapper card-5">
+                      <div class="image-wrapper"  style="background-image: url('http://lorempixel.com/405/200/sports/4')"> </div>
+                      <a href="#"><p class="title">Debug Apache on a FileMaker Server</p></a>
+                      <!-- <a href="#" class="button small">Blog</a> -->
+                    </div>
+                  </div>
+                  <div class="small-12 columns">
+                    <div class="card-wrapper card-5">
+                      {{>quotes-single}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title even">
+                <div class="svg-wrapper">
+                  <object type="image/svg+xml" data="assets/img/icons/FilemakerDev.svg" width="64" height="64"></object>
+                </div>
+                <h4>FileMaker and Web Integration</h4>
+                <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Interest / Remove Interest">
+                  <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+                </div>
+              </a>
+              <div class="accordion-content even" data-tab-content >
+                <p>For a decade and a half, we've been on the leading edge of integrating FileMaker and the web. In 2002, we won an award for FileMaker Inc, for developing a new tool for tying FileMaker to the web. Ever since, we've made the most of the tools that FileMaker Inc, our peers in the community, and we ourselves have invented to achieve a performant experience having portions of a FileMaker system accessed through a browser.</p>
+
+                <p>We call this a FileMaker-web hybrid system, and brings the best of FileMaker's rapid development efficiencies and the web's vast reach and ease of deployment.</p>
+
+                <div class="button green" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Let get this party started."  data-open="promotion-revel" style="margin-left:25px;">
+                  <strong>Get Your Free assessment Now</strong>
+                </div>
+
+                <!-- <div class="button hollow green tiny show-intrest" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="I have interest in this subject.">
+                  <i class="fa fa-star" aria-hidden="true"></i> <span>interested</span>
+                </div> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- ADVANCED NODES END-->
+
+        <!-- QUOTES  -->
+        <div class="row quotes-wrapper">
+          <div class="small-12 small-centered columns">
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-pause-on-hover="true" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; timer-delay:100;">
+              <ul class="orbit-container">
+                <button class="orbit-previous">
+                  <svg width="21px" height="35px" viewBox="0 0 21 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Services-Accordion-Copy" transform="translate(-237.000000, -1014.000000)" fill-rule="nonzero" fill="#9B9B9B">
+                              <g id="Quote-Group" transform="translate(210.000000, 954.000000)">
+                                  <polygon id="Shape-Copy" points="45.3513514 95 27 77.5 45.3513514 60 48 62.5257732 32.2972973 77.5 48 92.4742268"></polygon>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                  <span class="show-for-sr"><object type="image/svg+xml" data="{{root}}assets/img/ui/chevron-left.svg" width="21" height="35"></object></span>
+                  <!-- &#9664;&#xFE0E; -->
+                </button>
+
+                <button class="orbit-next">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="21px" height="35px" viewBox="0 0 21 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Services-Accordion-Copy" transform="translate(-1188.000000, -1014.000000)" fill-rule="nonzero" fill="#9B9B9B">
+                            <g id="Quote-Group" transform="translate(210.000000, 954.000000)">
+                                <polygon id="Shape" transform="translate(988.500000, 77.500000) scale(-1, 1) translate(-988.500000, -77.500000) " points="996.351351 95 978 77.5 996.351351 60 999 62.5257732 983.297297 77.5 999 92.4742268"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                  </svg>
+                </button>
+
+                <li class="orbit-slide">
+                  <div>
+                    <blockquote>
+                      <p class="quote"><span>Our Beezwax developer made a tremendous difference.</span> He very quickly made our system so much easier to use -- and was such a pleasure to work with. We're thrilled to be back on the right track with our database.Our Beezwax developer made a tremendous difference.He very quickly made our system so much easier to use -- and was such a pleasure to work with. We're thrilled to be back on the right track with our database. Thank you.He very quickly made our system so much easier to use -- and was such a pleasure to work with. We're thrilled to be back on the right track with our database.Our Beezwax developer made a tremendous difference.He very quickly made our system so much easier to use -- and was such a pleasure to work with. We're thrilled to be back on the right track with our database. Thank you.</p>
+
+                      <cite>
+                        <div class="name">
+                        Loretta Edmonson
+                        , Tech Coordinator
+                        </div>
+                        <div class="company">St. Mary of the Immaculate Conception School</div>
+                      </cite>
+                    </blockquote>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div>
+                    <blockquote>
+                    <p><span>Working with Beezwax was great. </span>Tara is a very talented engineer. We had a pretty tight budget and working with that in mind she was able to complete the bulky part of the project and give me enough assistance to see the job to completion myself. Because of the successful completion of this project we have saved at least 4 reams of paper in the last couple of weeks. Thanks for a great job and keeping our environment healthier!</p>
+                    <!-- <a class="button green tiny show-more">More</a> -->
+                    <cite>
+                    <div class="name">
+                    Maer Ben-Yisrael
+                    , Director of Technology
+                    </div>
+                    <div class="company">Presidio Hill School</div>
+                    </cite>
+                    </blockquote>
+                  </div>
+                </li>
+                <li class="orbit-slide">
+                  <div>
+                    <blockquote>
+                    <p><span>Beezwax vastly improved how we process web reservations, giving our staff and guests up-to-the-minute information.</span> We improved our service while reducing our costs.</p>
+                    <cite>
+                    <div class="name">
+                    Ariel Benarroch
+                    </div>
+                    <div class="company">Touchstone Hotel</div>
+                    </cite>
+                    </blockquote>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- QUOTES END -->
+
+        {{> related-all-items}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row expanded nodes-summary-wrapper v2 hide"  data-equalizer data-equalize-on="medium"> <!-- Nodes -->
+    <!-- <div class="small-12 small-centered columns"> -->
+      <!-- <div class="row"> -->
+        {{#each global.service-node-nav}}
+        <div class="small-12 columns  {{last}}" >
+            <div class="card-wrapper animated node-summary v7" id="{{id}} " onclick="$(".header-poster").addClass("now");" style="min-height:50vh;background-image: url('../assets/img/books.png');background-repeat: no-repeat;background-size: cover; background-position: center; border-radius: 5px; background-attachment: fixed;" data-equalizer-watch>
+              <div class="svg-wrapper">
+                <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+              </div>
+              <h4>{{title}}</h4>
+
+              {{>interested-btn}}
+
+              <p class="show-for-medium">{{description}}</p>
+
+              <div class="row" style="    bottom: 100px; position: absolute; width: 100%;">
+                <div class="small-12 medium-3 columns">
+                  <div class="svg-wrapper">
+                    <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+                  </div>
+                  Child One
+                </div>
+                <div class="small-12 medium-3 columns">
+                  <div class="svg-wrapper">
+                    <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+                  </div>
+                  Child Two
+                </div>
+                <div class="small-12 medium-3 columns">
+                  <div class="svg-wrapper">
+                    <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+                  </div>
+                  Child Three
+                </div>
+                <div class="small-12 medium-3 columns">
+                  <div class="svg-wrapper">
+                    <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+                  </div>
+                  Child Four
+                </div>
+              </div>
+            </div>
+
+        </div>
+        {{/each}}
+      <!-- </div> -->
+    <!-- </div> -->
+
+  </div>
+
+  <div class="row expanded small-12 nodes-summary-wrapper v1"  data-equalizer data-equalize-on="medium"> <!-- Nodes -->
+    <div class="small-12 small-centered columns">
+      <div class="row">
+        {{#each global.service-node-nav}}
+        <div class="small-12 medium-6 columns  {{last}}" >
+            <div class="card-wrapper animated node-summary v7" id="{{id}}" onclick="$(".header-poster").addClass("now");" data-equalizer-watch>
+              <div class="svg-wrapper">
+                <img src="/assets/img/icons/{{img}}" alt="{{alt}}" title="{{title}}">
+              </div>
+              <h4>{{title}}</h4>
+
+              {{>interested-btn}}
+              {{>share-btn}}
+
+              <p class="show-for-medium">{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+
+  {{> tech-list}}
+
+  <div class="reveal" id="promotion-revel" data-reveal>
+    <div class="row">
+      <div class="columns">
+        <div class="svg-wrapper large float-left">
+          <object type="image/svg+xml" data="assets/img/icons/WebDev2.svg" width="64" height="64"></object>
+        </div>
+        <h2 class="float-left">Web App Usability Analysis</h2>
+      </div>
+      <div class="columns">
+        <p>For a decade and a half, we've been on the leading edge of integrating FileMaker and the web. In 2002, we won an award for FileMaker Inc, for developing a new tool for tying FileMaker to the web. Ever since, we've made the most of the tools that FileMaker Inc, our peers in the community, and we ourselves have invented to achieve a performant experience having portions of a FileMaker system accessed through a browser.<br>
+          <small><span class="required-mark">*</span> Required field</small>
+        </p>
+      </div>
+    </div>
+
+    <form data-abide novalidate>
+      <div class="row">
+        <div class="columns">
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> There are some errors in your form.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="medium-6 columns">
+          <label>
+            <!-- First Name<span class="required-mark">*</span> -->
+            <input type="text" placeholder="First Name *" required>
+          </label>
+        </div>
+        <div class="medium-6 columns">
+          <label>
+            <!-- <span class="required-mark">*</span> -->
+            <input type="text" placeholder="Last Name *" required>
+          </label>
+        </div>
+
+        <div class="small-12 columns">
+          <label>
+            <input type="text" placeholder="Organization / Company" >
+          </label>
+        </div>
+
+        <div class="small-12 medium-4 columns">
+          <label>
+            <!-- Email<span class="required-mark">*</span> -->
+            <input type="text" placeholder="Email *" required>
+          </label>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <label>
+            <!-- Phone -->
+            <input type="text" placeholder="Phone" required>
+          </label>
+        </div>
+        <!-- <div class="small-12 medium-5 columns">
+          <label>
+            <select id="select" required>
+              <option value="" disabled selected>How did you hear about Beezwax</option>
+              <option value="god">GOD</option>
+              <option value="Craigslist">Craigslist</option>
+              <option value="Stack Overflow">Stack Overflow</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Dice.com">Dice.com</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div> -->
+
+        <div class="small-12 medium-5 columns">
+          <label>
+            <input type="text" placeholder="How did you hear about us?">
+          </label>
+        </div>
+
+        <div class="small-12 columns">
+          <label><strong>Specific Areas of Interest</strong></label>
+          <div class="promo-parts">
+            <label style="cursor: pointer;">
+              <i class="fa fa-star checkstar" aria-hidden="true"></i> User Experience Design
+            </label>
+          </div>
+
+          <div class="promo-parts">
+            <label style="cursor: pointer;">
+              <i class="fa fa-star checkstar" aria-hidden="true"></i> IT Consulting
+            </label>
+          </div>
+
+          <div class="promo-parts">
+            <label style="cursor: pointer;">
+              <i class="fa fa-star checkstar" aria-hidden="true"></i> User Interface Design
+            </label>
+          </div>
+
+          <div class="promo-parts">
+            <label style="cursor: pointer;">
+              <i class="fa fa-star checkstar" aria-hidden="true"></i> Preformance Imporements
+            </label>
+          </div>
+
+          <div class="promo-parts">
+            <label style="cursor: pointer;">
+              <i class="fa fa-star checkstar" aria-hidden="true"></i> Testing
+            </label>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="medium-12 columns" style="margin-top:20px;">
+          <label> <strong>Other Relevant Information</strong>
+            <textarea placeholder="Remember, be nice!" cols="30" rows="5"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <fieldset class="small-12 columns">
+          <p class="text-center">
+            <button class="button small secondary" type="reset" value="Reset">Reset</button>
+            <button class="button small green" type="submit" value="Submit">Let's Do It</button>
+          </p>
+        </fieldset>
+      </div>
+    </form>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>

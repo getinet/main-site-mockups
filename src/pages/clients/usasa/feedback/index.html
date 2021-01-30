@@ -1,0 +1,203 @@
+---
+title: Client Feedback Form
+posterClass: usasa feedback
+quoteDisplay: hide
+guest-profile: active
+guest-profile-page: true
+---
+
+<style media="screen">
+  .intrestest-wrapper-bar {
+    display: none;
+  }
+</style>
+
+{{> header-hero}}
+
+<div class="row feeback-wrapper">
+  <div class="small-11 large-6 small-centered columns">
+    <h4>Client Feedback Form</h4>
+  </div>
+  <br>
+  <div class="small-11 large-6 small-centered columns">
+    <a href="http://usasa.org" target="_blank" class="has-tip top float-right" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="USASA.ORG &#x1f517"><img src="{{root}}assets/img/clients/usasa/usasa-logo-primary.svg" alt="USASA Logo" style="margin-bottom: 0; width: 150px;"></a>
+    <p><span class="bold">Mike Mallon</span><br>USASA</p>
+    <hr>
+    <!-- <p><small>CURRENT OR RECENT PROJECTS</small></p> -->
+
+    {{#each global.feedback-projects}}
+    <div class="project-wrapper">
+      <h4 class="">{{project-name}} <button class="tiny green button show-project-detail">show details</button></h4>
+
+      <div class="project-details collapsed">
+        <p>
+          <small><b>SERVICES&nbsp;</b> <br>
+            <a href="/services/filemaker">FileMaker Development</a> | Integration | Web Development | Design | Consulting,
+            <br>
+            <b>FUNCTIONAL AREAS&nbsp;</b> <br>
+          Administration | Document Generation | Legal Notices | Marketing | Operations | Ordering Systems | Process Management | Quality Assurance | Program Management | Registration | Sales | Security
+          <br><b>TECH&nbsp;</b> <br>FileMaker Pro | FileMaker Custom Web Publishing |  PHP | Javascript | JQuery | CSS | Custom UI & UX design
+          <br><b>Goals&nbsp;</b> <br>Increase efficiency | Competitive Advanatage
+          </small>
+        </p>
+        <!-- <hr class="grey"> -->
+      </div>
+
+    </div>
+    {{/each}}
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <hr class="grey">
+    <label>Would you like the responses you give here to be held confidentially by Beezwax Management?
+      <div class="switch small float-right">
+        <!-- <span class="pre">Intro</span> -->
+        <input class="switch-input" id="q1" type="checkbox" name="togleSwitch">
+        <label class="switch-paddle" for="q1">
+          <span class="show-for-sr">How deeap do you want to get</span>
+          <span class="switch-inactive" aria-hidden="true"></span>
+          <span class="switch-active" aria-hidden="true"></span>
+        </label>
+      </div>
+    </label>
+    <div class="question-1-wrapper">
+      <label><small>If so, only your Account Manager and other Beezwax Managers will read these responses. If not confidential, we will share generally with everyone who worked on the project.</small></label>
+      <!-- <textarea placeholder="…" cols="30" rows="4"></textarea> -->
+    </div>
+    <hr class="grey">
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <label>Which recent projects would you like to give us feedback on? We will assume your feedback pertains to all the projects you select, unless you call them out by name in your comments.<br>
+    {{#each global.feedback-projects}}
+    <input id="{{id}}" type="checkbox" checked><label for="{{id}}">{{project-name}}</label>
+    {{/each}}
+    <!-- <input id="checkbox2" type="checkbox" checked><label for="checkbox2">Project 2</label>
+    <input id="checkbox3" type="checkbox" checked><label for="checkbox3">Project 3</label> -->
+
+      <textarea placeholder="…" cols="30" rows="4"></textarea>
+    </label>
+    <hr class="grey">
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <label>What value has your organization gotten, or do you anticipate getting, from the work we have done?
+      <textarea placeholder="…" cols="30" rows="4"></textarea>
+    </label>
+    <label>May we use what you have written as a testimonial?
+      <div class="switch small float-right">
+        <!-- <span class="pre">Intro</span> -->
+        <input class="switch-input" id="q1" type="checkbox" name="togleSwitch">
+        <label class="switch-paddle" for="q1">
+          <span class="show-for-sr">How deeap do you want to get</span>
+          <span class="switch-inactive" aria-hidden="true"></span>
+          <span class="switch-active" aria-hidden="true"></span>
+        </label>
+      </div>
+    </label>
+    <hr class="grey">
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <label>Were there problems with how we delivered our work?
+      <textarea placeholder="…" cols="30" rows="4"></textarea>
+    </label>
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <label>Is there any individual on our team you want to make particular comments about; either positive or negative?
+      <textarea placeholder="…" cols="30" rows="4"></textarea>
+    </label>
+    <hr class="grey">
+  </div>
+  <div class="small-11 large-6 small-centered columns">
+    <label>Are you interested in on-going work with us?
+      <div class="switch small float-right">
+        <!-- <span class="pre">Intro</span> -->
+        <input class="switch-input" id="q6" type="checkbox" name="togleSwitch">
+        <label class="switch-paddle" for="q6">
+          <span class="show-for-sr">How deeap do you want to get</span>
+          <span class="switch-inactive" aria-hidden="true"></span>
+          <span class="switch-active" aria-hidden="true"></span>
+        </label>
+      </div>
+    </label>
+    <div class="question-6-wrapper hide">
+      <input id="checkbox1" type="checkbox" checked><label for="checkbox1"> Continue Work</label>
+      <input id="checkbox2" type="checkbox" checked><label for="checkbox2">New Work</label>
+    </div>
+
+    <hr class="grey">
+  </div>
+
+  <div class="small-12 columns">
+    <p class="text-center">
+      <!-- <button class="button small secondary" type="reset" value="Reset">Reset</button> -->
+      <button class="button small green" type="submit" value="Submit" data-open="application-confirm">Submit</button>
+    </p>
+    </form>
+  </div>
+</div>
+
+<div class="reveal jobs-wrapper animated fadeIn text-center" id="application-confirm" data-reveal>
+  <h4>Thank you!</h4>
+    <p>Thank you for providing us with some feedback<br>
+    If it warrents, we will be getting in-touch with you soon.</p>
+    <p><small>You will be reciving an email with a copy withy ou submission for your records.</small></p>
+
+  <div class="text-center"> <a class="button green small" href="{{root}}">Done</a></div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button"  onclick="location.href='{{root}}';">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- <div class="tiny reveal animated fadeIn" id="FeedbackLogInModal" data-reveal>
+  <form class="log-in-form">
+    <h4 class="text-center">Log in</h4>
+    <label>Email
+      <input type="email" placeholder="somebody@example.com">
+    </label>
+    <label>Password
+      <input type="password" placeholder="Password">
+    </label>
+    <p class="button expanded green" onclick="$('.feeback-wrapper').removeClass('filter-blur');
+    $('.feeback-wrapper').addClass('filter-blur');" data-close>Login</p>
+  </form>
+  <button class="close-button" href="{{root}}users/jane-smith" data-close aria-label="Close modal" type="button" onclick="location.href='{{root}}';">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> -->
+
+
+<div class="tiny reveal animated fadeIn" id="TempPassLogInModal" data-reveal>
+  <form class="log-in-form">
+    <h4 class="text-center">Update Your Password</h4>
+    <label>Email
+      <input type="email" placeholder="somebody@example.com" readonly>
+    </label>
+    <label>Temparary Password
+      <input type="password" placeholder="Temparary Password">
+    </label>
+    <hr>
+    <label>New Password
+      <input type="password" placeholder="New Password">
+    </label>
+    <label>Confirm Password
+      <input type="password" placeholder="Confirm Password">
+    </label>
+    <p class="button expanded green" data-open="changepassword-confirm">Submit</p>
+  </form>
+  <button class="close-button" href="{{root}}users/jane-smith" data-close aria-label="Close modal" type="button" onclick="location.href='{{root}}';">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+<div class="reveal jobs-wrapper animated fadeIn text-center" id="changepassword-confirm" data-reveal>
+  <h4>Thank you!</h4>
+    <p>Your account credentials have been updated.</p>
+    <p>Please login to complete the feedback form.</p>
+
+  <div class="text-center"> <a class="button green small" data-open="FeedbackLogInModal">Sign-In</a></div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button"  onclick="location.href='{{root}}';">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
