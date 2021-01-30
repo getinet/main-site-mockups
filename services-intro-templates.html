@@ -1,0 +1,100 @@
+<div class="intro-nodes-mockups version-2">
+  <div class="small-12 columns">
+    <div class="masonry-css">
+      {{#each global.sub-nodes-intro}}
+      {{#if main}}
+      <div class="masonry-css-item animated fadeIn" style="column-span: {{column-span}};">
+        <div class="card beginners {{class}}">
+          <div class="svg-wrapper background" style="background-image: url('{{card-image}}');background-attachment: fixed;">&nbsp;</div>
+          <div class="content-wrapper">
+            <div class="card-section animated fadeIn">
+              <p class="resizeable">{{description}}</p>
+            </div>
+            <div class="card-divider animated fadeIn">
+              <div class="sub-node-icon" style="background-image: url('{{img}}');">&nbsp;</div>
+              <h4>{{title}}</h4>
+              <!-- <div class="button hollow blue small has-tip top show-intrest show-for-large" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Toggle interest in this service">
+                <i class="fa fa-star-o" aria-hidden="true"></i> <span>interested</span>
+              </div> -->
+              {{>interested-btn}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="intro-why">
+        <h4>{{why-title}}</h4>
+        <p>{{why-description}}</p>
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="intro-nodes-mockups version-4 last-section" id="version-4">
+
+  {{#each global.service-nodes-intro}}
+  <div class="small-12 columns wide-node {{style}}">
+    <div class="row">
+      <div class="small-12 medium-5 columns">
+        &nbsp;
+      </div>
+      <div class="small-12 medium-7 columns">
+        <div class="card beginners even">
+          <div class="svg-wrapper background" style="background-image: url('');">&nbsp;</div>
+          <div class="content-wrapper">
+            <div class="card-section animated fadeIn">
+              <p class="resizeable"  style="font-size:{{text-size}}rem">{{description}}</p>
+            </div>
+            <div class="card-divider animated fadeIn">
+              <div class="sub-node-icon" style="background-image: url('{{icon}}');">&nbsp;</div>
+              <h4>{{title}}</h4>
+              {{>interested-btn}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 medium-{{why-1-count}} columns">
+      <div class="intro-why">
+        <h4>{{why-title}}</h4>
+        <p>{{why-description}}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row small-up-1 medium-up-{{why-count}} hide">
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+    <div class="column column-block">
+      <img src="https://placehold.it/600x600" class="thumbnail" alt="">
+    </div>
+  </div>
+
+
+
+  {{/each}}
+
+</div>
